@@ -1,0 +1,8 @@
+
+#backend is django so duh
+*.pyc
+
+*.sqlite
+
+#ignore possible virtualenvs
+*env*
