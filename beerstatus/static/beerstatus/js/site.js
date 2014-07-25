@@ -62,10 +62,23 @@ var BeerView = Backbone.View.extend({
         <!--<td><%= date %></td>-->\
     '),
     render: function(){
-        this.$el.html(this.template(this.model.toJSON()));
+        var class_ = ""
+        if (this.model.get("availability") < 0){
+            class_ = "danger";
+        }
+        else if (this.model.get("availability") > 0 &&
+                this.model.get("availability") < 10){
+            class_ = "warning";
+        } else {
+            class_ = "active";     
+        }
+        var json = this.model.toJSON();
+        this.$el.html(this.template(json));
         if (this.model.get("availability") == 0){
             this.$el.addClass("hidden"); 
-            }
+        }
+        this.$el.addClass(class_);
+        
         return this;
     }
 })
