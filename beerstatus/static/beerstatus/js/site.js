@@ -39,8 +39,10 @@ var BeerAvailabilityWithRating = Backbone.Model.extend({
         //back-end is not locale aware
         },
     initialize: function(){
-        this.alko_url = "http://www.alko.fi/en/products/" +
-                                this.alko_product_id + "/";
+        this.set("alko_url" ,
+                    "http://www.alko.fi/en/products/" +
+                                this.get("alko_product_id") + "/"
+                    )
     }
    })
 
