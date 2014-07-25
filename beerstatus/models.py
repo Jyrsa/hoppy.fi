@@ -31,14 +31,16 @@ class Beer(models.Model):
     # todo: enforce check
     created_at = models.DateTimeField(auto_now_add=True)
     last_modified = models.DateTimeField(auto_now=True)
+    #Todo: add price info at some point
     #Todo: add style info at some point
-    #However beer style is far from simple
+    #However beer style is far from agreed on :(
 
     def __unicode__(self):
         return u"'%s' (%s ABV, %s EBU)" % (self.name,
                                             str(self.abv),
                                             str(self.ebu)
-                                )
+                            )
+
 
 class BeerRater(models.Model):
     name = models.CharField(max_length=200)
@@ -86,6 +88,7 @@ SUPPORTED_ALKO_CITIES = (
 
 class AlkoLocation(models.Model):
     name = models.CharField(max_length=200)
+    slug = AutoSlugField(populate_from="name")
     city = models.CharField(max_length=200, choices=SUPPORTED_ALKO_CITIES)
     #alko stores have a www.alko.fi/myymalat/store_id/ address
     store_id = models.CharField(max_length=5, validators=[validate_integer],
