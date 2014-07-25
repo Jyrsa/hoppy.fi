@@ -13,16 +13,18 @@ from util import PrettyJSONSerializer
 from django.conf import settings
 
 class AlkoLocationResource(ModelResource):
-    availability = fields.ToManyField(
-                                    "beerstatus.api.BeerAvailabilityResource",
-                                        "availability")
+
+    slug = fields.CharField(attribute="slug")
+
     class Meta:
         queryset = AlkoLocation.objects.all()
         resource_name = "alko"
         filtering = {
         'pk': ALL_WITH_RELATIONS,
-        'store_id': ALL_WITH_RELATIONS
+        'store_id': ALL_WITH_RELATIONS,
+        'slug': ALL_WITH_RELATIONS
         }
+        excludes = ["last_modified", "created_at"]
         if settings.DEBUG:
             serializer = PrettyJSONSerializer()
 
@@ -45,6 +47,7 @@ class BeerRaterResource(ModelResource):
 
 class BeerResource(ModelResource):
     scores = fields.ListField(readonly=True)
+    slug = fields.CharField(attribute="slug")
 
     def dehydrate_scores(self, bundle):
         list_ = []
@@ -64,7 +67,7 @@ class BeerResource(ModelResource):
                 'pk': ALL_WITH_RELATIONS,
                 'ratings': ALL
                 }
-
+        excludes = ["last_modified", "created_at"]
         if settings.DEBUG:
             serializer = PrettyJSONSerializer()
 
@@ -78,6 +81,7 @@ class BeerAvailabilityResource(ModelResource):
             'location': ALL_WITH_RELATIONS, 
             'date': ['exact', 'gt']
             }
+        excludes = ["last_modified", "created_at"]
         if settings.DEBUG:
             serializer = PrettyJSONSerializer()
 
