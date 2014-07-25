@@ -260,8 +260,12 @@ var AlkoSearchView = Backbone.View.extend({
         this.collection.setSelected(this.collection.findWhere({name:
                                 ui.item.label}));
     },
+    clearText: function(event_, ui){
+        this.$el.val("");
+    },
     events : {
         "autocompleteselect": "changeAlko", 
+        "click": "clearText"
     },
     render : function(){
             var vals = this.collection.pluck("name");
