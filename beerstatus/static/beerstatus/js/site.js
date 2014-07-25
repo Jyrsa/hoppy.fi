@@ -31,6 +31,8 @@ var BeerAvailabilityWithRating = Backbone.Model.extend({
         ebu: null,
         abv: null,
         scores : null,
+        price: null,
+        volume: null,
         score : null, //just one score for now
         score_url : null, //just one score for now
         alko_url: null, //this must be constructed on the front-end as the
@@ -49,11 +51,13 @@ var BeerView = Backbone.View.extend({
     },
     template: _.template('\
         <td><a href="<%= alko_url%>"><%= name %></a></td>\
-        <td><a href="<%= score_url %>"><%= score %></a></td>\
+        <td><a href="<%= score_url %>"><%= score %> pts</a></td>\
         <td><%= ebu %></td>\
-        <td><%= abv %></td>\
+        <td><%= abv %> %</td>\
+        <td><%= volume %> l</td>\
+        <td><%= price %> €</td>\
         <td><%= availability %></td>\
-        <td><%= date %></td>\
+        <!--<td><%= date %></td>-->\
     '),
     render: function(){
         this.$el.html(this.template(this.model.toJSON()));
@@ -72,7 +76,7 @@ var BeerCollection = Backbone.Collection.extend({
     },
     sortAttr: "score",
     legalSortAttrs: ["score", "abv", "ebu", "availability", "name",
-                    "date"],
+                    "price", "volume", "date"],
     sortAsc: false,
     comparator: function(a_, b_){
         var a = a_.get(this.sortAttr),
@@ -139,8 +143,10 @@ var BeerCollectionTable = Backbone.View.extend({
     <th data-sort="score"><a href="http://wwww.ratebeer.com">Ratebeer</a> score</th>\
     <th data-sort="ebu"> ebu </td>\
     <th data-sort="abv"> abv </td>\
+    <th data-sort="volume">volume</th>\
+    <th data-sort="price">price</th>\
     <th data-sort="availability">in stock</th>\
-    <th data-sort="data">date</th>\
+    <!--th data-sort="date">date</th-->\
     </thead>\
     <tbody></tbody>\
     '),

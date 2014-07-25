@@ -24,6 +24,9 @@ class Beer(models.Model):
                     "discontinued products from queries. set manually."
                     )
                 )
+    price = models.FloatField(default=0)
+    volume = models.FloatField(default=.33, help_text=("volume in "
+                    " litres"))
     alko_product_id = models.CharField(
                             max_length=6,
                             validators=[validate_integer]) 
