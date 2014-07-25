@@ -23,9 +23,16 @@ class BeerAdmin(admin.ModelAdmin):
     """ Lets input ratings inline.
     """
     inlines = (BeerRatingInline,)
+    list_display = ("name", "slug",)
+    readonly_fields = ("slug", )
 
 admin.site.register(Beer, BeerAdmin)
 admin.site.register(BeerRating)
 admin.site.register(BeerRater)
-admin.site.register(AlkoLocation)
+
+class AlkoLocationAdmin(admin.ModelAdmin):
+    """ lets the slug be visible
+    """
+    readonly_fields=("slug",)
+admin.site.register(AlkoLocation, AlkoLocationAdmin)
 admin.site.register(BeerAvailability)
