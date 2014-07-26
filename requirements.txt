@@ -5,6 +5,7 @@ distribute==0.6.24
 django-autoslug==1.7.2
 django-tastypie==0.11.1
 huey==0.4.2
+lxml==3.3.5
 mock==1.0.1
 python-dateutil==2.2
 python-mimeparse==0.1.4
