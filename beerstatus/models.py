@@ -13,10 +13,12 @@ class Beer(models.Model):
                 default=0)
     #but alko offers both of these
     ebu = models.FloatField(
-                help_text=("European Bitterness Units")
+                help_text=("European Bitterness Units"),
+                default=0,
                 )
     abv = models.FloatField(
-                help_text=("Alcohol by Volume")
+                help_text=("Alcohol by Volume"),
+                default=0
                 )
     active = models.BooleanField(
                 default=True,
@@ -29,7 +31,8 @@ class Beer(models.Model):
                     " litres"))
     alko_product_id = models.CharField(
                             max_length=6,
-                            validators=[validate_integer]) 
+                            validators=[validate_integer])
+    style = models.CharField(max_length=200)
     # should be an integer
     # todo: enforce check
     created_at = models.DateTimeField(auto_now_add=True)
