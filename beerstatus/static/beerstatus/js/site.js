@@ -54,9 +54,9 @@ var BeerView = Backbone.View.extend({
     template: _.template('\
         <td><a href="<%= alko_url%>"><%= name %></a></td>\
         <td><a href="<%= score_url %>"><%= score %> pts</a></td>\
-        <td><%= ebu %></td>\
-        <td><%= abv %> %</td>\
-        <td><%= volume %> l</td>\
+        <td class="hidden-xs"><%= ebu %></td>\
+        <td class="hidden-xs"><%= abv %> %</td>\
+        <td class="hidden-xs"><%= volume %> l</td>\
         <td><%= price %> €</td>\
         <td><%= availability %></td>\
         <!--<td><%= date %></td>-->\
@@ -155,10 +155,10 @@ var BeerCollectionTable = Backbone.View.extend({
     template : _.template('\
     <thead>\
     <th data-sort="name">name</th>\
-    <th data-sort="score"><a href="http://wwww.ratebeer.com">Ratebeer</a> score</th>\
-    <th data-sort="ebu"> ebu </td>\
-    <th data-sort="abv"> abv </td>\
-    <th data-sort="volume">volume</th>\
+    <th data-sort="score"><a href="http://www.ratebeer.com">Ratebeer</a> score</th>\
+    <th data-sort="ebu" class="hidden-xs"> ebu </td>\
+    <th data-sort="abv" class="hidden-xs"> abv </td>\
+    <th data-sort="volume" class="hidden-xs">volume</th>\
     <th data-sort="price">price</th>\
     <th data-sort="availability">in stock</th>\
     <!--th data-sort="date">date</th-->\
@@ -227,14 +227,16 @@ var AlkoLocations = Backbone.Collection.extend({
 });
 
 
-var SelectedAlkoView = Backbone.View.extend({
+var AlkoDetailsView = Backbone.View.extend({
     el: "#alkoDetails",
     initialize: function(params){
         this.collection.on("alkochanged", this.updateAlkoData, this);
     },
     template: _.template('\
-        <li><a href="<%= store_url %>"><%= name %></a></li> \
-        <li><a href="<%= gmaps_url %>"><%= address %></a></li> \
+        <div class="center">\
+        <span class="col-md-2 col-md-offset-4 col-xs-6"><a class="btn btn-default" href="<%= store_url %>">\
+        store home page</a></span><span class="col-md-2 col-xs-6"> <a class="btn btn-default" href="<%= gmaps_url %>">\
+        address in gmaps </a></div> \
     '),
     updateAlkoData: function(model){
         this.model = model;
@@ -253,15 +255,26 @@ var AlkoSearchView = Backbone.View.extend({
         this.collection.on("fetch set reset add change",
                         this.render,
                         this)
+        params.alkolocations.on("alkochanged", this.setAlko, this);
         this.render();
     },
     el: "#inputLocation",
     changeAlko: function(event_, ui){
         this.collection.setSelected(this.collection.findWhere({name:
                                 ui.item.label}));
+        event_.preventDefault(); 
+        //the view itself takes care of updating the text once event is
+        //triggered by the collection so we can prevent the jquery-ui update
+        //
+    },
+    setAlko: function(model){
+        this.setText(model.get("name"));     
+    },
+    setText: function(text){
+        this.$el.val(text);   
     },
     clearText: function(event_, ui){
-        this.$el.val("");
+        this.setText("");
     },
     events : {
         "autocompleteselect": "changeAlko", 
@@ -281,10 +294,11 @@ var BeerStatusRouter = Backbone.Router.extend({
     initialize: function(){
         this.als = new AlkoLocations([], {router:this});
         this.als.fetch();
-        this.alsView = new AlkoSearchView({collection: this.als});
+        this.alsView = new AlkoSearchView({collection: this.als,
+                        alkolocations: this.als});
         this.bc = new BeerCollection({locations:this.als, router: this});
         this.bcView = new BeerCollectionTable({collection: this.bc});
-        this.selAlView = new SelectedAlkoView({collection: this.als});
+        this.selAlView = new AlkoDetailsView({collection: this.als});
     },
     routes : {
        "" : "home",

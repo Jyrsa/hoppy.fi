@@ -2,14 +2,14 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Hoppy.fi draft page</title>
 
     <!-- Bootstrap -->
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
     <!-- lavish bootstrap, disabled for now until i find a perfect src picture -->
-    <!--link rel="stylesheet" href="./css/lavish-bootstrap-beerish.css" -->
+    <link rel="stylesheet" href="./css/lavish-bootstrap-threebeers.css">
     <!-- jquery-ui -->
   <link rel="stylesheet"
   href="//code.jquery.com/ui/1.11.0/themes/smoothness/jquery-ui.css">
@@ -20,7 +20,6 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-  </head>
     <style>
         body {
             padding-top: 60px; 
@@ -35,7 +34,20 @@
         .center th {
             text-align: center; 
             }
+        #beerTable th {
+            cursor: pointer;     
+        }
+        .jumbotron {
+            /*margin-bottom: 0px;*/
+            background-image: url(./img/hops2.jpg);
+            /*background-position: 50% 10%;*/
+            background-size: cover;
+            background-repeat: no-repeat;
+            color: white;
+            text-shadow: black 0.3em 0.3em 0.3em;
+        }
     </style>
+  </head>
   <body>
     <!-- navigation -->
     <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
@@ -54,34 +66,44 @@
             <li class="active"><a href="#">Home</a></li>
             <li><a href="./about.html">About</a></li>
           </ul>
-        </div><!--/.nav-collapse -->
+        </div>
       </div>
     </div>
     <!-- end navigation--> 
     <div class="container">
          <div class="jumbotron">
             <h1 class="center">Hoppy.fi</h1>
-            <div class="center">
-            <form class="form-inline" role="form">
-            <div class="form-group">
-                <label class="sr-only" for="inputLocation">Store name</label>
-                <input type="search" id="inputLocation" 
-                        placeholder="Nearest Alko"></input>
-            </div>
-                <button type="button" class="btn btn-default" id="locationButton">Use Location</button>
-            </div>
-            <ul id="alkoDetails" style="display:none" class="center"></ul>
+                <div class="row">
+                <div class="col-md-6 col-md-offset-3 col-xs-12">
+                    <form role="form">
+                            <div class="form-group">
+                                <label class="sr-only" for="inputLocation">Store name</label>
+                                <input type="text" class="input-lg form-control" id="inputLocation" 
+                                            placeholder="Input Nearest Alko" />
+                            </div>
+                            <div class="center">
+                                <button type="button" class="btn btn-default" id="locationButton">Use Location</button>
+                            </div>
+                    </form>
+                    </div>
+                </div>
          </div>
         <div class="row">
             <div class="col-md-12">
-            <table id="beerTable" style="display:none"></table>
+                <div id="alkoDetails" style="display:none"
+                class="center"></div>
             </div>
         </div>
+
+        <div class="row">
+            <div class="col-xs-12">
+                <table id="beerTable" style="display:none"></table>
+            </div>
         </div>
-    </div>
+           </div>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-   <script src="//code.jquery.com/ui/1.11.0/jquery-ui.js"> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"> </script>
+   <script src="//code.jquery.com/ui/1.11.0/jquery-ui.js">  </script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.6.0/underscore.js"></script>
