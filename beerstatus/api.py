@@ -13,7 +13,6 @@ from util import PrettyJSONSerializer
 from django.conf import settings
 
 class AlkoLocationResource(ModelResource):
-
     slug = fields.CharField(attribute="slug")
 
     class Meta:
@@ -52,12 +51,20 @@ class BeerResource(ModelResource):
     def dehydrate_scores(self, bundle):
         list_ = []
         for rater in BeerRater.objects.all():
-            rating = BeerRating.objects.get(beer=bundle.obj, rater=rater)
-            list_.append({
+            try:
+                rating = BeerRating.objects.get(beer=bundle.obj, rater=rater)
+                list_.append({
                             "rater": rater.name, 
                             "score": rating.rating,
                             "url": rater.get_url(rating.foreign_id)
                             })
+            except BeerRating.DoesNotExist:
+                list_.append({
+                    "rater": rater.name, 
+                    "score": None,
+                    "url": ""
+                    })
+ 
         return list_
 
     class Meta:
