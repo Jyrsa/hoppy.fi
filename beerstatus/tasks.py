@@ -13,6 +13,7 @@ import datetime
 from . import models
 from lxml import html
 from django.utils.timezone import utc
+import re
 
 LOGGER = logging.getLogger(__name__)
 
@@ -112,11 +113,11 @@ def get_element_contents(tree, xpath, cure):
             )
     return cure( list_[0])
 
-def ScrapeInconsistencyException(BaseException):
+class ScrapeInconsistencyException(BaseException):
     pass
 
 
-def ScrapeElementNotFoundException(BaseException):
+class ScrapeElementNotFoundException(BaseException):
     pass
 
 @db_periodic_task(crontab(hour='/12'))
@@ -125,7 +126,7 @@ def update_beer_infos():
     for beer in models.Beer.objects.all():
         update_beer_info(beer)
 
-@db_task()
+@db_task
 def update_beer_info(beer):
     """ retrieves beer page from alko, updates model fields and saves model.
 
@@ -217,4 +218,74 @@ def update_beer_info(beer):
         beer.slug = slugify(name) 
     beer.save()
 
+def find_alko_id_by_name(name):
+    name = name.replace("Alko", "").strip()
+    response = requests.get(
+    "http://www.alko.fi/api/find/stores?Language=en&Page=0&PageSize=20&ProductIds=&Query=%s"
+            % name)
+    blob = response.json()
+    results = blob.get("Results", [])
+    if len(results) == 1:
+        url = results[0]["Url"]
+        match = re.search(r"\d{4}", url)
+        if match:
+            return match.group(0)
+    return None
 
+@db_periodic_task(crontab(hour="5"))
+def update_all_alko_infos():
+    for alko in models.AlkoLocation.objects.all():
+        update_alko_info(alko)
+
+@db_task()
+def update_alko_info(alko):
+    store_id = find_alko_id_by_name(alko.name) or alko.store_id
+    if not store_id:
+        logging.warning("no store_id found for store name "\
+            + alko.name)
+        return  #should this be a loud failure?
+    alko.store_id = store_id
+    alko.save() #save here so in case page is different
+    #from standard we at least get id
+    url ="http://www.alko.fi/en/shops/%s/" % store_id
+    tree = retrieve_etree(url)
+    streetaddr = ""
+    try:
+        streetaddr = get_element_contents(tree, 
+            ('/html/body/div[7]/div/div[1]/div/div/'
+            'div/div[2]/span[1]/div/span[1]/text()'), 
+            lambda x: x)
+    except ScrapeElementNotFoundException:
+        pass
+    areacode = ""
+    try:
+        areacode = get_element_contents(tree, 
+            ('/html/body/div[7]/div/div[1]/div/div/'
+            'div/div[2]/span[1]/div/span[2]/text()'), 
+            lambda x: x)
+    except ScrapeElementNotFoundException:
+        pass
+    city = ""
+    try:
+        city = get_element_contents(tree, 
+            ('/html/body/div[7]/div/div[1]/div/div/'
+            'div/div[2]/span[1]/div/span[3]/text()'), 
+            lambda x: x)
+    except ScrapeElementNotFoundException:
+        pass
+    address = "%s, %s %s" % (
+                streetaddr,
+                areacode,
+                city
+                )
+    name = get_element_contents(tree, 
+            ('/html/body/div[7]/div/div[1]/div/div/'
+            'div/h1/text()'), 
+            lambda x: x)
+    # if name.length > 0:
+    #     alko.name = name
+    #     todo: should the name be used?
+    if len(address) > 4:
+        alko.address = address
+    alko.save()
+    

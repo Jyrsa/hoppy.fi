@@ -1,0 +1,5207 @@
+[
+{
+  "pk": 1, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "helsinki", 
+    "store_id": "2102", 
+    "created_at": "2014-07-23T18:00:21.299Z", 
+    "longitude": 60.170814, 
+    "last_modified": "2014-07-26T18:37:02.220Z", 
+    "address": "Salomonkatu 1, 00100 HELSINKI", 
+    "latitude": 24.934792, 
+    "slug": "alko-helsinki-keskusta-arkadia", 
+    "name": "Alko Helsinki keskusta Arkadia"
+  }
+},
+{
+  "pk": 2, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "helsinki", 
+    "store_id": "2123", 
+    "created_at": "2014-07-23T18:07:28.180Z", 
+    "longitude": 60.217522, 
+    "last_modified": "2014-07-26T18:37:01.750Z", 
+    "address": "Takomotie 33, 00380 HELSINKI", 
+    "latitude": 24.86974, 
+    "slug": "alko-helsinki-pitajanmaki", 
+    "name": "Alko Helsinki Pit\u00e4j\u00e4nm\u00e4ki"
+  }
+},
+{
+  "pk": 3, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "espoo", 
+    "store_id": "2153", 
+    "created_at": "2014-07-23T18:08:09.657Z", 
+    "longitude": 60.217952, 
+    "last_modified": "2014-07-26T18:37:01.814Z", 
+    "address": "Lepp\u00e4vaarankatu 3-9, 02600 ESPOO", 
+    "latitude": 24.809618, 
+    "slug": "alko-espoo-leppavaara-sello", 
+    "name": "Alko Espoo Lepp\u00e4vaara Sello"
+  }
+},
+{
+  "pk": 4, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "espoo", 
+    "store_id": "2152", 
+    "created_at": "2014-07-23T18:08:33.670Z", 
+    "longitude": 60.176391, 
+    "last_modified": "2014-07-26T18:37:01.890Z", 
+    "address": "Tapionaukio 4, 02100 ESPOO", 
+    "latitude": 24.808582, 
+    "slug": "alko-espoo-tapiola-ainoa", 
+    "name": "Alko Espoo Tapiola Ainoa"
+  }
+},
+{
+  "pk": 5, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "helsinki", 
+    "store_id": "2103", 
+    "created_at": "2014-07-26T17:47:33.027Z", 
+    "longitude": 60.164371, 
+    "last_modified": "2014-07-26T18:37:02.170Z", 
+    "address": "Fabianinkatu 9-11, 00130 HELSINKI", 
+    "latitude": 24.95006, 
+    "slug": "alko-helsinki-kasarmitori", 
+    "name": "Alko Helsinki Kasarmitori"
+  }
+},
+{
+  "pk": 6, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "helsinki", 
+    "store_id": "2104", 
+    "created_at": "2014-07-26T17:47:33.043Z", 
+    "longitude": 60.161259, 
+    "last_modified": "2014-07-26T18:37:02.252Z", 
+    "address": "Hietalahdenranta 5, 00120 HELSINKI", 
+    "latitude": 24.930095, 
+    "slug": "alko-helsinki-bulevardi", 
+    "name": "Alko Helsinki Bulevardi"
+  }
+},
+{
+  "pk": 7, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "helsinki", 
+    "store_id": "2105", 
+    "created_at": "2014-07-26T17:47:33.055Z", 
+    "longitude": 60.169013, 
+    "last_modified": "2014-07-26T18:37:02.633Z", 
+    "address": "Mannerheimintie 20, 00100 HELSINKI", 
+    "latitude": 24.937932, 
+    "slug": "alko-helsinki-keskusta-forum", 
+    "name": "Alko Helsinki keskusta Forum"
+  }
+},
+{
+  "pk": 8, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "helsinki", 
+    "store_id": "2106", 
+    "created_at": "2014-07-26T17:47:33.071Z", 
+    "longitude": 60.159321, 
+    "last_modified": "2014-07-26T18:37:02.548Z", 
+    "address": "Vuorimiehenkatu 33, 00140 HELSINKI", 
+    "latitude": 24.943421, 
+    "slug": "alko-helsinki-ullanlinna", 
+    "name": "Alko Helsinki Ullanlinna"
+  }
+},
+{
+  "pk": 9, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "helsinki", 
+    "store_id": "2107", 
+    "created_at": "2014-07-26T17:47:33.104Z", 
+    "longitude": 60.187262, 
+    "last_modified": "2014-07-26T18:37:02.577Z", 
+    "address": "Helsinginkatu 15, 00500 HELSINKI", 
+    "latitude": 24.955068, 
+    "slug": "alko-helsinki-kallio", 
+    "name": "Alko Helsinki Kallio"
+  }
+},
+{
+  "pk": 10, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "helsinki", 
+    "store_id": "2109", 
+    "created_at": "2014-07-26T17:47:33.118Z", 
+    "longitude": 60.191034, 
+    "last_modified": "2014-07-26T18:37:02.645Z", 
+    "address": "Topeliuksenkatu 43, 00250 HELSINKI", 
+    "latitude": 24.91082, 
+    "slug": "alko-helsinki-meilahti", 
+    "name": "Alko Helsinki Meilahti"
+  }
+},
+{
+  "pk": 11, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "helsinki", 
+    "store_id": "2110", 
+    "created_at": "2014-07-26T17:47:33.138Z", 
+    "longitude": 60.221808, 
+    "last_modified": "2014-07-26T18:37:02.940Z", 
+    "address": "Panuntie 11, 00620 HELSINKI", 
+    "latitude": 24.947375, 
+    "slug": "alko-helsinki-kapyla", 
+    "name": "Alko Helsinki K\u00e4pyl\u00e4"
+  }
+},
+{
+  "pk": 12, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "helsinki", 
+    "store_id": "2111", 
+    "created_at": "2014-07-26T17:47:33.146Z", 
+    "longitude": 60.197313, 
+    "last_modified": "2014-07-26T18:37:02.917Z", 
+    "address": "Ratapihantie 3, 00520 HELSINKI", 
+    "latitude": 24.935651, 
+    "slug": "alko-helsinki-ita-pasila", 
+    "name": "Alko Helsinki It\u00e4-Pasila"
+  }
+},
+{
+  "pk": 13, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "helsinki", 
+    "store_id": "2112", 
+    "created_at": "2014-07-26T17:47:33.155Z", 
+    "longitude": 60.239155, 
+    "last_modified": "2014-07-26T18:37:03.087Z", 
+    "address": "Ajomiehentie 1, 00390 HELSINKI", 
+    "latitude": 24.849934, 
+    "slug": "alko-helsinki-konala-ristikko", 
+    "name": "Alko Helsinki Konala Ristikko"
+  }
+},
+{
+  "pk": 14, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "helsinki", 
+    "store_id": "2115", 
+    "created_at": "2014-07-26T17:47:33.163Z", 
+    "longitude": 60.163317, 
+    "last_modified": "2014-07-26T18:37:03.034Z", 
+    "address": "It\u00e4merenkatu 21, 00180 HELSINKI", 
+    "latitude": 24.91022, 
+    "slug": "alko-helsinki-ruoholahti", 
+    "name": "Alko Helsinki Ruoholahti"
+  }
+},
+{
+  "pk": 15, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "helsinki", 
+    "store_id": "2116", 
+    "created_at": "2014-07-26T17:47:33.177Z", 
+    "longitude": 60.203124, 
+    "last_modified": "2014-07-26T18:37:03.360Z", 
+    "address": "H\u00e4meentie 109\u2013111 B 9, 00560 HELSINKI", 
+    "latitude": 24.967176, 
+    "slug": "alko-helsinki-arabianranta-arabia", 
+    "name": "Alko Helsinki Arabianranta Arabia"
+  }
+},
+{
+  "pk": 16, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "helsinki", 
+    "store_id": "2117", 
+    "created_at": "2014-07-26T17:47:33.188Z", 
+    "longitude": 60.174411, 
+    "last_modified": "2014-07-26T18:37:03.304Z", 
+    "address": "Maurinkatu 8-12, 00170 HELSINKI", 
+    "latitude": 24.959544, 
+    "slug": "alko-helsinki-kruununhaka", 
+    "name": "Alko Helsinki Kruununhaka"
+  }
+},
+{
+  "pk": 17, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "helsinki", 
+    "store_id": "2118", 
+    "created_at": "2014-07-26T17:47:33.197Z", 
+    "longitude": 60.205564, 
+    "last_modified": "2014-07-26T18:37:03.406Z", 
+    "address": "Raumantie 1, 00350 HELSINKI", 
+    "latitude": 24.876523, 
+    "slug": "alko-helsinki-munkkivuori", 
+    "name": "Alko Helsinki Munkkivuori"
+  }
+},
+{
+  "pk": 18, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "helsinki", 
+    "store_id": "2119", 
+    "created_at": "2014-07-26T17:47:33.213Z", 
+    "longitude": 60.160287, 
+    "last_modified": "2014-07-26T18:37:03.414Z", 
+    "address": "Heikkil\u00e4ntie 2, 00210 HELSINKI", 
+    "latitude": 24.88168, 
+    "slug": "alko-helsinki-lauttasaari", 
+    "name": "Alko Helsinki Lauttasaari"
+  }
+},
+{
+  "pk": 19, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "helsinki", 
+    "store_id": "2120", 
+    "created_at": "2014-07-26T17:47:33.229Z", 
+    "longitude": 60.180342, 
+    "last_modified": "2014-07-26T18:37:03.727Z", 
+    "address": "Siltasaarenkatu 18-20, 00530 HELSINKI", 
+    "latitude": 24.948811, 
+    "slug": "alko-helsinki-hakaniemi-ympyratalo", 
+    "name": "Alko Helsinki Hakaniemi Ympyr\u00e4talo"
+  }
+},
+{
+  "pk": 20, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "helsinki", 
+    "store_id": "2121", 
+    "created_at": "2014-07-26T17:47:33.238Z", 
+    "longitude": 60.236792, 
+    "last_modified": "2014-07-26T18:37:03.715Z", 
+    "address": "Pakilantie 46-48, 00660 HELSINKI", 
+    "latitude": 24.928815, 
+    "slug": "alko-helsinki-pakila", 
+    "name": "Alko Helsinki Pakila"
+  }
+},
+{
+  "pk": 21, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "helsinki", 
+    "store_id": "2122", 
+    "created_at": "2014-07-26T17:47:33.248Z", 
+    "longitude": 60.17867, 
+    "last_modified": "2014-07-26T18:37:03.797Z", 
+    "address": "Sandelsinkatu 4, 00260 HELSINKI", 
+    "latitude": 24.923898, 
+    "slug": "alko-helsinki-toolontori", 
+    "name": "Alko Helsinki T\u00f6\u00f6l\u00f6ntori"
+  }
+},
+{
+  "pk": 22, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "helsinki", 
+    "store_id": "2124", 
+    "created_at": "2014-07-26T17:47:33.264Z", 
+    "longitude": 60.17037, 
+    "last_modified": "2014-07-26T18:37:03.977Z", 
+    "address": "Mannerheimintie 9, 00100 HELSINKI", 
+    "latitude": 24.938604, 
+    "slug": "alko-helsinki-keskusta-sokos", 
+    "name": "Alko Helsinki keskusta Sokos"
+  }
+},
+{
+  "pk": 23, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "helsinki", 
+    "store_id": "2126", 
+    "created_at": "2014-07-26T17:47:33.271Z", 
+    "longitude": 60.227485, 
+    "last_modified": "2014-07-26T18:37:04.128Z", 
+    "address": "Viikintori 3, 00790 HELSINKI", 
+    "latitude": 25.009999, 
+    "slug": "alko-helsinki-viikki-prisma", 
+    "name": "Alko Helsinki Viikki Prisma"
+  }
+},
+{
+  "pk": 24, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "helsinki", 
+    "store_id": "2128", 
+    "created_at": "2014-07-26T17:47:33.300Z", 
+    "longitude": 60.168312, 
+    "last_modified": "2014-07-26T18:37:04.501Z", 
+    "address": "Aleksanterinkatu 52.b, 00100 HELSINKI", 
+    "latitude": 24.942498, 
+    "slug": "alko-helsinki-keskusta-stockmann", 
+    "name": "Alko Helsinki keskusta Stockmann"
+  }
+},
+{
+  "pk": 25, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "helsinki", 
+    "store_id": "2130", 
+    "created_at": "2014-07-26T17:47:33.307Z", 
+    "longitude": 60.251175, 
+    "last_modified": "2014-07-26T18:37:04.686Z", 
+    "address": "Ala-Malmin tori 5, 00700 HELSINKI", 
+    "latitude": 25.01398, 
+    "slug": "alko-helsinki-malmi-nova", 
+    "name": "Alko Helsinki Malmi Nova"
+  }
+},
+{
+  "pk": 26, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "helsinki", 
+    "store_id": "2131", 
+    "created_at": "2014-07-26T17:47:33.335Z", 
+    "longitude": 60.194368, 
+    "last_modified": "2014-07-26T18:37:04.482Z", 
+    "address": "Insin\u00f6\u00f6rinkatu 2, 00880 HELSINKI", 
+    "latitude": 25.033626, 
+    "slug": "alko-helsinki-herttoniemi-megahertsi", 
+    "name": "Alko Helsinki Herttoniemi Megahertsi"
+  }
+},
+{
+  "pk": 27, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "helsinki", 
+    "store_id": "2132", 
+    "created_at": "2014-07-26T17:47:33.353Z", 
+    "longitude": 60.23694, 
+    "last_modified": "2014-07-26T18:37:04.625Z", 
+    "address": "Kantelettarentie 1, 00420 HELSINKI", 
+    "latitude": 24.888702, 
+    "slug": "alko-helsinki-kannelmaki-kaari", 
+    "name": "Alko Helsinki Kannelm\u00e4ki Kaari"
+  }
+},
+{
+  "pk": 28, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "helsinki", 
+    "store_id": "2133", 
+    "created_at": "2014-07-26T17:47:33.380Z", 
+    "longitude": 60.213093, 
+    "last_modified": "2014-07-26T18:37:05.011Z", 
+    "address": "It\u00e4katu 1-5 B 61, 00930 HELSINKI", 
+    "latitude": 25.084704, 
+    "slug": "alko-helsinki-itakeskus-itis-stockmann", 
+    "name": "Alko Helsinki It\u00e4keskus Itis Stockmann"
+  }
+},
+{
+  "pk": 29, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "helsinki", 
+    "store_id": "2134", 
+    "created_at": "2014-07-26T17:47:33.458Z", 
+    "longitude": 60.213933, 
+    "last_modified": "2014-07-26T18:37:05.010Z", 
+    "address": "Vanhanlinnantie 1, 00900 HELSINKI", 
+    "latitude": 25.087828, 
+    "slug": "alko-helsinki-itakeskus-prisma", 
+    "name": "Alko Helsinki It\u00e4keskus Prisma"
+  }
+},
+{
+  "pk": 30, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "helsinki", 
+    "store_id": "2135", 
+    "created_at": "2014-07-26T17:47:33.472Z", 
+    "longitude": 60.238283, 
+    "last_modified": "2014-07-26T18:37:04.990Z", 
+    "address": "Ostostie 4, 00940 HELSINKI", 
+    "latitude": 25.083609, 
+    "slug": "alko-helsinki-kontula", 
+    "name": "Alko Helsinki Kontula"
+  }
+},
+{
+  "pk": 31, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "helsinki", 
+    "store_id": "2136", 
+    "created_at": "2014-07-26T17:47:33.496Z", 
+    "longitude": 60.207303, 
+    "last_modified": "2014-07-26T18:37:05.040Z", 
+    "address": "Vuotie 45, 00980 HELSINKI", 
+    "latitude": 25.144982, 
+    "slug": "alko-helsinki-vuosaari-columbus", 
+    "name": "Alko Helsinki Vuosaari Columbus"
+  }
+},
+{
+  "pk": 32, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "helsinki", 
+    "store_id": "2137", 
+    "created_at": "2014-07-26T17:47:33.530Z", 
+    "longitude": 60.209894, 
+    "last_modified": "2014-07-26T18:36:58.256Z", 
+    "address": "Kauppakartanonkatu 3, 00930 HELSINKI", 
+    "latitude": 25.085375, 
+    "slug": "alko-helsinki-itakeskus-citymarket", 
+    "name": "Alko Helsinki It\u00e4keskus Citymarket"
+  }
+},
+{
+  "pk": 33, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "espoo", 
+    "store_id": "2149", 
+    "created_at": "2014-07-26T17:47:33.539Z", 
+    "longitude": 60.240856, 
+    "last_modified": "2014-07-26T18:37:05.366Z", 
+    "address": "L\u00e4hderanta 1, 02720 ESPOO", 
+    "latitude": 24.739994, 
+    "slug": "alko-espoo-lahderanta", 
+    "name": "Alko Espoo L\u00e4hderanta"
+  }
+},
+{
+  "pk": 34, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "espoo", 
+    "store_id": "2150", 
+    "created_at": "2014-07-26T17:47:33.572Z", 
+    "longitude": 60.167325, 
+    "last_modified": "2014-07-26T18:37:05.454Z", 
+    "address": "Komeetankatu 2, 02210 ESPOO", 
+    "latitude": 24.735635, 
+    "slug": "alko-espoo-olari-prisma", 
+    "name": "Alko Espoo Olari Prisma"
+  }
+},
+{
+  "pk": 35, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "espoo", 
+    "store_id": "2154", 
+    "created_at": "2014-07-26T17:47:33.596Z", 
+    "longitude": 60.203856, 
+    "last_modified": "2014-07-26T18:37:05.530Z", 
+    "address": "Siltakatu 11, 02770 ESPOO", 
+    "latitude": 24.658903, 
+    "slug": "alko-espoo-espoon-keskus-entresse", 
+    "name": "Alko Espoo Espoon keskus Entresse"
+  }
+},
+{
+  "pk": 36, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "espoo", 
+    "store_id": "2155", 
+    "created_at": "2014-07-26T17:47:33.605Z", 
+    "longitude": 60.169771, 
+    "last_modified": "2014-07-26T18:37:05.561Z", 
+    "address": "Niittykummuntie 2, 02200 ESPOO", 
+    "latitude": 24.76066, 
+    "slug": "alko-espoo-niittykumpu-niittytori", 
+    "name": "Alko Espoo Niittykumpu Niittytori"
+  }
+},
+{
+  "pk": 37, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "espoo", 
+    "store_id": "2156", 
+    "created_at": "2014-07-26T17:47:33.618Z", 
+    "longitude": 60.14857, 
+    "last_modified": "2014-07-26T18:37:05.784Z", 
+    "address": "Espoonlahdenkatu 4, 02320 ESPOO", 
+    "latitude": 24.65783, 
+    "slug": "alko-espoo-espoonlahti-lippulaiva", 
+    "name": "Alko Espoo Espoonlahti Lippulaiva"
+  }
+},
+{
+  "pk": 38, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "espoo", 
+    "store_id": "2158", 
+    "created_at": "2014-07-26T17:47:33.625Z", 
+    "longitude": 60.162314, 
+    "last_modified": "2014-07-26T18:37:06.313Z", 
+    "address": "Piispansilta 11, 02230 ESPOO", 
+    "latitude": 24.738737, 
+    "slug": "alko-espoo-matinkyla-iso-omena", 
+    "name": "Alko Espoo Matinkyl\u00e4 Iso Omena"
+  }
+},
+{
+  "pk": 39, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "kirkkonummi", 
+    "store_id": "2159", 
+    "created_at": "2014-07-26T17:47:33.638Z", 
+    "longitude": 60.11846, 
+    "last_modified": "2014-07-26T18:37:06.385Z", 
+    "address": "Munkinm\u00e4entie 29, 02400 KIRKKONUMMI", 
+    "latitude": 24.447016, 
+    "slug": "alko-kirkkonummi-munkinmaki-prisma", 
+    "name": "Alko Kirkkonummi Munkinm\u00e4ki Prisma"
+  }
+},
+{
+  "pk": 40, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "espoo", 
+    "store_id": "2160", 
+    "created_at": "2014-07-26T17:47:33.654Z", 
+    "longitude": 60.20395, 
+    "last_modified": "2014-07-26T18:37:06.406Z", 
+    "address": "Sinikalliontie 1-3, 02630 ESPOO", 
+    "latitude": 24.766302, 
+    "slug": "alko-espoo-mankkaa", 
+    "name": "Alko Espoo Mankkaa"
+  }
+},
+{
+  "pk": 41, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "vantaa", 
+    "store_id": "2161", 
+    "created_at": "2014-07-26T17:47:33.721Z", 
+    "longitude": 60.293733, 
+    "last_modified": "2014-07-26T18:37:06.418Z", 
+    "address": "Peltolantie 1, 01300 VANTAA", 
+    "latitude": 25.032216, 
+    "slug": "alko-vantaa-tikkurila", 
+    "name": "Alko Vantaa Tikkurila"
+  }
+},
+{
+  "pk": 42, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "vantaa", 
+    "store_id": "2162", 
+    "created_at": "2014-07-26T17:47:33.729Z", 
+    "longitude": 60.259856, 
+    "last_modified": "2014-07-26T18:37:06.659Z", 
+    "address": "Iskoskuja 3, 01600 VANTAA", 
+    "latitude": 24.851973, 
+    "slug": "alko-vantaa-myyrmaki-myyrmanni", 
+    "name": "Alko Vantaa Myyrm\u00e4ki Myyrmanni"
+  }
+},
+{
+  "pk": 43, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "vantaa", 
+    "store_id": "2163", 
+    "created_at": "2014-07-26T17:47:33.743Z", 
+    "longitude": 60.349978, 
+    "last_modified": "2014-07-26T18:37:06.717Z", 
+    "address": "Minkkikuja 4, 01450 VANTAA", 
+    "latitude": 25.079448, 
+    "slug": "alko-vantaa-korso", 
+    "name": "Alko Vantaa Korso"
+  }
+},
+{
+  "pk": 44, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "vantaa", 
+    "store_id": "2164", 
+    "created_at": "2014-07-26T17:47:33.755Z", 
+    "longitude": 60.291027, 
+    "last_modified": "2014-07-26T18:36:58.398Z", 
+    "address": "Vantaanportinkatu 3, 01510 VANTAA", 
+    "latitude": 24.965878, 
+    "slug": "alko-vantaa-pakkala-jumbo", 
+    "name": "Alko Vantaa Pakkala Jumbo"
+  }
+},
+{
+  "pk": 45, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "kauniainen", 
+    "store_id": "2165", 
+    "created_at": "2014-07-26T17:47:33.768Z", 
+    "longitude": 60.209916, 
+    "last_modified": "2014-07-26T18:37:06.763Z", 
+    "address": "Kauniaistentie 7, 02700 KAUNIAINEN", 
+    "latitude": 24.729559, 
+    "slug": "alko-kauniainen", 
+    "name": "Alko Kauniainen"
+  }
+},
+{
+  "pk": 46, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "vantaa", 
+    "store_id": "2166", 
+    "created_at": "2014-07-26T17:47:33.776Z", 
+    "longitude": 60.272377, 
+    "last_modified": "2014-07-26T18:37:06.935Z", 
+    "address": "Ainontie 1, 01630 VANTAA", 
+    "latitude": 24.801821, 
+    "slug": "alko-vantaa-hameenkyla", 
+    "name": "Alko Vantaa H\u00e4meenkyl\u00e4"
+  }
+},
+{
+  "pk": 47, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "vantaa", 
+    "store_id": "2167", 
+    "created_at": "2014-07-26T17:47:33.786Z", 
+    "longitude": 60.318722, 
+    "last_modified": "2014-07-26T18:37:07.057Z", 
+    "address": "Helsinki-Vantaan lentoasema, 01530 VANTAA", 
+    "latitude": 24.968046, 
+    "slug": "alko-vantaa-helsinki-vantaan-lentoasema", 
+    "name": "Alko Vantaa Helsinki-Vantaan lentoasema"
+  }
+},
+{
+  "pk": 48, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "vantaa", 
+    "store_id": "2168", 
+    "created_at": "2014-07-26T17:47:33.796Z", 
+    "longitude": 60.274556, 
+    "last_modified": "2014-07-26T18:37:07.117Z", 
+    "address": "Valimotie 9, 01510 VANTAA", 
+    "latitude": 24.970769, 
+    "slug": "alko-vantaa-tammisto-citymarket", 
+    "name": "Alko Vantaa Tammisto Citymarket"
+  }
+},
+{
+  "pk": 49, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "vantaa", 
+    "store_id": "2169", 
+    "created_at": "2014-07-26T17:47:33.810Z", 
+    "longitude": 60.292564, 
+    "last_modified": "2014-07-26T18:37:07.318Z", 
+    "address": "Valuuttakatu 2, 01510 VANTAA", 
+    "latitude": 24.963051, 
+    "slug": "alko-vantaa-pakkala-jumbo-stockmann", 
+    "name": "Alko Vantaa Pakkala Jumbo Stockmann"
+  }
+},
+{
+  "pk": 50, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "tuusula", 
+    "store_id": "2170", 
+    "created_at": "2014-07-26T17:47:33.818Z", 
+    "longitude": 60.397794, 
+    "last_modified": "2014-07-26T18:37:07.276Z", 
+    "address": "Hyryl\u00e4nkatu 6, 04300 TUUSULA", 
+    "latitude": 25.020038, 
+    "slug": "alko-tuusula-hyryla", 
+    "name": "Alko Tuusula Hyryl\u00e4"
+  }
+},
+{
+  "pk": 51, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "hanko", 
+    "store_id": "2171", 
+    "created_at": "2014-07-26T17:47:33.826Z", 
+    "longitude": 59.824536, 
+    "last_modified": "2014-07-26T18:37:07.391Z", 
+    "address": "Vuorikatu 9, 10900 HANKO", 
+    "latitude": 22.967983, 
+    "slug": "alko-hanko", 
+    "name": "Alko Hanko"
+  }
+},
+{
+  "pk": 52, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "vantaa", 
+    "store_id": "2172", 
+    "created_at": "2014-07-26T17:47:33.838Z", 
+    "longitude": 60.324255, 
+    "last_modified": "2014-07-26T18:37:07.474Z", 
+    "address": "Ojalehdonkuja 1, 01400 VANTAA", 
+    "latitude": 25.058258, 
+    "slug": "alko-vantaa-koivukyla-citymarket", 
+    "name": "Alko Vantaa Koivukyl\u00e4 Citymarket"
+  }
+},
+{
+  "pk": 53, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "raasepori", 
+    "store_id": "2173", 
+    "created_at": "2014-07-26T17:47:33.846Z", 
+    "longitude": 59.978987, 
+    "last_modified": "2014-07-26T18:36:58.757Z", 
+    "address": "Rautatienkatu 5, 10600 TAMMISAARI", 
+    "latitude": 23.439252, 
+    "slug": "alko-raasepori-tammisaari", 
+    "name": "Alko Raasepori Tammisaari"
+  }
+},
+{
+  "pk": 54, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "inkoo", 
+    "store_id": "2174", 
+    "created_at": "2014-07-26T17:47:33.863Z", 
+    "longitude": 60.043109, 
+    "last_modified": "2014-07-26T18:36:58.767Z", 
+    "address": "Rantatie 3, 10210 INKOO", 
+    "latitude": 24.005258, 
+    "slug": "alko-inkoo", 
+    "name": "Alko Inkoo"
+  }
+},
+{
+  "pk": 55, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "raasepori", 
+    "store_id": "2175", 
+    "created_at": "2014-07-26T17:47:33.872Z", 
+    "longitude": 60.07065, 
+    "last_modified": "2014-07-26T18:37:07.739Z", 
+    "address": "Ratakatu 59, 10300 KARJAA", 
+    "latitude": 23.663103, 
+    "slug": "alko-raasepori-karjaa", 
+    "name": "Alko Raasepori Karjaa"
+  }
+},
+{
+  "pk": 56, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "lohja", 
+    "store_id": "2176", 
+    "created_at": "2014-07-26T17:47:33.879Z", 
+    "longitude": 60.229023, 
+    "last_modified": "2014-07-26T18:37:07.803Z", 
+    "address": "Ojamonharjuntie 61, 08200 LOHJA", 
+    "latitude": 24.027772, 
+    "slug": "alko-lohja-ojamo-citymarket", 
+    "name": "Alko Lohja Ojamo Citymarket"
+  }
+},
+{
+  "pk": 57, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "lohja", 
+    "store_id": "2177", 
+    "created_at": "2014-07-26T17:47:33.896Z", 
+    "longitude": 60.249308, 
+    "last_modified": "2014-07-26T18:37:08.025Z", 
+    "address": "Kauppakatu 5\u20139, 08100 LOHJA", 
+    "latitude": 24.065486, 
+    "slug": "alko-lohja-keskusta-lohjantahti", 
+    "name": "Alko Lohja keskusta Lohjant\u00e4hti"
+  }
+},
+{
+  "pk": 58, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "karkkila", 
+    "store_id": "2178", 
+    "created_at": "2014-07-26T17:47:33.905Z", 
+    "longitude": 60.534283, 
+    "last_modified": "2014-07-26T18:37:07.823Z", 
+    "address": "M\u00e4ntyl\u00e4nkatu 1, 03600 KARKKILA", 
+    "latitude": 24.232129, 
+    "slug": "alko-karkkila", 
+    "name": "Alko Karkkila"
+  }
+},
+{
+  "pk": 59, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "vihti", 
+    "store_id": "2179", 
+    "created_at": "2014-07-26T17:47:33.918Z", 
+    "longitude": 60.332434, 
+    "last_modified": "2014-07-26T18:37:08.083Z", 
+    "address": "Tuusankaari 1, 03100 NUMMELA", 
+    "latitude": 24.330636, 
+    "slug": "alko-vihti-nummela-citymarket", 
+    "name": "Alko Vihti Nummela Citymarket"
+  }
+},
+{
+  "pk": 60, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "nurmij\u00e4rvi", 
+    "store_id": "2180", 
+    "created_at": "2014-07-26T17:47:33.926Z", 
+    "longitude": 60.457117, 
+    "last_modified": "2014-07-26T18:37:08.154Z", 
+    "address": "Kauppanummentie 2, 01900 NURMIJ\u00c4RVI", 
+    "latitude": 24.821425, 
+    "slug": "alko-nurmijarvi-kirkonkyla", 
+    "name": "Alko Nurmij\u00e4rvi Kirkonkyl\u00e4"
+  }
+},
+{
+  "pk": 61, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "nurmij\u00e4rvi", 
+    "store_id": "2181", 
+    "created_at": "2014-07-26T17:47:33.946Z", 
+    "longitude": 60.377847, 
+    "last_modified": "2014-07-26T18:37:08.191Z", 
+    "address": "Viirintie 9, 01800 KLAUKKALA", 
+    "latitude": 24.759805, 
+    "slug": "alko-nurmijarvi-klaukkala-citymarket", 
+    "name": "Alko Nurmij\u00e4rvi Klaukkala Citymarket"
+  }
+},
+{
+  "pk": 62, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "kerava", 
+    "store_id": "2182", 
+    "created_at": "2014-07-26T17:47:33.966Z", 
+    "longitude": 60.402186, 
+    "last_modified": "2014-07-26T18:37:08.369Z", 
+    "address": "Kauppakaari 2, 04200 KERAVA", 
+    "latitude": 25.103374, 
+    "slug": "alko-kerava-prisma", 
+    "name": "Alko Kerava Prisma"
+  }
+},
+{
+  "pk": 63, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "j\u00e4rvenp\u00e4\u00e4", 
+    "store_id": "2183", 
+    "created_at": "2014-07-26T17:47:33.988Z", 
+    "longitude": 60.477074, 
+    "last_modified": "2014-07-26T18:36:58.834Z", 
+    "address": "Helsingintie 41, 04410 J\u00c4RVENP\u00c4\u00c4", 
+    "latitude": 25.101949, 
+    "slug": "alko-jarvenpaa-citymarket", 
+    "name": "Alko J\u00e4rvenp\u00e4\u00e4 Citymarket"
+  }
+},
+{
+  "pk": 64, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "m\u00e4nts\u00e4l\u00e4", 
+    "store_id": "2184", 
+    "created_at": "2014-07-26T17:47:34.002Z", 
+    "longitude": 60.63764, 
+    "last_modified": "2014-07-26T18:37:08.489Z", 
+    "address": "S\u00e4link\u00e4\u00e4ntie 2, 04600 M\u00c4NTS\u00c4L\u00c4", 
+    "latitude": 25.317703, 
+    "slug": "alko-mantsala", 
+    "name": "Alko M\u00e4nts\u00e4l\u00e4"
+  }
+},
+{
+  "pk": 65, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "j\u00e4rvenp\u00e4\u00e4", 
+    "store_id": "2185", 
+    "created_at": "2014-07-26T17:47:34.014Z", 
+    "longitude": 60.469467, 
+    "last_modified": "2014-07-26T18:37:08.598Z", 
+    "address": "Rantakatu 5, 04400 J\u00c4RVENP\u00c4\u00c4", 
+    "latitude": 25.084828, 
+    "slug": "alko-jarvenpaa-prisma", 
+    "name": "Alko J\u00e4rvenp\u00e4\u00e4 Prisma"
+  }
+},
+{
+  "pk": 66, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "hyvink\u00e4\u00e4", 
+    "store_id": "2186", 
+    "created_at": "2014-07-26T17:47:34.027Z", 
+    "longitude": 60.632648, 
+    "last_modified": "2014-07-26T18:37:08.587Z", 
+    "address": "H\u00e4meenkatu 9, 05800 HYVINK\u00c4\u00c4", 
+    "latitude": 24.86303, 
+    "slug": "alko-hyvinkaa-willa", 
+    "name": "Alko Hyvink\u00e4\u00e4 Willa"
+  }
+},
+{
+  "pk": 67, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "sipoo", 
+    "store_id": "2187", 
+    "created_at": "2014-07-26T17:47:34.047Z", 
+    "longitude": 60.377014, 
+    "last_modified": "2014-07-26T18:37:08.713Z", 
+    "address": "Kaskiniitynkuja 2, 04130 SIPOO", 
+    "latitude": 25.271547, 
+    "slug": "alko-sipoo-nikkila", 
+    "name": "Alko Sipoo Nikkil\u00e4"
+  }
+},
+{
+  "pk": 68, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "porvoo", 
+    "store_id": "2190", 
+    "created_at": "2014-07-26T17:47:34.064Z", 
+    "longitude": 60.387436, 
+    "last_modified": "2014-07-26T18:37:08.835Z", 
+    "address": "Aleksanterinkaari 1, 06100 PORVOO", 
+    "latitude": 25.651994, 
+    "slug": "alko-porvoo-nasi", 
+    "name": "Alko Porvoo N\u00e4si"
+  }
+},
+{
+  "pk": 69, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "porvoo", 
+    "store_id": "2191", 
+    "created_at": "2014-07-26T17:47:34.076Z", 
+    "longitude": 60.39948, 
+    "last_modified": "2014-07-26T18:37:08.959Z", 
+    "address": "Asentajantie 1, 06150 PORVOO", 
+    "latitude": 25.685876, 
+    "slug": "alko-porvoo-tarmola", 
+    "name": "Alko Porvoo Tarmola"
+  }
+},
+{
+  "pk": 70, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "loviisa", 
+    "store_id": "2192", 
+    "created_at": "2014-07-26T17:47:34.085Z", 
+    "longitude": 60.458504, 
+    "last_modified": "2014-07-26T18:37:08.975Z", 
+    "address": "Mariankatu 33, 07900 LOVIISA", 
+    "latitude": 26.226186, 
+    "slug": "alko-loviisa", 
+    "name": "Alko Loviisa"
+  }
+},
+{
+  "pk": 71, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "sipoo", 
+    "store_id": "2193", 
+    "created_at": "2014-07-26T17:47:34.096Z", 
+    "longitude": 60.297758, 
+    "last_modified": "2014-07-26T18:37:09.191Z", 
+    "address": "Rautatiekuja 4, 01150 S\u00d6DERKULLA", 
+    "latitude": 25.329402, 
+    "slug": "alko-sipoo-soderkulla", 
+    "name": "Alko Sipoo S\u00f6derkulla"
+  }
+},
+{
+  "pk": 72, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "turku", 
+    "store_id": "2201", 
+    "created_at": "2014-07-26T17:47:34.113Z", 
+    "longitude": 60.449795, 
+    "last_modified": "2014-07-26T18:37:09.781Z", 
+    "address": "Eerikinkatu 16 H, 20100 TURKU", 
+    "latitude": 22.265998, 
+    "slug": "alko-turku-keskusta-kauppahalli", 
+    "name": "Alko Turku keskusta Kauppahalli"
+  }
+},
+{
+  "pk": 73, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "turku", 
+    "store_id": "2202", 
+    "created_at": "2014-07-26T17:47:34.124Z", 
+    "longitude": 60.445722, 
+    "last_modified": "2014-07-26T18:37:09.387Z", 
+    "address": "Kalevantie 41, 20520 TURKU", 
+    "latitude": 22.326498, 
+    "slug": "alko-turku-itaharju", 
+    "name": "Alko Turku It\u00e4harju"
+  }
+},
+{
+  "pk": 74, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "raisio", 
+    "store_id": "2203", 
+    "created_at": "2014-07-26T17:47:34.133Z", 
+    "longitude": 60.490139, 
+    "last_modified": "2014-07-26T18:37:09.397Z", 
+    "address": "Myllynkatu 4, 21280 RAISIO", 
+    "latitude": 22.192296, 
+    "slug": "alko-raisio-mylly", 
+    "name": "Alko Raisio Mylly"
+  }
+},
+{
+  "pk": 75, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "turku", 
+    "store_id": "2204", 
+    "created_at": "2014-07-26T17:47:34.143Z", 
+    "longitude": 60.443938, 
+    "last_modified": "2014-07-26T18:37:09.562Z", 
+    "address": "Uudenmaantie 17, 20700 TURKU", 
+    "latitude": 22.286141, 
+    "slug": "alko-turku-kupittaa", 
+    "name": "Alko Turku Kupittaa"
+  }
+},
+{
+  "pk": 76, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "turku", 
+    "store_id": "2205", 
+    "created_at": "2014-07-26T17:47:34.163Z", 
+    "longitude": 60.457427, 
+    "last_modified": "2014-07-26T18:37:09.740Z", 
+    "address": "Pitk\u00e4m\u00e4enkatu 4, 20250 TURKU", 
+    "latitude": 22.235484, 
+    "slug": "alko-turku-manhattan", 
+    "name": "Alko Turku Manhattan"
+  }
+},
+{
+  "pk": 77, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "turku", 
+    "store_id": "2206", 
+    "created_at": "2014-07-26T17:47:34.179Z", 
+    "longitude": 60.452502, 
+    "last_modified": "2014-07-26T18:37:10.149Z", 
+    "address": "Kauppiaskatu 9, 20100 TURKU", 
+    "latitude": 22.267278, 
+    "slug": "alko-turku-keskusta-wiklund", 
+    "name": "Alko Turku keskusta Wiklund"
+  }
+},
+{
+  "pk": 78, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "turku", 
+    "store_id": "2207", 
+    "created_at": "2014-07-26T17:47:34.189Z", 
+    "longitude": 60.47357, 
+    "last_modified": "2014-07-26T18:37:09.956Z", 
+    "address": "Markulantie 150, 20320 TURKU", 
+    "latitude": 22.232602, 
+    "slug": "alko-turku-lansikeskus-citymarket", 
+    "name": "Alko Turku L\u00e4nsikeskus Citymarket"
+  }
+},
+{
+  "pk": 79, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "turku", 
+    "store_id": "2208", 
+    "created_at": "2014-07-26T17:47:34.197Z", 
+    "longitude": 60.450881, 
+    "last_modified": "2014-07-26T18:37:10.524Z", 
+    "address": "Yliopistonkatu 22, 20100 TURKU", 
+    "latitude": 22.262909, 
+    "slug": "alko-turku-keskusta-stockmann", 
+    "name": "Alko Turku keskusta Stockmann"
+  }
+},
+{
+  "pk": 80, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "turku", 
+    "store_id": "2209", 
+    "created_at": "2014-07-26T17:47:34.226Z", 
+    "longitude": 60.429156, 
+    "last_modified": "2014-07-26T18:37:10.180Z", 
+    "address": "Skanssinkatu 10, 20730 TURKU", 
+    "latitude": 22.324808, 
+    "slug": "alko-turku-skanssi", 
+    "name": "Alko Turku Skanssi"
+  }
+},
+{
+  "pk": 81, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "kaarina", 
+    "store_id": "2210", 
+    "created_at": "2014-07-26T17:47:34.238Z", 
+    "longitude": 60.407876, 
+    "last_modified": "2014-07-26T18:36:59.039Z", 
+    "address": "Hovirinnantie 5, 20780 KAARINA", 
+    "latitude": 22.36202, 
+    "slug": "alko-kaarina", 
+    "name": "Alko Kaarina"
+  }
+},
+{
+  "pk": 82, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "lieto", 
+    "store_id": "2211", 
+    "created_at": "2014-07-26T17:47:34.255Z", 
+    "longitude": 60.50343, 
+    "last_modified": "2014-07-26T18:37:10.453Z", 
+    "address": "Hyv\u00e4ttyl\u00e4ntie 2, 21420 LIETO", 
+    "latitude": 22.458444, 
+    "slug": "alko-lieto", 
+    "name": "Alko Lieto"
+  }
+},
+{
+  "pk": 83, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "turku", 
+    "store_id": "2213", 
+    "created_at": "2014-07-26T17:47:34.279Z", 
+    "longitude": 60.417817, 
+    "last_modified": "2014-07-26T18:37:10.499Z", 
+    "address": "Vanha Kakskerrantie 1, 20900 TURKU", 
+    "latitude": 22.229346, 
+    "slug": "alko-turku-hirvensalo", 
+    "name": "Alko Turku Hirvensalo"
+  }
+},
+{
+  "pk": 84, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "turku", 
+    "store_id": "2214", 
+    "created_at": "2014-07-26T17:47:34.289Z", 
+    "longitude": 60.472653, 
+    "last_modified": "2014-07-26T18:37:10.518Z", 
+    "address": "Vanha Tampereentie 108, 20300 TURKU", 
+    "latitude": 22.286593, 
+    "slug": "alko-turku-tampereentie", 
+    "name": "Alko Turku Tampereentie"
+  }
+},
+{
+  "pk": 85, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "raisio", 
+    "store_id": "2215", 
+    "created_at": "2014-07-26T17:47:34.310Z", 
+    "longitude": 60.490045, 
+    "last_modified": "2014-07-26T18:37:10.830Z", 
+    "address": "Voudinkatu 5, 21200 RAISIO", 
+    "latitude": 22.170569, 
+    "slug": "alko-raisio-keskusta", 
+    "name": "Alko Raisio keskusta"
+  }
+},
+{
+  "pk": 86, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "paimio", 
+    "store_id": "2217", 
+    "created_at": "2014-07-26T17:47:34.326Z", 
+    "longitude": 60.457487, 
+    "last_modified": "2014-07-26T18:37:10.864Z", 
+    "address": "Asematie 1, 21530 PAIMIO", 
+    "latitude": 22.687921, 
+    "slug": "alko-paimio", 
+    "name": "Alko Paimio"
+  }
+},
+{
+  "pk": 87, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "kaarina", 
+    "store_id": "2218", 
+    "created_at": "2014-07-26T17:47:34.338Z", 
+    "longitude": 60.429243, 
+    "last_modified": "2014-07-26T18:37:10.865Z", 
+    "address": "Lukkarintie 2, 21500 PIIKKI\u00d6", 
+    "latitude": 22.513118, 
+    "slug": "alko-kaarina-piikkio", 
+    "name": "Alko Kaarina Piikki\u00f6"
+  }
+},
+{
+  "pk": 88, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "kustavi", 
+    "store_id": "2220", 
+    "created_at": "2014-07-26T17:47:34.352Z", 
+    "longitude": 60.54504, 
+    "last_modified": "2014-07-26T18:37:10.895Z", 
+    "address": "Pleikil\u00e4ntie 2, 23360 KUSTAVI", 
+    "latitude": 21.35508, 
+    "slug": "alko-kustavi", 
+    "name": "Alko Kustavi"
+  }
+},
+{
+  "pk": 89, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "uusikaupunki", 
+    "store_id": "2221", 
+    "created_at": "2014-07-26T17:47:34.368Z", 
+    "longitude": 60.799447, 
+    "last_modified": "2014-07-26T18:37:11.152Z", 
+    "address": "Rantakatu 25, 23500 UUSIKAUPUNKI", 
+    "latitude": 21.412841, 
+    "slug": "alko-uusikaupunki", 
+    "name": "Alko Uusikaupunki"
+  }
+},
+{
+  "pk": 90, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "laitila", 
+    "store_id": "2222", 
+    "created_at": "2014-07-26T17:47:34.380Z", 
+    "longitude": 60.875964, 
+    "last_modified": "2014-07-26T18:37:11.201Z", 
+    "address": "Kauppakatu 3, 23800 LAITILA", 
+    "latitude": 21.69798, 
+    "slug": "alko-laitila", 
+    "name": "Alko Laitila"
+  }
+},
+{
+  "pk": 91, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "aura", 
+    "store_id": "2223", 
+    "created_at": "2014-07-26T17:47:34.396Z", 
+    "longitude": 60.647216, 
+    "last_modified": "2014-07-26T18:37:11.214Z", 
+    "address": "Savirannankuja 2, 21380 AURA", 
+    "latitude": 22.591327, 
+    "slug": "alko-aura", 
+    "name": "Alko Aura"
+  }
+},
+{
+  "pk": 92, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "myn\u00e4m\u00e4ki", 
+    "store_id": "2224", 
+    "created_at": "2014-07-26T17:47:34.405Z", 
+    "longitude": 60.684015, 
+    "last_modified": "2014-07-26T18:37:11.263Z", 
+    "address": "Valtakatu 1, 23100 MYN\u00c4M\u00c4KI", 
+    "latitude": 21.989049, 
+    "slug": "alko-mynamaki", 
+    "name": "Alko Myn\u00e4m\u00e4ki"
+  }
+},
+{
+  "pk": 93, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "naantali", 
+    "store_id": "2225", 
+    "created_at": "2014-07-26T17:47:34.414Z", 
+    "longitude": 60.467433, 
+    "last_modified": "2014-07-26T18:37:11.484Z", 
+    "address": "Tuulensuunkatu 12, 21100 NAANTALI", 
+    "latitude": 22.030951, 
+    "slug": "alko-naantali", 
+    "name": "Alko Naantali"
+  }
+},
+{
+  "pk": 94, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "parainen", 
+    "store_id": "2227", 
+    "created_at": "2014-07-26T17:47:34.422Z", 
+    "longitude": 60.309207, 
+    "last_modified": "2014-07-26T18:37:11.571Z", 
+    "address": "Kirkkoesplanadi 32, 21600 PARAINEN", 
+    "latitude": 22.308055, 
+    "slug": "alko-parainen-keskusta", 
+    "name": "Alko Parainen keskusta"
+  }
+},
+{
+  "pk": 95, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "parainen", 
+    "store_id": "2228", 
+    "created_at": "2014-07-26T17:47:34.430Z", 
+    "longitude": 60.192831, 
+    "last_modified": "2014-07-26T18:37:11.564Z", 
+    "address": "Kirkkom\u00e4ki, 21660 NAUVO", 
+    "latitude": 21.90989, 
+    "slug": "alko-parainen-nauvo", 
+    "name": "Alko Parainen Nauvo"
+  }
+},
+{
+  "pk": 96, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "salo", 
+    "store_id": "2231", 
+    "created_at": "2014-07-26T17:47:34.438Z", 
+    "longitude": 60.387296, 
+    "last_modified": "2014-07-26T18:37:11.754Z", 
+    "address": "Vilhonkatu 14, 24100 SALO", 
+    "latitude": 23.122481, 
+    "slug": "alko-salo-keskusta", 
+    "name": "Alko Salo keskusta"
+  }
+},
+{
+  "pk": 97, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "salo", 
+    "store_id": "2232", 
+    "created_at": "2014-07-26T17:47:34.447Z", 
+    "longitude": 60.393524, 
+    "last_modified": "2014-07-26T18:37:11.857Z", 
+    "address": "Prismantie 2, 24800 HALIKKO", 
+    "latitude": 23.082953, 
+    "slug": "alko-salo-halikko", 
+    "name": "Alko Salo Halikko"
+  }
+},
+{
+  "pk": 98, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "somero", 
+    "store_id": "2233", 
+    "created_at": "2014-07-26T17:47:34.460Z", 
+    "longitude": 60.633563, 
+    "last_modified": "2014-07-26T18:37:11.901Z", 
+    "address": "Turuntie 6, 31400 SOMERO", 
+    "latitude": 23.509684, 
+    "slug": "alko-somero", 
+    "name": "Alko Somero"
+  }
+},
+{
+  "pk": 99, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "salo", 
+    "store_id": "2234", 
+    "created_at": "2014-07-26T17:47:34.483Z", 
+    "longitude": 60.205337, 
+    "last_modified": "2014-07-26T18:37:11.929Z", 
+    "address": "Haarlantie 21, 25500 PERNI\u00d6", 
+    "latitude": 23.113334, 
+    "slug": "alko-salo-pernio", 
+    "name": "Alko Salo Perni\u00f6"
+  }
+},
+{
+  "pk": 100, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "kemi\u00f6nsaari", 
+    "store_id": "2235", 
+    "created_at": "2014-07-26T17:47:34.490Z", 
+    "longitude": 60.164133, 
+    "last_modified": "2014-07-26T18:37:12.107Z", 
+    "address": "Engelsbyntie 15, 25700 KEMI\u00d6", 
+    "latitude": 22.735125, 
+    "slug": "alko-kemionsaari-kemio", 
+    "name": "Alko Kemi\u00f6nsaari Kemi\u00f6"
+  }
+},
+{
+  "pk": 101, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "kemi\u00f6nsaari", 
+    "store_id": "2236", 
+    "created_at": "2014-07-26T17:47:34.498Z", 
+    "longitude": 60.01985, 
+    "last_modified": "2014-07-26T18:37:12.207Z", 
+    "address": "Malmintie 2, 25900 TAALINTEHDAS", 
+    "latitude": 22.507252, 
+    "slug": "alko-kemionsaari-dragsfjard-taalintehdas", 
+    "name": "Alko Kemi\u00f6nsaari Dragsfj\u00e4rd Taalintehdas"
+  }
+},
+{
+  "pk": 102, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "loimaa", 
+    "store_id": "2238", 
+    "created_at": "2014-07-26T17:47:34.521Z", 
+    "longitude": 60.855905, 
+    "last_modified": "2014-07-26T18:37:12.240Z", 
+    "address": "Aleksis Kivenkatu 7, 32200 LOIMAA", 
+    "latitude": 23.045726, 
+    "slug": "alko-loimaa", 
+    "name": "Alko Loimaa"
+  }
+},
+{
+  "pk": 103, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "jomala", 
+    "store_id": "2246", 
+    "created_at": "2014-07-26T17:47:34.530Z", 
+    "longitude": 60.129421, 
+    "last_modified": "2014-07-26T18:37:12.331Z", 
+    "address": "Sparv\u00e4gen 1, 22150 JOMALA", 
+    "latitude": 19.9334, 
+    "slug": "alko-jomala-maxinge-center", 
+    "name": "Alko Jomala Maxinge Center"
+  }
+},
+{
+  "pk": 104, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "maarianhamina", 
+    "store_id": "2247", 
+    "created_at": "2014-07-26T17:47:34.538Z", 
+    "longitude": 60.098919, 
+    "last_modified": "2014-07-26T18:37:12.455Z", 
+    "address": "Torggatan 13, 22100 MAARIANHAMINA", 
+    "latitude": 19.94233, 
+    "slug": "alko-maarianhamina-sittkoff", 
+    "name": "Alko Maarianhamina Sittkoff"
+  }
+},
+{
+  "pk": 105, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "pori", 
+    "store_id": "2251", 
+    "created_at": "2014-07-26T17:47:34.554Z", 
+    "longitude": 61.48529, 
+    "last_modified": "2014-07-26T18:37:12.559Z", 
+    "address": "Isolinnankatu 18, 28100 PORI", 
+    "latitude": 21.799701, 
+    "slug": "alko-pori-keskusta", 
+    "name": "Alko Pori keskusta"
+  }
+},
+{
+  "pk": 106, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "pori", 
+    "store_id": "2252", 
+    "created_at": "2014-07-26T17:47:34.574Z", 
+    "longitude": 61.477106, 
+    "last_modified": "2014-07-26T18:37:12.659Z", 
+    "address": "Etel\u00e4v\u00e4yl\u00e4 2, 28610 PORI", 
+    "latitude": 21.757081, 
+    "slug": "alko-pori-etelavayla-prisma", 
+    "name": "Alko Pori Etel\u00e4v\u00e4yl\u00e4 Prisma"
+  }
+},
+{
+  "pk": 107, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "pori", 
+    "store_id": "2254", 
+    "created_at": "2014-07-26T17:47:34.593Z", 
+    "longitude": 61.454815, 
+    "last_modified": "2014-07-26T18:37:12.771Z", 
+    "address": "It\u00e4keskuksenkaari 6, 28130 PORI", 
+    "latitude": 21.840197, 
+    "slug": "alko-pori-itakeskus-prisma", 
+    "name": "Alko Pori It\u00e4keskus Prisma"
+  }
+},
+{
+  "pk": 108, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "merikarvia", 
+    "store_id": "2255", 
+    "created_at": "2014-07-26T17:47:34.604Z", 
+    "longitude": 61.859844, 
+    "last_modified": "2014-07-26T18:37:12.774Z", 
+    "address": "Kauppatie 51, 29900 MERIKARVIA", 
+    "latitude": 21.504834, 
+    "slug": "alko-merikarvia", 
+    "name": "Alko Merikarvia"
+  }
+},
+{
+  "pk": 109, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "ulvila", 
+    "store_id": "2256", 
+    "created_at": "2014-07-26T17:47:34.613Z", 
+    "longitude": 61.427744, 
+    "last_modified": "2014-07-26T18:37:12.952Z", 
+    "address": "Friitalantie 18, 28400 ULVILA", 
+    "latitude": 21.876054, 
+    "slug": "alko-ulvila", 
+    "name": "Alko Ulvila"
+  }
+},
+{
+  "pk": 110, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "noormarkku", 
+    "store_id": "2257", 
+    "created_at": "2014-07-26T17:47:34.626Z", 
+    "longitude": 61.5958, 
+    "last_modified": "2014-07-26T18:37:13.088Z", 
+    "address": "Finpyyntie 10, 29600 NOORMARKKU", 
+    "latitude": 21.865994, 
+    "slug": "alko-pori-noormarkku", 
+    "name": "Alko Pori Noormarkku"
+  }
+},
+{
+  "pk": 111, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "nakkila", 
+    "store_id": "2258", 
+    "created_at": "2014-07-26T17:47:34.638Z", 
+    "longitude": 61.365595, 
+    "last_modified": "2014-07-26T18:37:13.248Z", 
+    "address": "Kauppatie 1, 29250 NAKKILA", 
+    "latitude": 22.004645, 
+    "slug": "alko-nakkila", 
+    "name": "Alko Nakkila"
+  }
+},
+{
+  "pk": 112, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "kankaanp\u00e4\u00e4", 
+    "store_id": "2260", 
+    "created_at": "2014-07-26T17:47:34.647Z", 
+    "longitude": 61.806785, 
+    "last_modified": "2014-07-26T18:37:13.289Z", 
+    "address": "Keskuskatu 39, 38700 KANKAANP\u00c4\u00c4", 
+    "latitude": 22.388775, 
+    "slug": "alko-kankaanpaa", 
+    "name": "Alko Kankaanp\u00e4\u00e4"
+  }
+},
+{
+  "pk": 113, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "harjavalta", 
+    "store_id": "2262", 
+    "created_at": "2014-07-26T17:47:34.663Z", 
+    "longitude": 61.313896, 
+    "last_modified": "2014-07-26T18:37:13.338Z", 
+    "address": "Harjavallankatu 12, 29200 HARJAVALTA", 
+    "latitude": 22.146361, 
+    "slug": "alko-harjavalta", 
+    "name": "Alko Harjavalta"
+  }
+},
+{
+  "pk": 114, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "s\u00e4kyl\u00e4", 
+    "store_id": "2263", 
+    "created_at": "2014-07-26T17:47:34.676Z", 
+    "longitude": 61.045141, 
+    "last_modified": "2014-07-26T18:37:13.432Z", 
+    "address": "Palomiehentie 9, 27800 S\u00c4KYL\u00c4", 
+    "latitude": 22.357448, 
+    "slug": "alko-sakyla", 
+    "name": "Alko S\u00e4kyl\u00e4"
+  }
+},
+{
+  "pk": 115, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "eurajoki", 
+    "store_id": "2264", 
+    "created_at": "2014-07-26T17:47:34.693Z", 
+    "longitude": 61.202553, 
+    "last_modified": "2014-07-26T18:37:13.740Z", 
+    "address": "Riikontie 2, 27100 EURAJOKI", 
+    "latitude": 21.72763, 
+    "slug": "alko-eurajoki", 
+    "name": "Alko Eurajoki"
+  }
+},
+{
+  "pk": 116, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "rauma", 
+    "store_id": "2265", 
+    "created_at": "2014-07-26T17:47:34.701Z", 
+    "longitude": 61.132434, 
+    "last_modified": "2014-07-26T18:37:13.901Z", 
+    "address": "Karjalankatu 5, 26100 RAUMA", 
+    "latitude": 21.506763, 
+    "slug": "alko-rauma-keskusta", 
+    "name": "Alko Rauma keskusta"
+  }
+},
+{
+  "pk": 117, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "eura", 
+    "store_id": "2266", 
+    "created_at": "2014-07-26T17:47:34.724Z", 
+    "longitude": 61.129924, 
+    "last_modified": "2014-07-26T18:37:14.299Z", 
+    "address": "Satakunnankatu 30, 27510 EURA", 
+    "latitude": 22.14335, 
+    "slug": "alko-eura", 
+    "name": "Alko Eura"
+  }
+},
+{
+  "pk": 118, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "kokem\u00e4ki", 
+    "store_id": "2267", 
+    "created_at": "2014-07-26T17:47:34.734Z", 
+    "longitude": 61.255059, 
+    "last_modified": "2014-07-26T18:37:14.106Z", 
+    "address": "Haapionkatu 14, 32800 KOKEM\u00c4KI", 
+    "latitude": 22.348445, 
+    "slug": "alko-kokemaki", 
+    "name": "Alko Kokem\u00e4ki"
+  }
+},
+{
+  "pk": 119, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "huittinen", 
+    "store_id": "2268", 
+    "created_at": "2014-07-26T17:47:34.766Z", 
+    "longitude": 61.179013, 
+    "last_modified": "2014-07-26T18:37:14.120Z", 
+    "address": "S\u00e4rm\u00e4nkatu 1, 32700 HUITTINEN", 
+    "latitude": 22.6988, 
+    "slug": "alko-huittinen", 
+    "name": "Alko Huittinen"
+  }
+},
+{
+  "pk": 120, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "rauma", 
+    "store_id": "2269", 
+    "created_at": "2014-07-26T17:47:34.785Z", 
+    "longitude": 61.131881, 
+    "last_modified": "2014-07-26T18:37:14.387Z", 
+    "address": "\u00c4yh\u00f6nj\u00e4rventie 1, 26100 RAUMA", 
+    "latitude": 21.538096, 
+    "slug": "alko-rauma-ayho", 
+    "name": "Alko Rauma \u00c4yh\u00f6"
+  }
+},
+{
+  "pk": 121, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "lappaj\u00e4rvi", 
+    "store_id": "2270", 
+    "created_at": "2014-07-26T17:47:34.796Z", 
+    "longitude": 63.217527, 
+    "last_modified": "2014-07-26T18:37:14.503Z", 
+    "address": "Maneesintie 1, 62600 LAPPAJ\u00c4RVI", 
+    "latitude": 23.623444, 
+    "slug": "alko-lappajarvi", 
+    "name": "Alko Lappaj\u00e4rvi"
+  }
+},
+{
+  "pk": 122, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "ilmajoki", 
+    "store_id": "2271", 
+    "created_at": "2014-07-26T17:47:34.805Z", 
+    "longitude": 62.730335, 
+    "last_modified": "2014-07-26T18:37:14.537Z", 
+    "address": "Kauppatie 20, 60800 ILMAJOKI", 
+    "latitude": 22.577784, 
+    "slug": "alko-ilmajoki", 
+    "name": "Alko Ilmajoki"
+  }
+},
+{
+  "pk": 123, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "sein\u00e4joki", 
+    "store_id": "2272", 
+    "created_at": "2014-07-26T17:47:34.822Z", 
+    "longitude": 62.791914, 
+    "last_modified": "2014-07-26T18:37:14.850Z", 
+    "address": "Puskantie 13, 60100 SEIN\u00c4JOKI", 
+    "latitude": 22.833935, 
+    "slug": "alko-seinajoki-keskusta-anttila", 
+    "name": "Alko Sein\u00e4joki keskusta Anttila"
+  }
+},
+{
+  "pk": 124, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "\u00c4ht\u00e4ri", 
+    "store_id": "2273", 
+    "created_at": "2014-07-26T17:47:34.838Z", 
+    "longitude": 62.550163, 
+    "last_modified": "2014-07-26T18:37:14.725Z", 
+    "address": "Oikotie 8, 63700 \u00c4HT\u00c4RI", 
+    "latitude": 24.086633, 
+    "slug": "alko-ahtari", 
+    "name": "Alko \u00c4ht\u00e4ri"
+  }
+},
+{
+  "pk": 125, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "alavus", 
+    "store_id": "2274", 
+    "created_at": "2014-07-26T17:47:34.847Z", 
+    "longitude": 62.587067, 
+    "last_modified": "2014-07-26T18:37:14.888Z", 
+    "address": "V\u00e4ht\u00e4rintie 2, 63300 ALAVUS", 
+    "latitude": 23.614204, 
+    "slug": "alko-alavus-keskusta", 
+    "name": "Alko Alavus keskusta"
+  }
+},
+{
+  "pk": 126, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "kauhava", 
+    "store_id": "2275", 
+    "created_at": "2014-07-26T17:47:34.856Z", 
+    "longitude": 63.100064, 
+    "last_modified": "2014-07-26T18:37:14.902Z", 
+    "address": "Heimolankuja 2, 62200 KAUHAVA", 
+    "latitude": 23.055516, 
+    "slug": "alko-kauhava-keskusta", 
+    "name": "Alko Kauhava keskusta"
+  }
+},
+{
+  "pk": 127, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "kurikka", 
+    "store_id": "2276", 
+    "created_at": "2014-07-26T17:47:34.880Z", 
+    "longitude": 62.615235, 
+    "last_modified": "2014-07-26T18:36:59.445Z", 
+    "address": "Laurintie 22, 61300 KURIKKA", 
+    "latitude": 22.395859, 
+    "slug": "alko-kurikka", 
+    "name": "Alko Kurikka"
+  }
+},
+{
+  "pk": 128, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "alaj\u00e4rvi", 
+    "store_id": "2277", 
+    "created_at": "2014-07-26T17:47:34.897Z", 
+    "longitude": 63.004916, 
+    "last_modified": "2014-07-26T18:37:15.193Z", 
+    "address": "Yritt\u00e4j\u00e4ntie 5, 62900 ALAJ\u00c4RVI", 
+    "latitude": 23.804257, 
+    "slug": "alko-alajarvi", 
+    "name": "Alko Alaj\u00e4rvi"
+  }
+},
+{
+  "pk": 129, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "lapua", 
+    "store_id": "2278", 
+    "created_at": "2014-07-26T17:47:34.910Z", 
+    "longitude": 62.974633, 
+    "last_modified": "2014-07-26T18:37:15.215Z", 
+    "address": "Latojantie 9, 62100 LAPUA", 
+    "latitude": 23.023058, 
+    "slug": "alko-lapua", 
+    "name": "Alko Lapua"
+  }
+},
+{
+  "pk": 130, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "jalasj\u00e4rvi", 
+    "store_id": "2279", 
+    "created_at": "2014-07-26T17:47:34.930Z", 
+    "longitude": 62.486851, 
+    "last_modified": "2014-07-26T18:37:15.245Z", 
+    "address": "Koskitie 21, 61600 JALASJ\u00c4RVI", 
+    "latitude": 22.752904, 
+    "slug": "alko-jalasjarvi", 
+    "name": "Alko Jalasj\u00e4rvi"
+  }
+},
+{
+  "pk": 131, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "kristiinankaupunki", 
+    "store_id": "2280", 
+    "created_at": "2014-07-26T17:47:34.938Z", 
+    "longitude": 62.2739, 
+    "last_modified": "2014-07-26T18:37:15.296Z", 
+    "address": "Merikatu 4, 64100 KRISTIINANKAUPUNKI", 
+    "latitude": 21.379701, 
+    "slug": "alko-kristiinankaupunki", 
+    "name": "Alko Kristiinankaupunki"
+  }
+},
+{
+  "pk": 132, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "kauhajoki", 
+    "store_id": "2281", 
+    "created_at": "2014-07-26T17:47:34.957Z", 
+    "longitude": 62.43392, 
+    "last_modified": "2014-07-26T18:37:15.540Z", 
+    "address": "Topeeka 65, 61800 KAUHAJOKI", 
+    "latitude": 22.183477, 
+    "slug": "alko-kauhajoki", 
+    "name": "Alko Kauhajoki"
+  }
+},
+{
+  "pk": 133, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "alavus", 
+    "store_id": "2282", 
+    "created_at": "2014-07-26T17:47:34.985Z", 
+    "longitude": 62.602426, 
+    "last_modified": "2014-07-26T18:37:15.552Z", 
+    "address": "Onnentie 7, 63610 TUURI", 
+    "latitude": 23.727049, 
+    "slug": "alko-alavus-tuuri", 
+    "name": "Alko Alavus Tuuri"
+  }
+},
+{
+  "pk": 134, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "kauhava", 
+    "store_id": "2283", 
+    "created_at": "2014-07-26T17:47:35.032Z", 
+    "longitude": 63.239095, 
+    "last_modified": "2014-07-26T18:37:15.606Z", 
+    "address": "Saharavainiontie 1, 62300 H\u00c4RM\u00c4", 
+    "latitude": 22.850262, 
+    "slug": "alko-kauhava-alaharma", 
+    "name": "Alko Kauhava Alah\u00e4rm\u00e4"
+  }
+},
+{
+  "pk": 135, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "uusikaarlepyy", 
+    "store_id": "2284", 
+    "created_at": "2014-07-26T17:47:35.054Z", 
+    "longitude": 63.532266, 
+    "last_modified": "2014-07-26T18:37:15.676Z", 
+    "address": "Frillmossantie 1, 66900 UUSIKAARLEPYY", 
+    "latitude": 22.540322, 
+    "slug": "alko-uusikaarlepyy", 
+    "name": "Alko Uusikaarlepyy"
+  }
+},
+{
+  "pk": 136, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "teuva", 
+    "store_id": "2285", 
+    "created_at": "2014-07-26T17:47:35.064Z", 
+    "longitude": 62.487718, 
+    "last_modified": "2014-07-26T18:37:15.886Z", 
+    "address": "Mikkil\u00e4ntie 12, 64700 TEUVA", 
+    "latitude": 21.739226, 
+    "slug": "alko-teuva", 
+    "name": "Alko Teuva"
+  }
+},
+{
+  "pk": 137, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "pietarsaari", 
+    "store_id": "2286", 
+    "created_at": "2014-07-26T17:47:35.074Z", 
+    "longitude": 63.678039, 
+    "last_modified": "2014-07-26T18:37:15.938Z", 
+    "address": "Koulukatu 4, 68600 PIETARSAARI", 
+    "latitude": 22.715981, 
+    "slug": "alko-pietarsaari", 
+    "name": "Alko Pietarsaari"
+  }
+},
+{
+  "pk": 138, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "sein\u00e4joki", 
+    "store_id": "2287", 
+    "created_at": "2014-07-26T17:47:35.101Z", 
+    "longitude": 62.806293, 
+    "last_modified": "2014-07-26T18:37:16.055Z", 
+    "address": "Hyllykalliontie 2, 60510 HYLLYKALLIO", 
+    "latitude": 22.879101, 
+    "slug": "alko-seinajoki-nurmo-prisma", 
+    "name": "Alko Sein\u00e4joki Nurmo Prisma"
+  }
+},
+{
+  "pk": 139, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "sein\u00e4joki", 
+    "store_id": "2289", 
+    "created_at": "2014-07-26T17:47:35.118Z", 
+    "longitude": 62.792524, 
+    "last_modified": "2014-07-26T18:37:16.024Z", 
+    "address": "Suupohjantie 45, 60320 SEIN\u00c4JOKI", 
+    "latitude": 22.807628, 
+    "slug": "alko-seinajoki-jouppi-citymarket", 
+    "name": "Alko Sein\u00e4joki Jouppi Citymarket"
+  }
+},
+{
+  "pk": 140, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "n\u00e4rpi\u00f6", 
+    "store_id": "2290", 
+    "created_at": "2014-07-26T17:47:35.127Z", 
+    "longitude": 62.476622, 
+    "last_modified": "2014-07-26T18:37:16.200Z", 
+    "address": "N\u00e4rpesv\u00e4gen 8, 64200 N\u00c4RPI\u00d6", 
+    "latitude": 21.337672, 
+    "slug": "alko-narpio", 
+    "name": "Alko N\u00e4rpi\u00f6"
+  }
+},
+{
+  "pk": 141, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "vaasa", 
+    "store_id": "2291", 
+    "created_at": "2014-07-26T17:47:35.146Z", 
+    "longitude": 63.098225, 
+    "last_modified": "2014-07-26T18:37:16.430Z", 
+    "address": "Hovioikeudenpuistikko 17, 65100 VAASA", 
+    "latitude": 21.616857, 
+    "slug": "alko-vaasa-keskusta-citymarket", 
+    "name": "Alko Vaasa keskusta Citymarket"
+  }
+},
+{
+  "pk": 142, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "vaasa", 
+    "store_id": "2292", 
+    "created_at": "2014-07-26T17:47:35.155Z", 
+    "longitude": 63.101757, 
+    "last_modified": "2014-07-26T18:37:16.456Z", 
+    "address": "Jukolantie 1, 65300 VAASA", 
+    "latitude": 21.646878, 
+    "slug": "alko-vaasa-asevelikyla-prisma", 
+    "name": "Alko Vaasa Asevelikyl\u00e4 Prisma"
+  }
+},
+{
+  "pk": 143, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "vaasa", 
+    "store_id": "2293", 
+    "created_at": "2014-07-26T17:47:35.164Z", 
+    "longitude": 63.108279, 
+    "last_modified": "2014-07-26T18:37:16.456Z", 
+    "address": "Kokkokalliontie 2\u20136, 65300 VAASA", 
+    "latitude": 21.65189, 
+    "slug": "alko-vaasa-kivihaka-citymarket", 
+    "name": "Alko Vaasa Kivihaka Citymarket"
+  }
+},
+{
+  "pk": 144, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "laihia", 
+    "store_id": "2295", 
+    "created_at": "2014-07-26T17:47:35.176Z", 
+    "longitude": 62.979786, 
+    "last_modified": "2014-07-26T18:37:16.521Z", 
+    "address": "Kauppatie 6, 66400 LAIHIA", 
+    "latitude": 22.007641, 
+    "slug": "alko-laihia", 
+    "name": "Alko Laihia"
+  }
+},
+{
+  "pk": 145, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "h\u00e4meenlinna", 
+    "store_id": "2401", 
+    "created_at": "2014-07-26T17:47:35.185Z", 
+    "longitude": 61.006729, 
+    "last_modified": "2014-07-26T18:37:16.831Z", 
+    "address": "Katsastusmiehentie 6, 13130 H\u00c4MEENLINNA", 
+    "latitude": 24.419328, 
+    "slug": "alko-hameenlinna-tiirio", 
+    "name": "Alko H\u00e4meenlinna Tiiri\u00f6"
+  }
+},
+{
+  "pk": 146, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "h\u00e4meenlinna", 
+    "store_id": "2402", 
+    "created_at": "2014-07-26T17:47:35.194Z", 
+    "longitude": 60.992139, 
+    "last_modified": "2014-07-26T18:37:16.844Z", 
+    "address": "H\u00e4meensaarentie 9, 13100 H\u00c4MEENLINNA", 
+    "latitude": 24.461443, 
+    "slug": "alko-hameenlinna-hameensaari", 
+    "name": "Alko H\u00e4meenlinna H\u00e4meensaari"
+  }
+},
+{
+  "pk": 147, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "h\u00e4meenlinna", 
+    "store_id": "2403", 
+    "created_at": "2014-07-26T17:47:35.216Z", 
+    "longitude": 61.171382, 
+    "last_modified": "2014-07-26T18:37:16.818Z", 
+    "address": "Hauhontie 16, 14700 HAUHO", 
+    "latitude": 24.563418, 
+    "slug": "alko-hameenlinna-hauho", 
+    "name": "Alko H\u00e4meenlinna Hauho"
+  }
+},
+{
+  "pk": 148, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "janakkala", 
+    "store_id": "2404", 
+    "created_at": "2014-07-26T17:47:35.225Z", 
+    "longitude": 60.922387, 
+    "last_modified": "2014-07-26T18:37:16.854Z", 
+    "address": "Harvialantie 5, 14200 TURENKI", 
+    "latitude": 24.649609, 
+    "slug": "alko-janakkala-turenki", 
+    "name": "Alko Janakkala Turenki"
+  }
+},
+{
+  "pk": 149, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "forssa", 
+    "store_id": "2405", 
+    "created_at": "2014-07-26T17:47:35.233Z", 
+    "longitude": 60.81186, 
+    "last_modified": "2014-07-26T18:37:17.212Z", 
+    "address": "Tapulikuja 6, 30100 FORSSA", 
+    "latitude": 23.6372, 
+    "slug": "alko-forssa-prismakeskus", 
+    "name": "Alko Forssa Prismakeskus"
+  }
+},
+{
+  "pk": 150, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "forssa", 
+    "store_id": "2406", 
+    "created_at": "2014-07-26T17:47:35.243Z", 
+    "longitude": 60.808372, 
+    "last_modified": "2014-07-26T18:37:17.217Z", 
+    "address": "Yhti\u00f6nkatu, 30100 FORSSA", 
+    "latitude": 23.630285, 
+    "slug": "alko-forssa-kutomo", 
+    "name": "Alko Forssa Kutomo"
+  }
+},
+{
+  "pk": 151, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "h\u00e4meenlinna", 
+    "store_id": "2407", 
+    "created_at": "2014-07-26T17:47:35.260Z", 
+    "longitude": 61.077225, 
+    "last_modified": "2014-07-26T18:37:17.246Z", 
+    "address": "Mommilantie 1, 16900 LAMMI", 
+    "latitude": 25.010456, 
+    "slug": "alko-hameenlinna-lammi", 
+    "name": "Alko H\u00e4meenlinna Lammi"
+  }
+},
+{
+  "pk": 152, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "riihim\u00e4ki", 
+    "store_id": "2408", 
+    "created_at": "2014-07-26T17:47:35.268Z", 
+    "longitude": 60.732814, 
+    "last_modified": "2014-07-26T18:37:17.225Z", 
+    "address": "Voimalankatu 2, 11130 RIIHIM\u00c4KI", 
+    "latitude": 24.77845, 
+    "slug": "alko-riihimaki-atomikortteli", 
+    "name": "Alko Riihim\u00e4ki Atomikortteli"
+  }
+},
+{
+  "pk": 153, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "loppi", 
+    "store_id": "2409", 
+    "created_at": "2014-07-26T17:47:35.285Z", 
+    "longitude": 60.720527, 
+    "last_modified": "2014-07-26T18:36:59.673Z", 
+    "address": "Yhdystie 3, 12700 LOPPI", 
+    "latitude": 24.442811, 
+    "slug": "alko-loppi", 
+    "name": "Alko Loppi"
+  }
+},
+{
+  "pk": 154, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "k\u00e4rk\u00f6l\u00e4", 
+    "store_id": "2410", 
+    "created_at": "2014-07-26T17:47:35.313Z", 
+    "longitude": 60.870555, 
+    "last_modified": "2014-07-26T18:37:17.629Z", 
+    "address": "Ruukintie 1, 16600 J\u00c4RVEL\u00c4", 
+    "latitude": 25.275816, 
+    "slug": "alko-karkola-jarvela", 
+    "name": "Alko K\u00e4rk\u00f6l\u00e4 J\u00e4rvel\u00e4"
+  }
+},
+{
+  "pk": 155, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "heinola", 
+    "store_id": "2411", 
+    "created_at": "2014-07-26T17:47:35.327Z", 
+    "longitude": 61.202979, 
+    "last_modified": "2014-07-26T18:37:17.628Z", 
+    "address": "Savontie 5, 18100 HEINOLA", 
+    "latitude": 26.03052, 
+    "slug": "alko-heinola-keskusta", 
+    "name": "Alko Heinola keskusta"
+  }
+},
+{
+  "pk": 156, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "hausj\u00e4rvi", 
+    "store_id": "2413", 
+    "created_at": "2014-07-26T17:47:35.335Z", 
+    "longitude": 60.788515, 
+    "last_modified": "2014-07-26T18:37:17.660Z", 
+    "address": "Tammitie 5, 12100 OITTI", 
+    "latitude": 25.026043, 
+    "slug": "alko-hausjarvi-oitti", 
+    "name": "Alko Hausj\u00e4rvi Oitti"
+  }
+},
+{
+  "pk": 157, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "heinola", 
+    "store_id": "2414", 
+    "created_at": "2014-07-26T17:47:35.355Z", 
+    "longitude": 61.192999, 
+    "last_modified": "2014-07-26T18:37:17.715Z", 
+    "address": "Hevossaarentie 1, 18100 HEINOLA", 
+    "latitude": 25.998414, 
+    "slug": "alko-heinola-citymarket", 
+    "name": "Alko Heinola Citymarket"
+  }
+},
+{
+  "pk": 158, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "riihim\u00e4ki", 
+    "store_id": "2415", 
+    "created_at": "2014-07-26T17:47:35.367Z", 
+    "longitude": 60.721974, 
+    "last_modified": "2014-07-26T18:37:17.970Z", 
+    "address": "Merkoksenkatu 5, 11710 RIIHIM\u00c4KI", 
+    "latitude": 24.734842, 
+    "slug": "alko-riihimaki-merkos", 
+    "name": "Alko Riihim\u00e4ki Merkos"
+  }
+},
+{
+  "pk": 159, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "sysm\u00e4", 
+    "store_id": "2416", 
+    "created_at": "2014-07-26T17:47:35.402Z", 
+    "longitude": 61.502352, 
+    "last_modified": "2014-07-26T18:37:18.012Z", 
+    "address": "S\u00e4rkilahdentie 3, 19700 SYSM\u00c4", 
+    "latitude": 25.681952, 
+    "slug": "alko-sysma", 
+    "name": "Alko Sysm\u00e4"
+  }
+},
+{
+  "pk": 160, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "h\u00e4meenlinna", 
+    "store_id": "2417", 
+    "created_at": "2014-07-26T17:47:35.413Z", 
+    "longitude": 61.006264, 
+    "last_modified": "2014-07-26T18:37:18.007Z", 
+    "address": "Laaniitynkatu 2, 13210 H\u00c4MEENLINNA", 
+    "latitude": 24.506237, 
+    "slug": "alko-hameenlinna-idanpaa", 
+    "name": "Alko H\u00e4meenlinna Id\u00e4np\u00e4\u00e4"
+  }
+},
+{
+  "pk": 161, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "hartola", 
+    "store_id": "2418", 
+    "created_at": "2014-07-26T17:47:35.426Z", 
+    "longitude": 61.579146, 
+    "last_modified": "2014-07-26T18:37:18.042Z", 
+    "address": "Keskustie 50, 19600 HARTOLA", 
+    "latitude": 26.020975, 
+    "slug": "alko-hartola", 
+    "name": "Alko Hartola"
+  }
+},
+{
+  "pk": 162, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "lahti", 
+    "store_id": "2419", 
+    "created_at": "2014-07-26T17:47:35.435Z", 
+    "longitude": 60.981861, 
+    "last_modified": "2014-07-26T18:37:18.451Z", 
+    "address": "Kauppiaankatu 2, 15160 LAHTI", 
+    "latitude": 25.737246, 
+    "slug": "alko-lahti-karisma", 
+    "name": "Alko Lahti Karisma"
+  }
+},
+{
+  "pk": 163, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "lahti", 
+    "store_id": "2420", 
+    "created_at": "2014-07-26T17:47:35.447Z", 
+    "longitude": 60.935637, 
+    "last_modified": "2014-07-26T18:37:18.431Z", 
+    "address": "Simolanmutka 1, 15680 LAHTI", 
+    "latitude": 25.634262, 
+    "slug": "alko-lahti-renkomaki", 
+    "name": "Alko Lahti Renkom\u00e4ki"
+  }
+},
+{
+  "pk": 164, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "lahti", 
+    "store_id": "2421", 
+    "created_at": "2014-07-26T17:47:35.461Z", 
+    "longitude": 60.986219, 
+    "last_modified": "2014-07-26T18:37:18.499Z", 
+    "address": "Kauppakatu 18, 15140 LAHTI", 
+    "latitude": 25.665995, 
+    "slug": "alko-lahti-syke", 
+    "name": "Alko Lahti Syke"
+  }
+},
+{
+  "pk": 165, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "lahti", 
+    "store_id": "2422", 
+    "created_at": "2014-07-26T17:47:35.470Z", 
+    "longitude": 60.98264, 
+    "last_modified": "2014-07-26T18:37:18.436Z", 
+    "address": "Aleksanterinkatu 19-21, 15110 LAHTI", 
+    "latitude": 25.659033, 
+    "slug": "alko-lahti-sokos", 
+    "name": "Alko Lahti Sokos"
+  }
+},
+{
+  "pk": 166, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "lahti", 
+    "store_id": "2423", 
+    "created_at": "2014-07-26T17:47:35.480Z", 
+    "longitude": 60.958912, 
+    "last_modified": "2014-07-26T18:37:18.838Z", 
+    "address": "Ajokatu 83, 15610 LAHTI", 
+    "latitude": 25.654014, 
+    "slug": "alko-lahti-laune", 
+    "name": "Alko Lahti Laune"
+  }
+},
+{
+  "pk": 167, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "lahti", 
+    "store_id": "2424", 
+    "created_at": "2014-07-26T17:47:35.490Z", 
+    "longitude": 61.006472, 
+    "last_modified": "2014-07-26T18:37:18.832Z", 
+    "address": "Johanneksenkatu 4, 15240 LAHTI", 
+    "latitude": 25.678272, 
+    "slug": "alko-lahti-holma", 
+    "name": "Alko Lahti Holma"
+  }
+},
+{
+  "pk": 168, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "hollola", 
+    "store_id": "2425", 
+    "created_at": "2014-07-26T17:47:35.498Z", 
+    "longitude": 60.989939, 
+    "last_modified": "2014-07-26T18:37:18.802Z", 
+    "address": "Kansankatu 8, 15870 HOLLOLA", 
+    "latitude": 25.516161, 
+    "slug": "alko-hollola-salpakangas", 
+    "name": "Alko Hollola Salpakangas"
+  }
+},
+{
+  "pk": 169, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "nastola", 
+    "store_id": "2426", 
+    "created_at": "2014-07-26T17:47:35.520Z", 
+    "longitude": 60.937211, 
+    "last_modified": "2014-07-26T18:37:18.837Z", 
+    "address": "Muurarintie 3, 15550 NASTOLA", 
+    "latitude": 25.962447, 
+    "slug": "alko-nastola-rakokivi", 
+    "name": "Alko Nastola Rakokivi"
+  }
+},
+{
+  "pk": 170, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "orimattila", 
+    "store_id": "2427", 
+    "created_at": "2014-07-26T17:47:35.537Z", 
+    "longitude": 60.805143, 
+    "last_modified": "2014-07-26T18:37:19.137Z", 
+    "address": "Erkontie 16, 16300 ORIMATTILA", 
+    "latitude": 25.730748, 
+    "slug": "alko-orimattila", 
+    "name": "Alko Orimattila"
+  }
+},
+{
+  "pk": 171, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "asikkala", 
+    "store_id": "2428", 
+    "created_at": "2014-07-26T17:47:35.545Z", 
+    "longitude": 61.173231, 
+    "last_modified": "2014-07-26T18:37:19.208Z", 
+    "address": "Maakaupantie 1, 17200 V\u00c4\u00c4KSY", 
+    "latitude": 25.545711, 
+    "slug": "alko-asikkala-vaaksy", 
+    "name": "Alko Asikkala V\u00e4\u00e4ksy"
+  }
+},
+{
+  "pk": 172, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "padasjoki", 
+    "store_id": "2429", 
+    "created_at": "2014-07-26T17:47:35.561Z", 
+    "longitude": 61.349178, 
+    "last_modified": "2014-07-26T18:37:19.186Z", 
+    "address": "Kauppatie 2, 17500 PADASJOKI", 
+    "latitude": 25.265784, 
+    "slug": "alko-padasjoki", 
+    "name": "Alko Padasjoki"
+  }
+},
+{
+  "pk": 173, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "sastamala", 
+    "store_id": "2432", 
+    "created_at": "2014-07-26T17:47:35.570Z", 
+    "longitude": 61.340121, 
+    "last_modified": "2014-07-26T18:37:19.211Z", 
+    "address": "Torikatu 1, 38200 SASTAMALA", 
+    "latitude": 22.911459, 
+    "slug": "alko-sastamala-vammala", 
+    "name": "Alko Sastamala Vammala"
+  }
+},
+{
+  "pk": 174, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "nokia", 
+    "store_id": "2435", 
+    "created_at": "2014-07-26T17:47:35.578Z", 
+    "longitude": 61.478415, 
+    "last_modified": "2014-07-26T18:37:19.469Z", 
+    "address": "V\u00e4likatu 22, 37100 NOKIA", 
+    "latitude": 23.512283, 
+    "slug": "alko-nokia", 
+    "name": "Alko Nokia"
+  }
+},
+{
+  "pk": 175, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "virrat", 
+    "store_id": "2483", 
+    "created_at": "2014-07-26T17:47:35.595Z", 
+    "longitude": 62.240508, 
+    "last_modified": "2014-07-26T18:36:59.878Z", 
+    "address": "Torikatu 5 a, 43100 SAARIJ\u00c4RVI", 
+    "latitude": 23.780325, 
+    "slug": "alko-virrat", 
+    "name": "Alko Virrat"
+  }
+},
+{
+  "pk": 176, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "parkano", 
+    "store_id": "2437", 
+    "created_at": "2014-07-26T17:47:35.620Z", 
+    "longitude": 62.010248, 
+    "last_modified": "2014-07-26T18:37:19.547Z", 
+    "address": "Keskuskatu 9, 39700 PARKANO", 
+    "latitude": 23.021288, 
+    "slug": "alko-parkano", 
+    "name": "Alko Parkano"
+  }
+},
+{
+  "pk": 177, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "ikaalinen", 
+    "store_id": "2438", 
+    "created_at": "2014-07-26T17:47:35.637Z", 
+    "longitude": 61.762242, 
+    "last_modified": "2014-07-26T18:37:19.613Z", 
+    "address": "Teollisuustalontie 2, 39500 IKAALINEN", 
+    "latitude": 23.070562, 
+    "slug": "alko-ikaalinen", 
+    "name": "Alko Ikaalinen"
+  }
+},
+{
+  "pk": 178, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "akaa", 
+    "store_id": "2440", 
+    "created_at": "2014-07-26T17:47:35.645Z", 
+    "longitude": 61.167988, 
+    "last_modified": "2014-07-26T18:37:19.741Z", 
+    "address": "Valtatie 1, 37800 TOIJALA", 
+    "latitude": 23.8672, 
+    "slug": "alko-akaa-toijala", 
+    "name": "Alko Akaa Toijala"
+  }
+},
+{
+  "pk": 179, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "urjala", 
+    "store_id": "2441", 
+    "created_at": "2014-07-26T17:47:35.662Z", 
+    "longitude": 61.080473, 
+    "last_modified": "2014-07-26T18:37:19.815Z", 
+    "address": "Tampereentie 1, 31760 URJALA", 
+    "latitude": 23.549621, 
+    "slug": "alko-urjala", 
+    "name": "Alko Urjala"
+  }
+},
+{
+  "pk": 180, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "valkeakoski", 
+    "store_id": "2442", 
+    "created_at": "2014-07-26T17:47:35.671Z", 
+    "longitude": 61.266482, 
+    "last_modified": "2014-07-26T18:37:19.888Z", 
+    "address": "Valtakatu 9-11, 37600 VALKEAKOSKI", 
+    "latitude": 24.029415, 
+    "slug": "alko-valkeakoski", 
+    "name": "Alko Valkeakoski"
+  }
+},
+{
+  "pk": 181, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "m\u00e4ntt\u00e4-vilppula", 
+    "store_id": "2451", 
+    "created_at": "2014-07-26T17:47:35.682Z", 
+    "longitude": 62.033163, 
+    "last_modified": "2014-07-26T18:37:19.941Z", 
+    "address": "Sepp\u00e4l\u00e4n puistotie 1, 35800 M\u00c4NTT\u00c4", 
+    "latitude": 24.622603, 
+    "slug": "alko-mantta", 
+    "name": "Alko M\u00e4ntt\u00e4"
+  }
+},
+{
+  "pk": 182, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "orivesi", 
+    "store_id": "2453", 
+    "created_at": "2014-07-26T17:47:35.695Z", 
+    "longitude": 61.678308, 
+    "last_modified": "2014-07-26T18:37:20.074Z", 
+    "address": "Keskustie 36, 35300 ORIVESI", 
+    "latitude": 24.357521, 
+    "slug": "alko-orivesi", 
+    "name": "Alko Orivesi"
+  }
+},
+{
+  "pk": 183, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "\u00c4\u00e4nekoski", 
+    "store_id": "2455", 
+    "created_at": "2014-07-26T17:47:35.720Z", 
+    "longitude": 62.516746, 
+    "last_modified": "2014-07-26T18:37:20.156Z", 
+    "address": "Suonenjoentie 10, 44250 \u00c4\u00c4NEKOIVISTO", 
+    "latitude": 25.688297, 
+    "slug": "alko-aanekoski-hirvaskangas", 
+    "name": "Alko \u00c4\u00e4nekoski Hirvaskangas"
+  }
+},
+{
+  "pk": 184, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "jyv\u00e4skyl\u00e4", 
+    "store_id": "", 
+    "created_at": "2014-07-26T17:47:35.732Z", 
+    "longitude": 62.264535, 
+    "last_modified": "2014-07-26T18:36:59.935Z", 
+    "address": "", 
+    "latitude": 25.778512, 
+    "slug": "alko-jyvaskyla-seppala-citymarket", 
+    "name": "Alko Jyv\u00e4skyl\u00e4 Sepp\u00e4l\u00e4 Citymarket"
+  }
+},
+{
+  "pk": 185, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "tampere", 
+    "store_id": "2461", 
+    "created_at": "2014-07-26T17:47:35.740Z", 
+    "longitude": 61.499225, 
+    "last_modified": "2014-07-26T18:37:20.318Z", 
+    "address": "Puutarhakatu 10, 33210 TAMPERE", 
+    "latitude": 23.756124, 
+    "slug": "alko-tampere-anttila", 
+    "name": "Alko Tampere Anttila"
+  }
+},
+{
+  "pk": 186, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "tampere", 
+    "store_id": "2462", 
+    "created_at": "2014-07-26T17:47:35.748Z", 
+    "longitude": 61.498807, 
+    "last_modified": "2014-07-26T18:37:20.422Z", 
+    "address": "H\u00e4meenkatu 4, 33100 TAMPERE", 
+    "latitude": 23.770676, 
+    "slug": "alko-tampere-stockmann", 
+    "name": "Alko Tampere Stockmann"
+  }
+},
+{
+  "pk": 187, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "tampere", 
+    "store_id": "2463", 
+    "created_at": "2014-07-26T17:47:35.762Z", 
+    "longitude": 61.492203, 
+    "last_modified": "2014-07-26T18:37:20.466Z", 
+    "address": "Sammonkatu 75, 33540 TAMPERE", 
+    "latitude": 23.819818, 
+    "slug": "alko-tampere-kaleva-prisma", 
+    "name": "Alko Tampere Kaleva Prisma"
+  }
+},
+{
+  "pk": 188, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "tampere", 
+    "store_id": "2464", 
+    "created_at": "2014-07-26T17:47:35.779Z", 
+    "longitude": 61.497127, 
+    "last_modified": "2014-07-26T18:37:20.504Z", 
+    "address": "H\u00e4meenkatu 21, 33200 TAMPERE", 
+    "latitude": 23.758166, 
+    "slug": "alko-tampere-sokos", 
+    "name": "Alko Tampere Sokos"
+  }
+},
+{
+  "pk": 189, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "tampere", 
+    "store_id": "2465", 
+    "created_at": "2014-07-26T17:47:35.795Z", 
+    "longitude": 61.503191, 
+    "last_modified": "2014-07-26T18:37:20.647Z", 
+    "address": "Kullervonkatu 9, 33100 TAMPERE", 
+    "latitude": 23.778285, 
+    "slug": "alko-tampere-tammela", 
+    "name": "Alko Tampere Tammela"
+  }
+},
+{
+  "pk": 190, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "tampere", 
+    "store_id": "2466", 
+    "created_at": "2014-07-26T17:47:35.807Z", 
+    "longitude": 61.468627, 
+    "last_modified": "2014-07-26T18:37:20.874Z", 
+    "address": "Lemp\u00e4\u00e4l\u00e4ntie 21, 33820 TAMPERE", 
+    "latitude": 23.781915, 
+    "slug": "alko-tampere-koivistonkyla-prisma", 
+    "name": "Alko Tampere Koivistonkyl\u00e4 Prisma"
+  }
+},
+{
+  "pk": 191, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "kangasala", 
+    "store_id": "2467", 
+    "created_at": "2014-07-26T17:47:35.820Z", 
+    "longitude": 61.462267, 
+    "last_modified": "2014-07-26T18:37:20.841Z", 
+    "address": "Finnentie 1, 36200 KANGASALA", 
+    "latitude": 24.067794, 
+    "slug": "alko-kangasala-keskusta", 
+    "name": "Alko Kangasala keskusta"
+  }
+},
+{
+  "pk": 192, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "tampere", 
+    "store_id": "2468", 
+    "created_at": "2014-07-26T17:47:35.832Z", 
+    "longitude": 61.494844, 
+    "last_modified": "2014-07-26T18:37:20.947Z", 
+    "address": "Liikekatu 3, 33580 TAMPERE", 
+    "latitude": 23.880841, 
+    "slug": "alko-tampere-linnainmaa-prisma", 
+    "name": "Alko Tampere Linnainmaa Prisma"
+  }
+},
+{
+  "pk": 193, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "lemp\u00e4\u00e4l\u00e4", 
+    "store_id": "2469", 
+    "created_at": "2014-07-26T17:47:35.845Z", 
+    "longitude": 61.312805, 
+    "last_modified": "2014-07-26T18:37:21.085Z", 
+    "address": "Puistokatu 4, 37500 LEMP\u00c4\u00c4L\u00c4", 
+    "latitude": 23.756892, 
+    "slug": "alko-lempaala-keskusta", 
+    "name": "Alko Lemp\u00e4\u00e4l\u00e4 keskusta"
+  }
+},
+{
+  "pk": 194, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "tampere", 
+    "store_id": "2470", 
+    "created_at": "2014-07-26T17:47:35.856Z", 
+    "longitude": 61.450919, 
+    "last_modified": "2014-07-26T18:37:21.250Z", 
+    "address": "Pietil\u00e4nkatu 2, 33720 TAMPERE", 
+    "latitude": 23.852381, 
+    "slug": "alko-tampere-hervanta-duo", 
+    "name": "Alko Tampere Hervanta Duo"
+  }
+},
+{
+  "pk": 195, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "tampere", 
+    "store_id": "2471", 
+    "created_at": "2014-07-26T17:47:35.870Z", 
+    "longitude": 61.51469, 
+    "last_modified": "2014-07-26T18:37:21.229Z", 
+    "address": "Harjuntausta 7, 33400 TAMPERE", 
+    "latitude": 23.669295, 
+    "slug": "alko-tampere-lielahti-citymarket", 
+    "name": "Alko Tampere Lielahti Citymarket"
+  }
+},
+{
+  "pk": 196, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "tampere", 
+    "store_id": "2472", 
+    "created_at": "2014-07-26T17:47:35.882Z", 
+    "longitude": 61.478346, 
+    "last_modified": "2014-07-26T18:37:21.305Z", 
+    "address": "Martinpojankatu 4, 33710 TAMPERE", 
+    "latitude": 23.841853, 
+    "slug": "alko-tampere-turtola-citymarket", 
+    "name": "Alko Tampere Turtola Citymarket"
+  }
+},
+{
+  "pk": 197, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "pirkkala", 
+    "store_id": "2473", 
+    "created_at": "2014-07-26T17:47:35.895Z", 
+    "longitude": 61.46598, 
+    "last_modified": "2014-07-26T18:37:21.477Z", 
+    "address": "Suupantie 10, 33960 PIRKKALA", 
+    "latitude": 23.645459, 
+    "slug": "alko-pirkkala-keskusta", 
+    "name": "Alko Pirkkala keskusta"
+  }
+},
+{
+  "pk": 198, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "yl\u00f6j\u00e4rvi", 
+    "store_id": "2474", 
+    "created_at": "2014-07-26T17:47:35.905Z", 
+    "longitude": 61.564332, 
+    "last_modified": "2014-07-26T18:37:21.608Z", 
+    "address": "L\u00e4hdevainiontie 1, 33480 YL\u00d6J\u00c4RVI", 
+    "latitude": 23.594696, 
+    "slug": "alko-ylojarvi", 
+    "name": "Alko Yl\u00f6j\u00e4rvi"
+  }
+},
+{
+  "pk": 199, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "h\u00e4meenkyr\u00f6", 
+    "store_id": "2475", 
+    "created_at": "2014-07-26T17:47:35.913Z", 
+    "longitude": 61.639021, 
+    "last_modified": "2014-07-26T18:37:21.631Z", 
+    "address": "H\u00e4rkikuja 4, 39100 H\u00c4MEENKYR\u00d6", 
+    "latitude": 23.196255, 
+    "slug": "alko-hameenkyro", 
+    "name": "Alko H\u00e4meenkyr\u00f6"
+  }
+},
+{
+  "pk": 200, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "kangasala", 
+    "store_id": "2476", 
+    "created_at": "2014-07-26T17:47:35.929Z", 
+    "longitude": 61.476944, 
+    "last_modified": "2014-07-26T18:37:21.703Z", 
+    "address": "M\u00e4kirinteentie 10, 36220 KANGASALA", 
+    "latitude": 23.977163, 
+    "slug": "alko-kangasala-prisma", 
+    "name": "Alko Kangasala Prisma"
+  }
+},
+{
+  "pk": 201, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "pirkkala", 
+    "store_id": "2477", 
+    "created_at": "2014-07-26T17:47:35.944Z", 
+    "longitude": 61.469506, 
+    "last_modified": "2014-07-26T18:37:21.818Z", 
+    "address": "Kenk\u00e4tie 4, 33950 PIRKKALA", 
+    "latitude": 23.716786, 
+    "slug": "alko-pirkkala-partola", 
+    "name": "Alko Pirkkala Partola"
+  }
+},
+{
+  "pk": 202, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "lemp\u00e4\u00e4l\u00e4", 
+    "store_id": "2478", 
+    "created_at": "2014-07-26T17:47:35.957Z", 
+    "longitude": 61.360117, 
+    "last_modified": "2014-07-26T18:37:21.944Z", 
+    "address": "Ideaparkinkatu 4, 37570 LEMP\u00c4\u00c4L\u00c4", 
+    "latitude": 23.799195, 
+    "slug": "alko-lempaala-ideapark", 
+    "name": "Alko Lemp\u00e4\u00e4l\u00e4 Ideapark"
+  }
+},
+{
+  "pk": 203, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "muurame", 
+    "store_id": "2479", 
+    "created_at": "2014-07-26T17:47:35.965Z", 
+    "longitude": 62.136472, 
+    "last_modified": "2014-07-26T18:37:21.980Z", 
+    "address": "Set\u00e4l\u00e4ntie 2, 40950 MUURAME", 
+    "latitude": 25.673711, 
+    "slug": "alko-muurame", 
+    "name": "Alko Muurame"
+  }
+},
+{
+  "pk": 204, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "kyyj\u00e4rvi", 
+    "store_id": "2480", 
+    "created_at": "2014-07-26T17:47:35.973Z", 
+    "longitude": 63.042863, 
+    "last_modified": "2014-07-26T18:37:22.042Z", 
+    "address": "Vaasantie 2, 43700 KYYJ\u00c4RVI", 
+    "latitude": 24.560426, 
+    "slug": "alko-kyyjarvi", 
+    "name": "Alko Kyyj\u00e4rvi"
+  }
+},
+{
+  "pk": 205, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "ruovesi", 
+    "store_id": "2481", 
+    "created_at": "2014-07-26T17:47:35.982Z", 
+    "longitude": 61.98498, 
+    "last_modified": "2014-07-26T18:37:22.216Z", 
+    "address": "Ruovedentie 38, 34600 RUOVESI", 
+    "latitude": 24.071969, 
+    "slug": "alko-ruovesi", 
+    "name": "Alko Ruovesi"
+  }
+},
+{
+  "pk": 206, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "keuruu", 
+    "store_id": "2482", 
+    "created_at": "2014-07-26T17:47:35.991Z", 
+    "longitude": 62.258003, 
+    "last_modified": "2014-07-26T18:37:22.289Z", 
+    "address": "Keuruuntie 9, 42700 KEURUU", 
+    "latitude": 24.708457, 
+    "slug": "alko-keuruu", 
+    "name": "Alko Keuruu"
+  }
+},
+{
+  "pk": 207, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "saarij\u00e4rvi", 
+    "store_id": "2483", 
+    "created_at": "2014-07-26T17:47:36.003Z", 
+    "longitude": 62.707346, 
+    "last_modified": "2014-07-26T18:37:00.107Z", 
+    "address": "Torikatu 5 a, 43100 SAARIJ\u00c4RVI", 
+    "latitude": 25.257256, 
+    "slug": "alko-saarijarvi", 
+    "name": "Alko Saarij\u00e4rvi"
+  }
+},
+{
+  "pk": 208, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "karstula", 
+    "store_id": "2484", 
+    "created_at": "2014-07-26T17:47:36.020Z", 
+    "longitude": 62.879189, 
+    "last_modified": "2014-07-26T18:37:22.363Z", 
+    "address": "Keskustie 2, 43500 KARSTULA", 
+    "latitude": 24.804008, 
+    "slug": "alko-karstula", 
+    "name": "Alko Karstula"
+  }
+},
+{
+  "pk": 209, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "viitasaari", 
+    "store_id": "2485", 
+    "created_at": "2014-07-26T17:47:36.032Z", 
+    "longitude": 63.076549, 
+    "last_modified": "2014-07-26T18:37:22.484Z", 
+    "address": "Pappilantie 14, 44500 VIITASAARI", 
+    "latitude": 25.862125, 
+    "slug": "alko-viitasaari", 
+    "name": "Alko Viitasaari"
+  }
+},
+{
+  "pk": 210, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "pihtipudas", 
+    "store_id": "2487", 
+    "created_at": "2014-07-26T17:47:36.040Z", 
+    "longitude": 63.369812, 
+    "last_modified": "2014-07-26T18:37:22.551Z", 
+    "address": "Asematie 1, 44800 PIHTIPUDAS", 
+    "latitude": 25.579702, 
+    "slug": "alko-pihtipudas", 
+    "name": "Alko Pihtipudas"
+  }
+},
+{
+  "pk": 211, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "\u00c4\u00e4nekoski", 
+    "store_id": "2488", 
+    "created_at": "2014-07-26T17:47:36.053Z", 
+    "longitude": 62.601088, 
+    "last_modified": "2014-07-26T18:37:22.668Z", 
+    "address": "Matkakatu 2, 44100 \u00c4\u00c4NEKOSKI", 
+    "latitude": 25.724241, 
+    "slug": "alko-aanekoski-keskusta", 
+    "name": "Alko \u00c4\u00e4nekoski keskusta"
+  }
+},
+{
+  "pk": 212, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "jyv\u00e4skyl\u00e4", 
+    "store_id": "2490", 
+    "created_at": "2014-07-26T17:47:36.061Z", 
+    "longitude": 62.289037, 
+    "last_modified": "2014-07-26T18:37:22.778Z", 
+    "address": "Palokanorsi 1, 40270 PALOKKA", 
+    "latitude": 25.715219, 
+    "slug": "alko-jyvaskyla-palokka-prisma", 
+    "name": "Alko Jyv\u00e4skyl\u00e4 Palokka Prisma"
+  }
+},
+{
+  "pk": 213, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "jyv\u00e4skyl\u00e4", 
+    "store_id": "2491", 
+    "created_at": "2014-07-26T17:47:36.082Z", 
+    "longitude": 62.242713, 
+    "last_modified": "2014-07-26T18:37:23.110Z", 
+    "address": "Asemakatu 8, 40100 JYV\u00c4SKYL\u00c4", 
+    "latitude": 25.748515, 
+    "slug": "alko-jyvaskyla-keskusta-sokos", 
+    "name": "Alko Jyv\u00e4skyl\u00e4 keskusta Sokos"
+  }
+},
+{
+  "pk": 214, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "jyv\u00e4skyl\u00e4", 
+    "store_id": "2492", 
+    "created_at": "2014-07-26T17:47:36.091Z", 
+    "longitude": 62.258701, 
+    "last_modified": "2014-07-26T18:37:23.122Z", 
+    "address": "Ahjokatu 7, 40320 JYV\u00c4SKYL\u00c4", 
+    "latitude": 25.778421, 
+    "slug": "alko-jyvaskyla-seppala-prisma", 
+    "name": "Alko Jyv\u00e4skyl\u00e4 Sepp\u00e4l\u00e4 Prisma"
+  }
+},
+{
+  "pk": 215, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "jyv\u00e4skyl\u00e4", 
+    "store_id": "2493", 
+    "created_at": "2014-07-26T17:47:36.099Z", 
+    "longitude": 62.216138, 
+    "last_modified": "2014-07-26T18:37:23.164Z", 
+    "address": "Kylm\u00e4lahdentie 6, 40500 JYV\u00c4SKYL\u00c4", 
+    "latitude": 25.718685, 
+    "slug": "alko-jyvaskyla-keljo-keljon-kauppakeskus", 
+    "name": "Alko Jyv\u00e4skyl\u00e4 Keljo Keljon kauppakeskus"
+  }
+},
+{
+  "pk": 216, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "laukaa", 
+    "store_id": "2494", 
+    "created_at": "2014-07-26T17:47:36.112Z", 
+    "longitude": 62.414266, 
+    "last_modified": "2014-07-26T18:37:23.151Z", 
+    "address": "Laukaantie 25, 41340 LAUKAA", 
+    "latitude": 25.953412, 
+    "slug": "alko-laukaa", 
+    "name": "Alko Laukaa"
+  }
+},
+{
+  "pk": 217, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "jyv\u00e4skyl\u00e4", 
+    "store_id": "2495", 
+    "created_at": "2014-07-26T17:47:36.123Z", 
+    "longitude": 62.248309, 
+    "last_modified": "2014-07-26T18:37:23.448Z", 
+    "address": "Asematie 1, 40800 VAAJAKOSKI", 
+    "latitude": 25.877603, 
+    "slug": "alko-jyvaskyla-vaajakoski", 
+    "name": "Alko Jyv\u00e4skyl\u00e4 Vaajakoski"
+  }
+},
+{
+  "pk": 218, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "j\u00e4ms\u00e4", 
+    "store_id": "2496", 
+    "created_at": "2014-07-26T17:47:36.137Z", 
+    "longitude": 61.866123, 
+    "last_modified": "2014-07-26T18:37:23.488Z", 
+    "address": "Siltakatu 10, 42100 J\u00c4MS\u00c4", 
+    "latitude": 25.196518, 
+    "slug": "alko-jamsa", 
+    "name": "Alko J\u00e4ms\u00e4"
+  }
+},
+{
+  "pk": 219, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "joutsa", 
+    "store_id": "2497", 
+    "created_at": "2014-07-26T17:47:36.148Z", 
+    "longitude": 61.744075, 
+    "last_modified": "2014-07-26T18:37:23.489Z", 
+    "address": "Yhdystie 9, 19650 JOUTSA", 
+    "latitude": 26.106857, 
+    "slug": "alko-joutsa", 
+    "name": "Alko Joutsa"
+  }
+},
+{
+  "pk": 220, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "hankasalmi", 
+    "store_id": "2498", 
+    "created_at": "2014-07-26T17:47:36.162Z", 
+    "longitude": 62.389205, 
+    "last_modified": "2014-07-26T18:37:23.510Z", 
+    "address": "Keskustie 35, 41520 HANKASALMI", 
+    "latitude": 26.435999, 
+    "slug": "alko-hankasalmi", 
+    "name": "Alko Hankasalmi"
+  }
+},
+{
+  "pk": 221, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "kuhmoinen", 
+    "store_id": "2499", 
+    "created_at": "2014-07-26T17:47:36.169Z", 
+    "longitude": 61.56593, 
+    "last_modified": "2014-07-26T18:37:23.822Z", 
+    "address": "Toritie 54, 17800 KUHMOINEN", 
+    "latitude": 25.181791, 
+    "slug": "alko-kuhmoinen", 
+    "name": "Alko Kuhmoinen"
+  }
+},
+{
+  "pk": 222, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "joensuu", 
+    "store_id": "2701", 
+    "created_at": "2014-07-26T17:47:36.182Z", 
+    "longitude": 62.600975, 
+    "last_modified": "2014-07-26T18:37:24.372Z", 
+    "address": "Rantakatu 19, 80100 JOENSUU", 
+    "latitude": 29.76513, 
+    "slug": "alko-joensuu-keskusta-sokos", 
+    "name": "Alko Joensuu keskusta Sokos"
+  }
+},
+{
+  "pk": 223, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "joensuu", 
+    "store_id": "2702", 
+    "created_at": "2014-07-26T17:47:36.191Z", 
+    "longitude": 62.618003, 
+    "last_modified": "2014-07-26T18:37:24.369Z", 
+    "address": "Voimatie 2, 80100 JOENSUU", 
+    "latitude": 29.774824, 
+    "slug": "alko-joensuu-kapykangas-prisma", 
+    "name": "Alko Joensuu K\u00e4pykangas Prisma"
+  }
+},
+{
+  "pk": 224, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "joensuu", 
+    "store_id": "2703", 
+    "created_at": "2014-07-26T17:47:36.211Z", 
+    "longitude": 62.628581, 
+    "last_modified": "2014-07-26T18:37:23.923Z", 
+    "address": "Linjatie 2, 80140 JOENSUU", 
+    "latitude": 29.706821, 
+    "slug": "alko-joensuu-pilkko-citymarket", 
+    "name": "Alko Joensuu Pilkko Citymarket"
+  }
+},
+{
+  "pk": 225, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "liperi", 
+    "store_id": "2704", 
+    "created_at": "2014-07-26T17:47:36.220Z", 
+    "longitude": 62.529043, 
+    "last_modified": "2014-07-26T18:37:24.178Z", 
+    "address": "Hein\u00e4vedentie 1, 83100 LIPERI", 
+    "latitude": 29.385043, 
+    "slug": "alko-liperi", 
+    "name": "Alko Liperi"
+  }
+},
+{
+  "pk": 226, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "joensuu", 
+    "store_id": "2705", 
+    "created_at": "2014-07-26T17:47:36.232Z", 
+    "longitude": 62.798109, 
+    "last_modified": "2014-07-26T18:37:24.347Z", 
+    "address": "Kauppatie 11, 81200 ENO", 
+    "latitude": 30.149654, 
+    "slug": "alko-joensuu-eno", 
+    "name": "Alko Joensuu Eno"
+  }
+},
+{
+  "pk": 227, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "outokumpu", 
+    "store_id": "2706", 
+    "created_at": "2014-07-26T17:47:36.240Z", 
+    "longitude": 62.728121, 
+    "last_modified": "2014-07-26T18:37:24.583Z", 
+    "address": "Pohjoisahonkatu 3, 83500 OUTOKUMPU", 
+    "latitude": 29.014013, 
+    "slug": "alko-outokumpu", 
+    "name": "Alko Outokumpu"
+  }
+},
+{
+  "pk": 228, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "kitee", 
+    "store_id": "2707", 
+    "created_at": "2014-07-26T17:47:36.253Z", 
+    "longitude": 62.096867, 
+    "last_modified": "2014-07-26T18:37:00.291Z", 
+    "address": "Kiteentie 6, 82500 KITEE", 
+    "latitude": 30.143477, 
+    "slug": "alko-kitee", 
+    "name": "Alko Kitee"
+  }
+},
+{
+  "pk": 229, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "ilomantsi", 
+    "store_id": "2708", 
+    "created_at": "2014-07-26T17:47:36.265Z", 
+    "longitude": 62.672287, 
+    "last_modified": "2014-07-26T18:37:24.719Z", 
+    "address": "Mantsintie 1-3, 82900 ILOMANTSI", 
+    "latitude": 30.934764, 
+    "slug": "alko-ilomantsi", 
+    "name": "Alko Ilomantsi"
+  }
+},
+{
+  "pk": 230, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "nurmes", 
+    "store_id": "2711", 
+    "created_at": "2014-07-26T17:47:36.279Z", 
+    "longitude": 63.556411, 
+    "last_modified": "2014-07-26T18:37:24.728Z", 
+    "address": "Porokyl\u00e4nkatu 21, 75500 NURMES", 
+    "latitude": 29.105163, 
+    "slug": "alko-nurmes", 
+    "name": "Alko Nurmes"
+  }
+},
+{
+  "pk": 231, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "lieksa", 
+    "store_id": "2715", 
+    "created_at": "2014-07-26T17:47:36.296Z", 
+    "longitude": 63.316395, 
+    "last_modified": "2014-07-26T18:37:24.911Z", 
+    "address": "Pielisentie 34, 81700 LIEKSA", 
+    "latitude": 30.032385, 
+    "slug": "alko-lieksa", 
+    "name": "Alko Lieksa"
+  }
+},
+{
+  "pk": 232, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "savonlinna", 
+    "store_id": "2716", 
+    "created_at": "2014-07-26T17:47:36.327Z", 
+    "longitude": 61.875174, 
+    "last_modified": "2014-07-26T18:37:24.969Z", 
+    "address": "Nojanmaantie 15, 57210 SAVONLINNA", 
+    "latitude": 28.949571, 
+    "slug": "alko-savonlinna-nojanmaa-prisma", 
+    "name": "Alko Savonlinna Nojanmaa Prisma"
+  }
+},
+{
+  "pk": 233, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "juuka", 
+    "store_id": "2717", 
+    "created_at": "2014-07-26T17:47:36.350Z", 
+    "longitude": 63.243903, 
+    "last_modified": "2014-07-26T18:37:25.073Z", 
+    "address": "Kirkkotie 4, 83900 JUUKA", 
+    "latitude": 29.253305, 
+    "slug": "alko-juuka", 
+    "name": "Alko Juuka"
+  }
+},
+{
+  "pk": 234, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "ristiina", 
+    "store_id": "2720", 
+    "created_at": "2014-07-26T17:47:36.361Z", 
+    "longitude": 61.510779, 
+    "last_modified": "2014-07-26T18:37:25.104Z", 
+    "address": "Brahentie 14, 52300 RISTIINA", 
+    "latitude": 27.247587, 
+    "slug": "alko-mikkeli-ristiina", 
+    "name": "Alko Mikkeli Ristiina"
+  }
+},
+{
+  "pk": 235, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "puumala", 
+    "store_id": "2721", 
+    "created_at": "2014-07-26T17:47:36.374Z", 
+    "longitude": 61.523938, 
+    "last_modified": "2014-07-26T18:37:00.335Z", 
+    "address": "Keskustie 19, 52200 PUUMALA", 
+    "latitude": 28.17756, 
+    "slug": "alko-puumala", 
+    "name": "Alko Puumala"
+  }
+},
+{
+  "pk": 236, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "mikkeli", 
+    "store_id": "2722", 
+    "created_at": "2014-07-26T17:47:36.382Z", 
+    "longitude": 61.689634, 
+    "last_modified": "2014-07-26T18:37:25.846Z", 
+    "address": "Savilahdenkatu 8, 50100 MIKKELI", 
+    "latitude": 27.273595, 
+    "slug": "alko-mikkeli-keskusta-stella", 
+    "name": "Alko Mikkeli keskusta Stella"
+  }
+},
+{
+  "pk": 237, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "kangasniemi", 
+    "store_id": "2723", 
+    "created_at": "2014-07-26T17:47:36.395Z", 
+    "longitude": 61.987915, 
+    "last_modified": "2014-07-26T18:37:00.352Z", 
+    "address": "Otto Mannisen tie 10, 51200 KANGASNIEMI", 
+    "latitude": 26.642199, 
+    "slug": "alko-kangasniemi", 
+    "name": "Alko Kangasniemi"
+  }
+},
+{
+  "pk": 238, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "m\u00e4ntyharju", 
+    "store_id": "2724", 
+    "created_at": "2014-07-26T17:47:36.409Z", 
+    "longitude": 61.416734, 
+    "last_modified": "2014-07-26T18:37:25.467Z", 
+    "address": "Liiketie 1, 52700 M\u00c4NTYHARJU", 
+    "latitude": 26.879372, 
+    "slug": "alko-mantyharju", 
+    "name": "Alko M\u00e4ntyharju"
+  }
+},
+{
+  "pk": 239, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "juva", 
+    "store_id": "2725", 
+    "created_at": "2014-07-26T17:47:36.424Z", 
+    "longitude": 61.896569, 
+    "last_modified": "2014-07-26T18:37:25.478Z", 
+    "address": "Piikkil\u00e4ntie 8, 51900 JUVA", 
+    "latitude": 27.855548, 
+    "slug": "alko-juva", 
+    "name": "Alko Juva"
+  }
+},
+{
+  "pk": 240, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "savonlinna", 
+    "store_id": "2726", 
+    "created_at": "2014-07-26T17:47:36.432Z", 
+    "longitude": 61.86842, 
+    "last_modified": "2014-07-26T18:37:25.816Z", 
+    "address": "Tulliportinkatu 10, 57100 SAVONLINNA", 
+    "latitude": 28.868356, 
+    "slug": "alko-savonlinna-keskusta-citymarket", 
+    "name": "Alko Savonlinna keskusta Citymarket"
+  }
+},
+{
+  "pk": 241, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "hein\u00e4vesi", 
+    "store_id": "2727", 
+    "created_at": "2014-07-26T17:47:36.440Z", 
+    "longitude": 62.425744, 
+    "last_modified": "2014-07-26T18:37:25.822Z", 
+    "address": "Keskuksenkuja 1, 79700 HEIN\u00c4VESI", 
+    "latitude": 28.630546, 
+    "slug": "alko-heinavesi", 
+    "name": "Alko Hein\u00e4vesi"
+  }
+},
+{
+  "pk": 242, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "rantasalmi", 
+    "store_id": "2728", 
+    "created_at": "2014-07-26T17:47:36.448Z", 
+    "longitude": 62.066787, 
+    "last_modified": "2014-07-26T18:37:25.846Z", 
+    "address": "Kyl\u00e4tie 42-44, 58900 RANTASALMI", 
+    "latitude": 28.300051, 
+    "slug": "alko-rantasalmi", 
+    "name": "Alko Rantasalmi"
+  }
+},
+{
+  "pk": 243, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "kerim\u00e4ki", 
+    "store_id": "2729", 
+    "created_at": "2014-07-26T17:47:36.457Z", 
+    "longitude": 61.911941, 
+    "last_modified": "2014-07-26T18:37:26.210Z", 
+    "address": "Puruvedentie 51, 58200 KERIM\u00c4KI", 
+    "latitude": 29.280315, 
+    "slug": "alko-savonlinna-kerimaki", 
+    "name": "Alko Savonlinna Kerim\u00e4ki"
+  }
+},
+{
+  "pk": 244, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "pertunmaa", 
+    "store_id": "2730", 
+    "created_at": "2014-07-26T17:47:36.466Z", 
+    "longitude": 61.42561, 
+    "last_modified": "2014-07-26T18:37:26.197Z", 
+    "address": "M\u00e4yr\u00e4tie 1, 19410 KUORTTI", 
+    "latitude": 26.434785, 
+    "slug": "alko-pertunmaa-kuortti", 
+    "name": "Alko Pertunmaa Kuortti"
+  }
+},
+{
+  "pk": 245, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "pieks\u00e4m\u00e4ki", 
+    "store_id": "2731", 
+    "created_at": "2014-07-26T17:47:36.479Z", 
+    "longitude": 62.303469, 
+    "last_modified": "2014-07-26T18:37:26.209Z", 
+    "address": "Kukkaroniementie 5, 76100 PIEKS\u00c4M\u00c4KI", 
+    "latitude": 27.164375, 
+    "slug": "alko-pieksamaki", 
+    "name": "Alko Pieks\u00e4m\u00e4ki"
+  }
+},
+{
+  "pk": 246, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "mikkeli", 
+    "store_id": "2732", 
+    "created_at": "2014-07-26T17:47:36.491Z", 
+    "longitude": 61.686663, 
+    "last_modified": "2014-07-26T18:37:26.258Z", 
+    "address": "Graanintie 1, 50190 MIKKELI", 
+    "latitude": 27.299714, 
+    "slug": "alko-mikkeli-graani", 
+    "name": "Alko Mikkeli Graani"
+  }
+},
+{
+  "pk": 247, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "varkaus", 
+    "store_id": "2736", 
+    "created_at": "2014-07-26T17:47:36.504Z", 
+    "longitude": 62.315079, 
+    "last_modified": "2014-07-26T18:37:26.592Z", 
+    "address": "Relanderinkatu 30, 78200 VARKAUS", 
+    "latitude": 27.868417, 
+    "slug": "alko-varkaus", 
+    "name": "Alko Varkaus"
+  }
+},
+{
+  "pk": 248, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "lepp\u00e4virta", 
+    "store_id": "2737", 
+    "created_at": "2014-07-26T17:47:36.518Z", 
+    "longitude": 62.491531, 
+    "last_modified": "2014-07-26T18:37:26.550Z", 
+    "address": "Savonkatu 43, 79100 LEPP\u00c4VIRTA", 
+    "latitude": 27.788592, 
+    "slug": "alko-leppavirta", 
+    "name": "Alko Lepp\u00e4virta"
+  }
+},
+{
+  "pk": 249, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "sulkava", 
+    "store_id": "2738", 
+    "created_at": "2014-07-26T17:47:36.527Z", 
+    "longitude": 61.787281, 
+    "last_modified": "2014-07-26T18:37:26.591Z", 
+    "address": "Alanteentie 38, 58700 SULKAVA", 
+    "latitude": 28.371237, 
+    "slug": "alko-sulkava", 
+    "name": "Alko Sulkava"
+  }
+},
+{
+  "pk": 250, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "iisalmi", 
+    "store_id": "2741", 
+    "created_at": "2014-07-26T17:47:36.545Z", 
+    "longitude": 63.55605, 
+    "last_modified": "2014-07-26T18:37:26.636Z", 
+    "address": "Satamakatu 10, 74100 IISALMI", 
+    "latitude": 27.189721, 
+    "slug": "alko-iisalmi", 
+    "name": "Alko Iisalmi"
+  }
+},
+{
+  "pk": 251, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "lapinlahti", 
+    "store_id": "2742", 
+    "created_at": "2014-07-26T17:47:36.553Z", 
+    "longitude": 63.366821, 
+    "last_modified": "2014-07-26T18:37:00.478Z", 
+    "address": "Linnansalmentie 12, 73100 LAPINLAHTI", 
+    "latitude": 27.399304, 
+    "slug": "alko-lapinlahti", 
+    "name": "Alko Lapinlahti"
+  }
+},
+{
+  "pk": 252, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "pielavesi", 
+    "store_id": "2743", 
+    "created_at": "2014-07-26T17:47:36.561Z", 
+    "longitude": 63.233559, 
+    "last_modified": "2014-07-26T18:37:26.941Z", 
+    "address": "Puustellintie 21, 72400 PIELAVESI", 
+    "latitude": 26.756019, 
+    "slug": "alko-pielavesi", 
+    "name": "Alko Pielavesi"
+  }
+},
+{
+  "pk": 253, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "kiuruvesi", 
+    "store_id": "2744", 
+    "created_at": "2014-07-26T17:47:36.578Z", 
+    "longitude": 63.650315, 
+    "last_modified": "2014-07-26T18:37:26.951Z", 
+    "address": "Kukkom\u00e4entie 17, 74700 KIURUVESI", 
+    "latitude": 26.62015, 
+    "slug": "alko-kiuruvesi", 
+    "name": "Alko Kiuruvesi"
+  }
+},
+{
+  "pk": 254, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "siilinj\u00e4rvi", 
+    "store_id": "2745", 
+    "created_at": "2014-07-26T17:47:36.586Z", 
+    "longitude": 63.074275, 
+    "last_modified": "2014-07-26T18:37:27.002Z", 
+    "address": "Toritie 12, 71800 SIILINJ\u00c4RVI", 
+    "latitude": 27.657723, 
+    "slug": "alko-siilinjarvi", 
+    "name": "Alko Siilinj\u00e4rvi"
+  }
+},
+{
+  "pk": 255, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "kuopio", 
+    "store_id": "2747", 
+    "created_at": "2014-07-26T17:47:36.598Z", 
+    "longitude": 63.200804, 
+    "last_modified": "2014-07-26T18:37:27.071Z", 
+    "address": "Laitilantie 27, 73300 NILSI\u00c4", 
+    "latitude": 28.090054, 
+    "slug": "alko-kuopio-nilsia", 
+    "name": "Alko Kuopio Nilsi\u00e4"
+  }
+},
+{
+  "pk": 256, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "kuopio", 
+    "store_id": "2751", 
+    "created_at": "2014-07-26T17:47:36.612Z", 
+    "longitude": 62.839781, 
+    "last_modified": "2014-07-26T18:37:27.281Z", 
+    "address": "Jalkasenkatu 5, 70820 KUOPIO", 
+    "latitude": 27.642216, 
+    "slug": "alko-kuopio-petonen", 
+    "name": "Alko Kuopio Petonen"
+  }
+},
+{
+  "pk": 257, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "kuopio", 
+    "store_id": "2752", 
+    "created_at": "2014-07-26T17:47:36.629Z", 
+    "longitude": 62.892187, 
+    "last_modified": "2014-07-26T18:37:27.428Z", 
+    "address": "Haapaniemenkatu 24-26, 70110 KUOPIO", 
+    "latitude": 27.676846, 
+    "slug": "alko-kuopio-keskusta-sokos", 
+    "name": "Alko Kuopio keskusta Sokos"
+  }
+},
+{
+  "pk": 258, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "kuopio", 
+    "store_id": "2753", 
+    "created_at": "2014-07-26T17:47:36.640Z", 
+    "longitude": 62.864407, 
+    "last_modified": "2014-07-26T18:37:27.341Z", 
+    "address": "Kolmisopentie 3, PL 3000, 70780 KUOPIO", 
+    "latitude": 27.610635, 
+    "slug": "alko-kuopio-kolmisoppi-citymarket", 
+    "name": "Alko Kuopio Kolmisoppi Citymarket"
+  }
+},
+{
+  "pk": 259, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "kuopio", 
+    "store_id": "2754", 
+    "created_at": "2014-07-26T17:47:36.649Z", 
+    "longitude": 62.888673, 
+    "last_modified": "2014-07-26T18:37:27.458Z", 
+    "address": "Savilahdentie 10, PL 1050, 70700 KUOPIO", 
+    "latitude": 27.631822, 
+    "slug": "alko-kuopio-savilahti-prisma", 
+    "name": "Alko Kuopio Savilahti Prisma"
+  }
+},
+{
+  "pk": 260, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "kuopio", 
+    "store_id": "2755", 
+    "created_at": "2014-07-26T17:47:36.662Z", 
+    "longitude": 62.9324, 
+    "last_modified": "2014-07-26T18:37:27.648Z", 
+    "address": "P\u00e4iv\u00e4rannantie 18, 70420 KUOPIO", 
+    "latitude": 27.676868, 
+    "slug": "alko-kuopio-paivaranta-citymarket", 
+    "name": "Alko Kuopio P\u00e4iv\u00e4ranta Citymarket"
+  }
+},
+{
+  "pk": 261, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "suonenjoki", 
+    "store_id": "2756", 
+    "created_at": "2014-07-26T17:47:36.674Z", 
+    "longitude": 62.625775, 
+    "last_modified": "2014-07-26T18:37:27.682Z", 
+    "address": "Rautalammintie 15, 77600 SUONENJOKI", 
+    "latitude": 27.119036, 
+    "slug": "alko-suonenjoki", 
+    "name": "Alko Suonenjoki"
+  }
+},
+{
+  "pk": 262, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "kaavi", 
+    "store_id": "2757", 
+    "created_at": "2014-07-26T17:47:36.687Z", 
+    "longitude": 62.974878, 
+    "last_modified": "2014-07-26T18:37:27.775Z", 
+    "address": "Kaavintie 5, 73600 KAAVI", 
+    "latitude": 28.479923, 
+    "slug": "alko-kaavi", 
+    "name": "Alko Kaavi"
+  }
+},
+{
+  "pk": 263, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "kuopio", 
+    "store_id": "2758", 
+    "created_at": "2014-07-26T17:47:36.703Z", 
+    "longitude": 62.894964, 
+    "last_modified": "2014-07-26T18:37:27.817Z", 
+    "address": "Kissakuusentie 1, 72100 KARTTULA", 
+    "latitude": 26.973215, 
+    "slug": "alko-kuopio-karttula", 
+    "name": "Alko Kuopio Karttula"
+  }
+},
+{
+  "pk": 264, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "kouvola", 
+    "store_id": "2761", 
+    "created_at": "2014-07-26T17:47:36.711Z", 
+    "longitude": 60.929977, 
+    "last_modified": "2014-07-26T18:37:28.058Z", 
+    "address": "Kalevantie 1, 45370 VALKEALA", 
+    "latitude": 26.799732, 
+    "slug": "alko-kouvola-valkeala", 
+    "name": "Alko Kouvola Valkeala"
+  }
+},
+{
+  "pk": 265, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "kouvola", 
+    "store_id": "2762", 
+    "created_at": "2014-07-26T17:47:36.724Z", 
+    "longitude": 60.906708, 
+    "last_modified": "2014-07-26T18:37:00.613Z", 
+    "address": "Kymenlaaksonkatu 2, 45700 KUUSANKOSKI", 
+    "latitude": 26.625951, 
+    "slug": "alko-kouvola-kuusankoski", 
+    "name": "Alko Kouvola Kuusankoski"
+  }
+},
+{
+  "pk": 266, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "kouvola", 
+    "store_id": "2763", 
+    "created_at": "2014-07-26T17:47:36.737Z", 
+    "longitude": 60.877378, 
+    "last_modified": "2014-07-26T18:37:28.121Z", 
+    "address": "Tervasharjunkatu 1, 45720 KUUSANKOSKI", 
+    "latitude": 26.653954, 
+    "slug": "alko-kouvola-tervaskangas", 
+    "name": "Alko Kouvola Tervaskangas"
+  }
+},
+{
+  "pk": 267, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "kouvola", 
+    "store_id": "2765", 
+    "created_at": "2014-07-26T17:47:36.746Z", 
+    "longitude": 60.692303, 
+    "last_modified": "2014-07-26T18:37:28.170Z", 
+    "address": "Lauttatie 1, 46900 INKEROINEN", 
+    "latitude": 26.838245, 
+    "slug": "alko-kouvola-inkeroinen", 
+    "name": "Alko Kouvola Inkeroinen"
+  }
+},
+{
+  "pk": 268, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "kouvola", 
+    "store_id": "2767", 
+    "created_at": "2014-07-26T17:47:36.761Z", 
+    "longitude": 60.868299, 
+    "last_modified": "2014-07-26T18:37:28.238Z", 
+    "address": "Koulukatu 1, 45100 KOUVOLA", 
+    "latitude": 26.708441, 
+    "slug": "alko-kouvola-keskusta", 
+    "name": "Alko Kouvola keskusta"
+  }
+},
+{
+  "pk": 269, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "kouvola", 
+    "store_id": "2768", 
+    "created_at": "2014-07-26T17:47:36.774Z", 
+    "longitude": 60.871403, 
+    "last_modified": "2014-07-26T18:37:28.447Z", 
+    "address": "Tommolankatu 9, 45130 KOUVOLA", 
+    "latitude": 26.658382, 
+    "slug": "alko-kouvola-korjala-prisma", 
+    "name": "Alko Kouvola Korjala Prisma"
+  }
+},
+{
+  "pk": 270, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "iitti", 
+    "store_id": "2769", 
+    "created_at": "2014-07-26T17:47:36.787Z", 
+    "longitude": 60.888789, 
+    "last_modified": "2014-07-26T18:37:28.424Z", 
+    "address": "Kauppakatu 13, 47400 KAUSALA", 
+    "latitude": 26.340823, 
+    "slug": "alko-iitti-kausala", 
+    "name": "Alko Iitti Kausala"
+  }
+},
+{
+  "pk": 271, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "hamina", 
+    "store_id": "2772", 
+    "created_at": "2014-07-26T17:47:36.799Z", 
+    "longitude": 60.569083, 
+    "last_modified": "2014-07-26T18:37:28.488Z", 
+    "address": "Isoympyr\u00e4nkatu 15, 49400 HAMINA", 
+    "latitude": 27.194155, 
+    "slug": "alko-hamina", 
+    "name": "Alko Hamina"
+  }
+},
+{
+  "pk": 272, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "virolahti", 
+    "store_id": "2773", 
+    "created_at": "2014-07-26T17:47:36.807Z", 
+    "longitude": 60.585202, 
+    "last_modified": "2014-07-26T18:37:28.594Z", 
+    "address": "It\u00e4tie 1, 49900 VIROLAHTI", 
+    "latitude": 27.70975, 
+    "slug": "alko-virolahti", 
+    "name": "Alko Virolahti"
+  }
+},
+{
+  "pk": 273, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "kotka", 
+    "store_id": "2781", 
+    "created_at": "2014-07-26T17:47:36.815Z", 
+    "longitude": 60.467086, 
+    "last_modified": "2014-07-26T18:37:28.859Z", 
+    "address": "Kirkkokatu 7, 48100 KOTKA", 
+    "latitude": 26.943838, 
+    "slug": "alko-kotka-pasaati", 
+    "name": "Alko Kotka Pasaati"
+  }
+},
+{
+  "pk": 274, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "kotka", 
+    "store_id": "2782", 
+    "created_at": "2014-07-26T17:47:36.829Z", 
+    "longitude": 60.501522, 
+    "last_modified": "2014-07-26T18:37:29.099Z", 
+    "address": "Hakam\u00e4entie 1, 48400 KOTKA", 
+    "latitude": 26.867186, 
+    "slug": "alko-kotka-sutela-prisma", 
+    "name": "Alko Kotka Sutela Prisma"
+  }
+},
+{
+  "pk": 275, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "kotka", 
+    "store_id": "2783", 
+    "created_at": "2014-07-26T17:47:36.845Z", 
+    "longitude": 60.505699, 
+    "last_modified": "2014-07-26T18:37:28.923Z", 
+    "address": "Jumalniementie 8, 48600 KOTKA", 
+    "latitude": 26.916507, 
+    "slug": "alko-kotka-jumalniemi-citymarket", 
+    "name": "Alko Kotka Jumalniemi Citymarket"
+  }
+},
+{
+  "pk": 276, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "pyht\u00e4\u00e4", 
+    "store_id": "2786", 
+    "created_at": "2014-07-26T17:47:36.853Z", 
+    "longitude": 60.489119, 
+    "last_modified": "2014-07-26T18:37:29.128Z", 
+    "address": "Pyht\u00e4\u00e4ntie 38-40, ABC-liikenneasema, 49270 PYHT\u00c4\u00c4", 
+    "latitude": 26.557596, 
+    "slug": "alko-pyhtaa", 
+    "name": "Alko Pyht\u00e4\u00e4"
+  }
+},
+{
+  "pk": 277, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "luum\u00e4ki", 
+    "store_id": "2790", 
+    "created_at": "2014-07-26T17:47:36.871Z", 
+    "longitude": 60.922663, 
+    "last_modified": "2014-07-26T18:37:29.229Z", 
+    "address": "Riihitie 1, 54500 TAAVETTI", 
+    "latitude": 27.568984, 
+    "slug": "alko-luumaki-taavetti", 
+    "name": "Alko Luum\u00e4ki Taavetti"
+  }
+},
+{
+  "pk": 278, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "lappeenranta", 
+    "store_id": "2791", 
+    "created_at": "2014-07-26T17:47:36.882Z", 
+    "longitude": 61.057062, 
+    "last_modified": "2014-07-26T18:37:29.774Z", 
+    "address": "Brahenkatu 3A, 53100 LAPPEENRANTA", 
+    "latitude": 28.195178, 
+    "slug": "alko-lappeenranta-keskusta-iso-kristiina", 
+    "name": "Alko Lappeenranta keskusta Iso Kristiina"
+  }
+},
+{
+  "pk": 279, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "lappeenranta", 
+    "store_id": "2792", 
+    "created_at": "2014-07-26T17:47:36.890Z", 
+    "longitude": 61.044756, 
+    "last_modified": "2014-07-26T18:37:00.736Z", 
+    "address": "Toikansuontie 4, 53500 LAPPEENRANTA", 
+    "latitude": 28.202433, 
+    "slug": "alko-lappeenranta-citymarket", 
+    "name": "Alko Lappeenranta Citymarket"
+  }
+},
+{
+  "pk": 280, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "lappeenranta", 
+    "store_id": "2793", 
+    "created_at": "2014-07-26T17:47:36.898Z", 
+    "longitude": 61.050894, 
+    "last_modified": "2014-07-26T18:37:30.143Z", 
+    "address": "Puhakankatu 9-11, 53600 LAPPEENRANTA", 
+    "latitude": 28.178024, 
+    "slug": "alko-lappeenranta-leiri-prisma", 
+    "name": "Alko Lappeenranta Leiri Prisma"
+  }
+},
+{
+  "pk": 281, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "lappeenranta", 
+    "store_id": "2794", 
+    "created_at": "2014-07-26T17:47:36.912Z", 
+    "longitude": 61.118144, 
+    "last_modified": "2014-07-26T18:37:29.805Z", 
+    "address": "Keskuskatu 4, 54100 JOUTSENO", 
+    "latitude": 28.501645, 
+    "slug": "alko-lappeenranta-joutseno", 
+    "name": "Alko Lappeenranta Joutseno"
+  }
+},
+{
+  "pk": 282, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "imatra", 
+    "store_id": "2795", 
+    "created_at": "2014-07-26T17:47:36.936Z", 
+    "longitude": 61.188554, 
+    "last_modified": "2014-07-26T18:37:29.967Z", 
+    "address": "Karhum\u00e4enkatu 6, 55120 IMATRA", 
+    "latitude": 28.76279, 
+    "slug": "alko-imatra-mansikkala", 
+    "name": "Alko Imatra Mansikkala"
+  }
+},
+{
+  "pk": 283, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "imatra", 
+    "store_id": "2796", 
+    "created_at": "2014-07-26T17:47:36.945Z", 
+    "longitude": 61.224899, 
+    "last_modified": "2014-07-26T18:37:30.178Z", 
+    "address": "Torikatu 8, 55800 IMATRA", 
+    "latitude": 28.835851, 
+    "slug": "alko-imatra-vuoksenniska", 
+    "name": "Alko Imatra Vuoksenniska"
+  }
+},
+{
+  "pk": 284, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "savitaipale", 
+    "store_id": "2797", 
+    "created_at": "2014-07-26T17:47:36.953Z", 
+    "longitude": 61.197615, 
+    "last_modified": "2014-07-26T18:37:30.157Z", 
+    "address": "Torikatu 6, 54800 SAVITAIPALE", 
+    "latitude": 27.681354, 
+    "slug": "alko-savitaipale", 
+    "name": "Alko Savitaipale"
+  }
+},
+{
+  "pk": 285, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "parikkala", 
+    "store_id": "2798", 
+    "created_at": "2014-07-26T17:47:36.966Z", 
+    "longitude": 61.554134, 
+    "last_modified": "2014-07-26T18:37:30.350Z", 
+    "address": "Parikkalantie 19, 59100 PARIKKALA", 
+    "latitude": 29.49947, 
+    "slug": "alko-parikkala", 
+    "name": "Alko Parikkala"
+  }
+},
+{
+  "pk": 286, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "kannus", 
+    "store_id": "2801", 
+    "created_at": "2014-07-26T17:47:36.978Z", 
+    "longitude": 63.901444, 
+    "last_modified": "2014-07-26T18:37:30.499Z", 
+    "address": "Torikuja 3, 69100 KANNUS", 
+    "latitude": 23.917357, 
+    "slug": "alko-kannus", 
+    "name": "Alko Kannus"
+  }
+},
+{
+  "pk": 287, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "kalajoki", 
+    "store_id": "2802", 
+    "created_at": "2014-07-26T17:47:36.987Z", 
+    "longitude": 64.260334, 
+    "last_modified": "2014-07-26T18:37:30.517Z", 
+    "address": "Merenojantie 2, 85100 KALAJOKI", 
+    "latitude": 23.950219, 
+    "slug": "alko-kalajoki", 
+    "name": "Alko Kalajoki"
+  }
+},
+{
+  "pk": 288, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "kokkola", 
+    "store_id": "2803", 
+    "created_at": "2014-07-26T17:47:36.999Z", 
+    "longitude": 63.833051, 
+    "last_modified": "2014-07-26T18:37:30.545Z", 
+    "address": "Prismantie 1, 67700 KOKKOLA", 
+    "latitude": 23.122473, 
+    "slug": "alko-kokkola-kosila-prisma", 
+    "name": "Alko Kokkola Kosila Prisma"
+  }
+},
+{
+  "pk": 289, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "ylivieska", 
+    "store_id": "2804", 
+    "created_at": "2014-07-26T17:47:37.008Z", 
+    "longitude": 64.060569, 
+    "last_modified": "2014-07-26T18:37:30.702Z", 
+    "address": "Savarinkatu 9, 84100 YLIVIESKA", 
+    "latitude": 24.556233, 
+    "slug": "alko-ylivieska", 
+    "name": "Alko Ylivieska"
+  }
+},
+{
+  "pk": 290, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "oulainen", 
+    "store_id": "2805", 
+    "created_at": "2014-07-26T17:47:37.020Z", 
+    "longitude": 64.268537, 
+    "last_modified": "2014-07-26T18:37:30.847Z", 
+    "address": "Oulaistenkatu 15\u201317, 86300 OULAINEN", 
+    "latitude": 24.828768, 
+    "slug": "alko-oulainen", 
+    "name": "Alko Oulainen"
+  }
+},
+{
+  "pk": 291, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "kaustinen", 
+    "store_id": "2806", 
+    "created_at": "2014-07-26T17:47:37.028Z", 
+    "longitude": 63.548406, 
+    "last_modified": "2014-07-26T18:37:30.866Z", 
+    "address": "Terveystie 1, 69600 KAUSTINEN", 
+    "latitude": 23.689246, 
+    "slug": "alko-kaustinen", 
+    "name": "Alko Kaustinen"
+  }
+},
+{
+  "pk": 292, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "haapaj\u00e4rvi", 
+    "store_id": "2807", 
+    "created_at": "2014-07-26T17:47:37.045Z", 
+    "longitude": 63.748838, 
+    "last_modified": "2014-07-26T18:37:30.890Z", 
+    "address": "Kirkkokatu 1, 85800 HAAPAJ\u00c4RVI", 
+    "latitude": 25.318171, 
+    "slug": "alko-haapajarvi", 
+    "name": "Alko Haapaj\u00e4rvi"
+  }
+},
+{
+  "pk": 293, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "siikalatva", 
+    "store_id": "2808", 
+    "created_at": "2014-07-26T17:47:37.057Z", 
+    "longitude": 64.265554, 
+    "last_modified": "2014-07-26T18:37:31.078Z", 
+    "address": "Pulkkilantie 2, 92600 PULKKILA", 
+    "latitude": 25.865079, 
+    "slug": "alko-pulkkila", 
+    "name": "Alko Pulkkila"
+  }
+},
+{
+  "pk": 294, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "pyh\u00e4j\u00e4rvi", 
+    "store_id": "2809", 
+    "created_at": "2014-07-26T17:47:37.066Z", 
+    "longitude": 63.682499, 
+    "last_modified": "2014-07-26T18:37:31.197Z", 
+    "address": "Antintie 3, 86800 PYH\u00c4SALMI", 
+    "latitude": 25.982018, 
+    "slug": "alko-pyhajarvi", 
+    "name": "Alko Pyh\u00e4j\u00e4rvi"
+  }
+},
+{
+  "pk": 295, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "nivala", 
+    "store_id": "2810", 
+    "created_at": "2014-07-26T17:47:37.074Z", 
+    "longitude": 63.929164, 
+    "last_modified": "2014-07-26T18:37:31.211Z", 
+    "address": "Toritie 13, 85500 NIVALA", 
+    "latitude": 24.967176, 
+    "slug": "alko-nivala", 
+    "name": "Alko Nivala"
+  }
+},
+{
+  "pk": 296, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "haapavesi", 
+    "store_id": "2811", 
+    "created_at": "2014-07-26T17:47:37.082Z", 
+    "longitude": 64.137733, 
+    "last_modified": "2014-07-26T18:37:31.247Z", 
+    "address": "Vanhatie 48, 86600 HAAPAVESI", 
+    "latitude": 25.364216, 
+    "slug": "alko-haapavesi", 
+    "name": "Alko Haapavesi"
+  }
+},
+{
+  "pk": 297, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "kokkola", 
+    "store_id": "2813", 
+    "created_at": "2014-07-26T17:47:37.090Z", 
+    "longitude": 63.836051, 
+    "last_modified": "2014-07-26T18:37:31.630Z", 
+    "address": "Rautatienkatu 10, 67100 KOKKOLA", 
+    "latitude": 23.142568, 
+    "slug": "alko-kokkola-keskusta-k-supermarket", 
+    "name": "Alko Kokkola keskusta K-Supermarket"
+  }
+},
+{
+  "pk": 298, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "k\u00e4rs\u00e4m\u00e4ki", 
+    "store_id": "2814", 
+    "created_at": "2014-07-26T17:47:37.103Z", 
+    "longitude": 63.97384, 
+    "last_modified": "2014-07-26T18:37:31.532Z", 
+    "address": "Haapaj\u00e4rventie 1, 86710 K\u00c4RS\u00c4M\u00c4KI", 
+    "latitude": 25.760726, 
+    "slug": "alko-karsamaki", 
+    "name": "Alko K\u00e4rs\u00e4m\u00e4ki"
+  }
+},
+{
+  "pk": 299, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "raahe", 
+    "store_id": "2815", 
+    "created_at": "2014-07-26T17:47:37.111Z", 
+    "longitude": 64.680272, 
+    "last_modified": "2014-07-26T18:37:31.575Z", 
+    "address": "Ollinkalliontie 2, 92120 RAAHE", 
+    "latitude": 24.492469, 
+    "slug": "alko-raahe", 
+    "name": "Alko Raahe"
+  }
+},
+{
+  "pk": 300, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "liminka", 
+    "store_id": "2820", 
+    "created_at": "2014-07-26T17:47:37.128Z", 
+    "longitude": 64.807193, 
+    "last_modified": "2014-07-26T18:37:31.592Z", 
+    "address": "Pitk\u00e4koskentie 15, 91900 LIMINKA", 
+    "latitude": 25.454925, 
+    "slug": "alko-liminka", 
+    "name": "Alko Liminka"
+  }
+},
+{
+  "pk": 301, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "kajaani", 
+    "store_id": "2821", 
+    "created_at": "2014-07-26T17:47:37.137Z", 
+    "longitude": 64.22102, 
+    "last_modified": "2014-07-26T18:37:31.898Z", 
+    "address": "Veturitie 1, 87100 KAJAANI", 
+    "latitude": 27.748742, 
+    "slug": "alko-kajaani-prisma", 
+    "name": "Alko Kajaani Prisma"
+  }
+},
+{
+  "pk": 302, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "sotkamo", 
+    "store_id": "2822", 
+    "created_at": "2014-07-26T17:47:37.149Z", 
+    "longitude": 64.130616, 
+    "last_modified": "2014-07-26T18:37:31.929Z", 
+    "address": "Kainuuntie 18, 88600 SOTKAMO", 
+    "latitude": 28.383809, 
+    "slug": "alko-sotkamo", 
+    "name": "Alko Sotkamo"
+  }
+},
+{
+  "pk": 303, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "kuhmo", 
+    "store_id": "2823", 
+    "created_at": "2014-07-26T17:47:37.157Z", 
+    "longitude": 64.127205, 
+    "last_modified": "2014-07-26T18:37:31.937Z", 
+    "address": "Koulukatu 13, 88900 KUHMO", 
+    "latitude": 29.525218, 
+    "slug": "alko-kuhmo", 
+    "name": "Alko Kuhmo"
+  }
+},
+{
+  "pk": 304, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "hyrynsalmi", 
+    "store_id": "2824", 
+    "created_at": "2014-07-26T17:47:37.170Z", 
+    "longitude": 64.674993, 
+    "last_modified": "2014-07-26T18:37:31.973Z", 
+    "address": "Hyryntie 45, 89400 HYRYNSALMI", 
+    "latitude": 28.505947, 
+    "slug": "alko-hyrynsalmi", 
+    "name": "Alko Hyrynsalmi"
+  }
+},
+{
+  "pk": 305, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "kajaani", 
+    "store_id": "2825", 
+    "created_at": "2014-07-26T17:47:37.178Z", 
+    "longitude": 64.223235, 
+    "last_modified": "2014-07-26T18:37:32.362Z", 
+    "address": "Kauppakatu 10, 87100 KAJAANI", 
+    "latitude": 27.736667, 
+    "slug": "alko-kajaani-keskusta-citymarket", 
+    "name": "Alko Kajaani keskusta Citymarket"
+  }
+},
+{
+  "pk": 306, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "paltamo", 
+    "store_id": "2826", 
+    "created_at": "2014-07-26T17:47:37.202Z", 
+    "longitude": 64.403758, 
+    "last_modified": "2014-07-26T18:37:32.233Z", 
+    "address": "Rinnekuja 2, 88300 PALTAMO", 
+    "latitude": 27.835359, 
+    "slug": "alko-paltamo", 
+    "name": "Alko Paltamo"
+  }
+},
+{
+  "pk": 307, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "puolanka", 
+    "store_id": "2827", 
+    "created_at": "2014-07-26T17:47:37.220Z", 
+    "longitude": 64.869467, 
+    "last_modified": "2014-07-26T18:37:32.286Z", 
+    "address": "Keskuskatu 2, 89200 PUOLANKA", 
+    "latitude": 27.665958, 
+    "slug": "alko-puolanka", 
+    "name": "Alko Puolanka"
+  }
+},
+{
+  "pk": 308, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "suomussalmi", 
+    "store_id": "2828", 
+    "created_at": "2014-07-26T17:47:37.232Z", 
+    "longitude": 64.8873, 
+    "last_modified": "2014-07-26T18:37:00.935Z", 
+    "address": "Risteentie 12, 89600 SUOMUSSALMI", 
+    "latitude": 28.9083, 
+    "slug": "alko-suomussalmi", 
+    "name": "Alko Suomussalmi"
+  }
+},
+{
+  "pk": 309, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "oulu", 
+    "store_id": "2829", 
+    "created_at": "2014-07-26T17:47:37.249Z", 
+    "longitude": 64.952565, 
+    "last_modified": "2014-07-26T18:37:32.513Z", 
+    "address": "Metsokankaantie 5, 90420 OULU", 
+    "latitude": 25.534825, 
+    "slug": "alko-oulu-kaakkuri", 
+    "name": "Alko Oulu Kaakkuri"
+  }
+},
+{
+  "pk": 310, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "oulu", 
+    "store_id": "2830", 
+    "created_at": "2014-07-26T17:47:37.262Z", 
+    "longitude": 65.054959, 
+    "last_modified": "2014-07-26T18:37:32.568Z", 
+    "address": "Kauppalinnankuja 1-3, 90570 OULU", 
+    "latitude": 25.457923, 
+    "slug": "alko-oulu-linnanmaa", 
+    "name": "Alko Oulu Linnanmaa"
+  }
+},
+{
+  "pk": 311, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "oulu", 
+    "store_id": "2831", 
+    "created_at": "2014-07-26T17:47:37.274Z", 
+    "longitude": 65.01214, 
+    "last_modified": "2014-07-26T18:37:32.652Z", 
+    "address": "Kauppurienkatu 10, 90100 OULU", 
+    "latitude": 25.468476, 
+    "slug": "alko-oulu-stockmann", 
+    "name": "Alko Oulu Stockmann"
+  }
+},
+{
+  "pk": 312, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "oulu", 
+    "store_id": "2832", 
+    "created_at": "2014-07-26T17:47:37.295Z", 
+    "longitude": 65.010463, 
+    "last_modified": "2014-07-26T18:37:32.701Z", 
+    "address": "Tehtaankatu 1, 90130 OULU", 
+    "latitude": 25.487853, 
+    "slug": "alko-oulu-raksila", 
+    "name": "Alko Oulu Raksila"
+  }
+},
+{
+  "pk": 313, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "oulu", 
+    "store_id": "2833", 
+    "created_at": "2014-07-26T17:47:37.307Z", 
+    "longitude": 64.994041, 
+    "last_modified": "2014-07-26T18:37:32.912Z", 
+    "address": "Nuottasaarentie 1, 90400 OULU", 
+    "latitude": 25.460972, 
+    "slug": "alko-oulu-limingantulli", 
+    "name": "Alko Oulu Limingantulli"
+  }
+},
+{
+  "pk": 314, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "oulu", 
+    "store_id": "2834", 
+    "created_at": "2014-07-26T17:47:37.320Z", 
+    "longitude": 65.030982, 
+    "last_modified": "2014-07-26T18:37:32.911Z", 
+    "address": "Revonkuja 2, 90530 OULU", 
+    "latitude": 25.472193, 
+    "slug": "alko-oulu-valivainio", 
+    "name": "Alko Oulu V\u00e4livainio"
+  }
+},
+{
+  "pk": 315, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "kempele", 
+    "store_id": "2835", 
+    "created_at": "2014-07-26T17:47:37.332Z", 
+    "longitude": 64.903284, 
+    "last_modified": "2014-07-26T18:37:33.038Z", 
+    "address": "Zeppelinintie 1, 90450 KEMPELE", 
+    "latitude": 25.538211, 
+    "slug": "alko-kempele-zeppelin", 
+    "name": "Alko Kempele Zeppelin"
+  }
+},
+{
+  "pk": 316, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "oulu", 
+    "store_id": "2836", 
+    "created_at": "2014-07-26T17:47:37.345Z", 
+    "longitude": 65.176562, 
+    "last_modified": "2014-07-26T18:37:33.056Z", 
+    "address": "Revontie 8, 90830 HAUKIPUDAS", 
+    "latitude": 25.349004, 
+    "slug": "alko-oulu-haukipudas", 
+    "name": "Alko Oulu Haukipudas"
+  }
+},
+{
+  "pk": 317, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "muhos", 
+    "store_id": "2837", 
+    "created_at": "2014-07-26T17:47:37.353Z", 
+    "longitude": 64.808204, 
+    "last_modified": "2014-07-26T18:37:33.278Z", 
+    "address": "Valtatie 20, 91500 MUHOS", 
+    "latitude": 25.990905, 
+    "slug": "alko-muhos", 
+    "name": "Alko Muhos"
+  }
+},
+{
+  "pk": 318, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "oulu", 
+    "store_id": "2838", 
+    "created_at": "2014-07-26T17:47:37.370Z", 
+    "longitude": 65.12757, 
+    "last_modified": "2014-07-26T18:37:33.280Z", 
+    "address": "Kauppareitti 2, 90900 KIIMINKI", 
+    "latitude": 25.778904, 
+    "slug": "alko-oulu-kiiminki", 
+    "name": "Alko Oulu Kiiminki"
+  }
+},
+{
+  "pk": 319, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "oulu", 
+    "store_id": "2839", 
+    "created_at": "2014-07-26T17:47:37.396Z", 
+    "longitude": 64.934119, 
+    "last_modified": "2014-07-26T18:37:33.327Z", 
+    "address": "Karhuojantie 2, 90460 OULUNSALO", 
+    "latitude": 25.400345, 
+    "slug": "alko-oulu-oulunsalo", 
+    "name": "Alko Oulu Oulunsalo"
+  }
+},
+{
+  "pk": 320, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "ii", 
+    "store_id": "2840", 
+    "created_at": "2014-07-26T17:47:37.412Z", 
+    "longitude": 65.322115, 
+    "last_modified": "2014-07-26T18:37:01.061Z", 
+    "address": "Kisatie 2, 91100 II", 
+    "latitude": 25.377275, 
+    "slug": "alko-ii", 
+    "name": "Alko Ii"
+  }
+},
+{
+  "pk": 321, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "vaala", 
+    "store_id": "2841", 
+    "created_at": "2014-07-26T17:47:37.424Z", 
+    "longitude": 64.560545, 
+    "last_modified": "2014-07-26T18:37:33.628Z", 
+    "address": "Vaalantie 26, 91700 VAALA", 
+    "latitude": 26.843812, 
+    "slug": "alko-vaala", 
+    "name": "Alko Vaala"
+  }
+},
+{
+  "pk": 322, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "pudasj\u00e4rvi", 
+    "store_id": "2843", 
+    "created_at": "2014-07-26T17:47:37.433Z", 
+    "longitude": 65.360774, 
+    "last_modified": "2014-07-26T18:37:01.073Z", 
+    "address": "Kauppatie 8, 93100 PUDASJ\u00c4RVI", 
+    "latitude": 26.995651, 
+    "slug": "alko-pudasjarvi", 
+    "name": "Alko Pudasj\u00e4rvi"
+  }
+},
+{
+  "pk": 323, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "kuusamo", 
+    "store_id": "2846", 
+    "created_at": "2014-07-26T17:47:37.441Z", 
+    "longitude": 65.955778, 
+    "last_modified": "2014-07-26T18:37:33.726Z", 
+    "address": "Luomantie 1-3, 93600 KUUSAMO", 
+    "latitude": 29.160433, 
+    "slug": "alko-kuusamo-keskusta", 
+    "name": "Alko Kuusamo keskusta"
+  }
+},
+{
+  "pk": 324, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "taivalkoski", 
+    "store_id": "2847", 
+    "created_at": "2014-07-26T17:47:37.459Z", 
+    "longitude": 65.574952, 
+    "last_modified": "2014-07-26T18:37:33.698Z", 
+    "address": "Kauppatie 11, 93400 TAIVALKOSKI", 
+    "latitude": 28.243856, 
+    "slug": "alko-taivalkoski", 
+    "name": "Alko Taivalkoski"
+  }
+},
+{
+  "pk": 325, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "kuusamo", 
+    "store_id": "2848", 
+    "created_at": "2014-07-26T17:47:37.469Z", 
+    "longitude": 66.16753, 
+    "last_modified": "2014-07-26T18:37:33.734Z", 
+    "address": "Rukankyl\u00e4ntie 8, 93825 RUKATUNTURI", 
+    "latitude": 29.138535, 
+    "slug": "alko-kuusamo-ruka", 
+    "name": "Alko Kuusamo Ruka"
+  }
+},
+{
+  "pk": 326, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "inari", 
+    "store_id": "2851", 
+    "created_at": "2014-07-26T17:47:37.477Z", 
+    "longitude": 68.659689, 
+    "last_modified": "2014-07-26T18:37:33.980Z", 
+    "address": "Petsamontie 2, 99800 IVALO", 
+    "latitude": 27.541203, 
+    "slug": "alko-inari-ivalo", 
+    "name": "Alko Inari Ivalo"
+  }
+},
+{
+  "pk": 327, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "inari", 
+    "store_id": "2852", 
+    "created_at": "2014-07-26T17:47:37.484Z", 
+    "longitude": 68.419503, 
+    "last_modified": "2014-07-26T18:37:34.052Z", 
+    "address": "Saarisel\u00e4ntie 1, PL 16, 99831 SAARISELK\u00c4", 
+    "latitude": 27.408828, 
+    "slug": "alko-inari-saariselka", 
+    "name": "Alko Inari Saariselk\u00e4"
+  }
+},
+{
+  "pk": 328, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "sodankyl\u00e4", 
+    "store_id": "2853", 
+    "created_at": "2014-07-26T17:47:37.501Z", 
+    "longitude": 67.413967, 
+    "last_modified": "2014-07-26T18:37:01.144Z", 
+    "address": "Haastajantie 1, 99600 SODANKYL\u00c4", 
+    "latitude": 26.585427, 
+    "slug": "alko-sodankyla", 
+    "name": "Alko Sodankyl\u00e4"
+  }
+},
+{
+  "pk": 329, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "rovaniemi", 
+    "store_id": "2855", 
+    "created_at": "2014-07-26T17:47:37.518Z", 
+    "longitude": 66.503095, 
+    "last_modified": "2014-07-26T18:37:34.088Z", 
+    "address": "Koskikatu 25, 96200 ROVANIEMI", 
+    "latitude": 25.726452, 
+    "slug": "alko-rovaniemi-keskusta", 
+    "name": "Alko Rovaniemi keskusta"
+  }
+},
+{
+  "pk": 330, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "rovaniemi", 
+    "store_id": "2856", 
+    "created_at": "2014-07-26T17:47:37.526Z", 
+    "longitude": 66.517509, 
+    "last_modified": "2014-07-26T18:37:34.268Z", 
+    "address": "Pulkamontie 1, 96900 SAARENKYL\u00c4", 
+    "latitude": 25.7578, 
+    "slug": "alko-rovaniemi-saarenkyla", 
+    "name": "Alko Rovaniemi Saarenkyl\u00e4"
+  }
+},
+{
+  "pk": 331, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "rovaniemi", 
+    "store_id": "2857", 
+    "created_at": "2014-07-26T17:47:37.540Z", 
+    "longitude": 66.491446, 
+    "last_modified": "2014-07-26T18:37:34.304Z", 
+    "address": "Teollisuustie 1, 96320 ROVANIEMI", 
+    "latitude": 25.691872, 
+    "slug": "alko-rovaniemi-etelakeskus", 
+    "name": "Alko Rovaniemi Etel\u00e4keskus"
+  }
+},
+{
+  "pk": 332, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "ranua", 
+    "store_id": "2858", 
+    "created_at": "2014-07-26T17:47:37.562Z", 
+    "longitude": 65.932795, 
+    "last_modified": "2014-07-26T18:37:34.411Z", 
+    "address": "Keskustie 1, 97700 RANUA", 
+    "latitude": 26.509411, 
+    "slug": "alko-ranua", 
+    "name": "Alko Ranua"
+  }
+},
+{
+  "pk": 333, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "posio", 
+    "store_id": "2859", 
+    "created_at": "2014-07-26T17:47:37.578Z", 
+    "longitude": 66.112341, 
+    "last_modified": "2014-07-26T18:37:34.384Z", 
+    "address": "Posiontie 49, 97900 POSIO", 
+    "latitude": 28.157987, 
+    "slug": "alko-posio", 
+    "name": "Alko Posio"
+  }
+},
+{
+  "pk": 334, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "kemi", 
+    "store_id": "2865", 
+    "created_at": "2014-07-26T17:47:37.590Z", 
+    "longitude": 65.740213, 
+    "last_modified": "2014-07-26T18:37:34.601Z", 
+    "address": "Asemakatu 1, 94100 KEMI", 
+    "latitude": 24.564834, 
+    "slug": "alko-kemi", 
+    "name": "Alko Kemi"
+  }
+},
+{
+  "pk": 335, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "keminmaa", 
+    "store_id": "2866", 
+    "created_at": "2014-07-26T17:47:37.598Z", 
+    "longitude": 65.792657, 
+    "last_modified": "2014-07-26T18:37:34.657Z", 
+    "address": "Jokisuuntie 8, 94450 KEMINMAA", 
+    "latitude": 24.527461, 
+    "slug": "alko-keminmaa", 
+    "name": "Alko Keminmaa"
+  }
+},
+{
+  "pk": 336, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "tornio", 
+    "store_id": "2875", 
+    "created_at": "2014-07-26T17:47:37.612Z", 
+    "longitude": 65.84385, 
+    "last_modified": "2014-07-26T18:37:34.729Z", 
+    "address": "L\u00e4nsiranta 10, 95400 TORNIO", 
+    "latitude": 24.143978, 
+    "slug": "alko-tornio", 
+    "name": "Alko Tornio"
+  }
+},
+{
+  "pk": 337, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "ylitornio", 
+    "store_id": "2876", 
+    "created_at": "2014-07-26T17:47:37.624Z", 
+    "longitude": 66.326552, 
+    "last_modified": "2014-07-26T18:37:34.756Z", 
+    "address": "Alkkulanraitti 75, 95600 YLITORNIO", 
+    "latitude": 23.677091, 
+    "slug": "alko-ylitornio", 
+    "name": "Alko Ylitornio"
+  }
+},
+{
+  "pk": 338, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "pello", 
+    "store_id": "2877", 
+    "created_at": "2014-07-26T17:47:37.637Z", 
+    "longitude": 66.773552, 
+    "last_modified": "2014-07-26T18:37:34.945Z", 
+    "address": "Pellontie 23, 95700 PELLO", 
+    "latitude": 23.964842, 
+    "slug": "alko-pello", 
+    "name": "Alko Pello"
+  }
+},
+{
+  "pk": 339, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "kittil\u00e4", 
+    "store_id": "2878", 
+    "created_at": "2014-07-26T17:47:37.662Z", 
+    "longitude": 67.657167, 
+    "last_modified": "2014-07-26T18:37:35.123Z", 
+    "address": "Valtatie 68, 99100 KITTIL\u00c4", 
+    "latitude": 24.907671, 
+    "slug": "alko-kittila-keskusta", 
+    "name": "Alko Kittil\u00e4 keskusta"
+  }
+},
+{
+  "pk": 340, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "muonio", 
+    "store_id": "2879", 
+    "created_at": "2014-07-26T17:47:37.674Z", 
+    "longitude": 67.955545, 
+    "last_modified": "2014-07-26T18:37:35.062Z", 
+    "address": "Lahenrannantie 1, 99300 MUONIO", 
+    "latitude": 23.683955, 
+    "slug": "alko-muonio", 
+    "name": "Alko Muonio"
+  }
+},
+{
+  "pk": 341, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "kolari", 
+    "store_id": "2880", 
+    "created_at": "2014-07-26T17:47:37.682Z", 
+    "longitude": 67.335298, 
+    "last_modified": "2014-07-26T18:37:35.166Z", 
+    "address": "Jokijalantie 2 A, 95900 KOLARI", 
+    "latitude": 23.820361, 
+    "slug": "alko-kolari-keskusta", 
+    "name": "Alko Kolari keskusta"
+  }
+},
+{
+  "pk": 342, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "kittil\u00e4", 
+    "store_id": "2881", 
+    "created_at": "2014-07-26T17:47:37.691Z", 
+    "longitude": 67.808927, 
+    "last_modified": "2014-07-26T18:37:35.309Z", 
+    "address": "Leviraitti 18, 99130 SIRKKA", 
+    "latitude": 24.806355, 
+    "slug": "alko-kittila-levi", 
+    "name": "Alko Kittil\u00e4 Levi"
+  }
+},
+{
+  "pk": 343, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "kolari", 
+    "store_id": "2882", 
+    "created_at": "2014-07-26T17:47:37.703Z", 
+    "longitude": 67.605228, 
+    "last_modified": "2014-07-26T18:37:35.608Z", 
+    "address": "Sannanrannantie 3, 95970 \u00c4K\u00c4SLOMPOLO", 
+    "latitude": 24.154617, 
+    "slug": "alko-kolari-yllas-akaslompolo", 
+    "name": "Alko Kolari Yll\u00e4s \u00c4k\u00e4slompolo"
+  }
+},
+{
+  "pk": 344, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "kemij\u00e4rvi", 
+    "store_id": "2885", 
+    "created_at": "2014-07-26T17:47:37.714Z", 
+    "longitude": 66.715955, 
+    "last_modified": "2014-07-26T18:37:35.461Z", 
+    "address": "Kirkkokatu 2-4, 98100 KEMIJ\u00c4RVI", 
+    "latitude": 27.428403, 
+    "slug": "alko-kemijarvi", 
+    "name": "Alko Kemij\u00e4rvi"
+  }
+},
+{
+  "pk": 345, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "salla", 
+    "store_id": "2887", 
+    "created_at": "2014-07-26T17:47:37.728Z", 
+    "longitude": 66.832076, 
+    "last_modified": "2014-07-26T18:37:01.269Z", 
+    "address": "Kuusamontie 9, 98900 SALLA", 
+    "latitude": 28.670251, 
+    "slug": "alko-salla", 
+    "name": "Alko Salla"
+  }
+},
+{
+  "pk": 346, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "enonteki\u00f6", 
+    "store_id": "2888", 
+    "created_at": "2014-07-26T17:47:37.741Z", 
+    "longitude": 68.384754, 
+    "last_modified": "2014-07-26T18:37:35.659Z", 
+    "address": "Kustaavantie 1, 99400 ENONTEKI\u00d6", 
+    "latitude": 23.639437, 
+    "slug": "alko-enontekio-hetta", 
+    "name": "Alko Enonteki\u00f6 Hetta"
+  }
+},
+{
+  "pk": 347, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "utsjoki", 
+    "store_id": "2889", 
+    "created_at": "2014-07-26T17:47:37.749Z", 
+    "longitude": 70.080733, 
+    "last_modified": "2014-07-26T18:37:35.670Z", 
+    "address": ", 99990 NUORGAM", 
+    "latitude": 27.86485, 
+    "slug": "alko-utsjoki-nuorgam", 
+    "name": "Alko Utsjoki Nuorgam"
+  }
+}
+]
