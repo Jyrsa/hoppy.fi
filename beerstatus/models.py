@@ -3,9 +3,10 @@ from autoslug import AutoSlugField
 from django.core.exceptions import ValidationError
 from util import validate_integer
 from util import validate_takes_one_string
+from alko_towns import ALKO_LOCATION_TOWNS
 
 class Beer(models.Model):
-    name = models.CharField(max_length=200)
+    name = models.CharField(max_length=200, blank=True)
     slug = AutoSlugField(populate_from="name")
     ibu = models.FloatField(
                 help_text=("International Bittering Units"),
@@ -32,7 +33,7 @@ class Beer(models.Model):
     alko_product_id = models.CharField(
                             max_length=6,
                             validators=[validate_integer])
-    style = models.CharField(max_length=200)
+    style = models.CharField(max_length=200, blank=True)
     # should be an integer
     # todo: enforce check
     created_at = models.DateTimeField(auto_now_add=True)
@@ -46,7 +47,6 @@ class Beer(models.Model):
                                             str(self.abv),
                                             str(self.ebu)
                             )
-
 
 class BeerRater(models.Model):
     name = models.CharField(max_length=200)
@@ -96,9 +96,9 @@ class AlkoLocation(models.Model):
     city = models.CharField(max_length=200, choices=SUPPORTED_ALKO_CITIES)
     #alko stores have a www.alko.fi/myymalat/store_id/ address
     store_id = models.CharField(max_length=5, validators=[validate_integer],
-    unique=True)
-    latitude = models.FloatField()
-    longitude = models.FloatField()
+    )
+    latitude = models.FloatField(default=24.934792)
+    longitude = models.FloatField(default=60.170814)
     address = models.TextField(max_length=400)
     created_at = models.DateTimeField(auto_now_add=True)
     last_modified = models.DateTimeField(auto_now=True)
@@ -109,6 +109,7 @@ class AlkoLocation(models.Model):
                                             self.name,
                                             self.address
                                             )
+
     def get_latest_beers_and_availability():
         values = [] 
         for beer in Beer.objects.filter(active=True):
