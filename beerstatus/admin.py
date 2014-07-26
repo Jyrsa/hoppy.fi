@@ -24,7 +24,7 @@ class BeerAdmin(admin.ModelAdmin):
     """
     inlines = (BeerRatingInline,)
     list_display = ("name", "slug",)
-    readonly_fields = ("slug", )
+    readonly_fields = ("slug", "created_at", "last_modified")
 
 admin.site.register(Beer, BeerAdmin)
 admin.site.register(BeerRating)
