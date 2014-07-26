@@ -85,12 +85,10 @@ class BeerRating(models.Model):
                                             self.rating,
                                             self.rater.name,)
 
-SUPPORTED_ALKO_CITIES = (
-        ("espoo", "Espoo"),
-        ("helsinki", "Helsinki")
-        #ToDo, complete
-        #Note that not all availability info is available
-    )
+#ALKO_LOCATION_TOWNS was parsed from site
+#city listing for Koskenkorva
+#(the list doesn't show cities where product isn't available)
+SUPPORTED_ALKO_CITIES = ALKO_LOCATION_TOWNS
 
 class AlkoLocation(models.Model):
     name = models.CharField(max_length=200)
