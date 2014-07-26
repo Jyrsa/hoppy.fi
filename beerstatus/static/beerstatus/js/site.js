@@ -20,6 +20,22 @@ var Alko = Backbone.Model.extend({
                     "http://www.alko.fi/en/shops/"+this.get("store_id")+"/");
         this.set("gmaps_url",
             "https://www.google.com/maps/preview?q="+this.get("address"));
+    },
+    getDistance: function(lat, lon){
+        //this is really evil, map projection people gonna hate
+        //todo: update to a better projection
+        var earth_radius = 6371; //km
+        var lat1 = this.toRadians(lat);
+        var lat2 = this.toRadians(this.get("latitude"));
+        var lat1 = this.toRadians(lon);
+        var lat2 = this.toRadians(this.get("longitude"));
+        
+        var x = (lat1-lat2)*Math.cos((lon1+lon2)/2);
+        var y = lon1-lon2;
+        return Math.sqrt(x*x+y*y)*R;
+    },
+    toRadians: function(value){
+        return value * Math.PI/180; 
     }
 });
 
@@ -268,7 +284,8 @@ var AlkoSearchView = Backbone.View.extend({
         //
     },
     setAlko: function(model){
-        this.setText(model.get("name"));     
+        this.setText(model.get("name"));
+        this.$el.blur();
     },
     setText: function(text){
         this.$el.val(text);   

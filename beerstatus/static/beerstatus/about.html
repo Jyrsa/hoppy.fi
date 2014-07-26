@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Hoppy.fi draft page</title>
+    <title>Hoppy.fi about</title>
 
     <!-- Bootstrap -->
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
@@ -47,6 +47,10 @@
             color: white;
             text-shadow: black 0.3em 0.3em 0.3em;
         }
+        .jumbotron a {
+            color: black;
+            text-shadow: none;
+            }
     </style>
   </head>
   <body>
@@ -60,57 +64,24 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Hoppy.fi</a>
+          <a class="navbar-brand" href="./index.html">Hoppy.fi</a>
         </div>
         <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="./about.html">About</a></li>
+            <li ><a href="./index.html">Home</a></li>
+            <li class="active"><a href="#">About</a></li>
           </ul>
         </div>
       </div>
     </div>
     <!-- end navigation--> 
     <div class="container">
-         <div class="jumbotron">
-            <h1 class="center">Hoppy.fi</h1>
-            <h3 class="center">Beers in stock at Alko stores</h3>
-                <div class="row">
-                <div class="col-md-6 col-md-offset-3 col-xs-12">
-                    <form role="form">
-                            <div class="form-group">
-                                <label class="sr-only" for="inputLocation">Store name</label>
-                                <input type="text" class="input-lg form-control" id="inputLocation" 
-                                            placeholder="Input Nearest Alko" />
-                            </div>
-                            <div class="center">
-                                <button type="button" class="btn btn-default"
-                                disabled id="locationButton">Use Location (not
-                                implemented)</button>
-                            </div>
-                    </form>
-                    </div>
-                </div>
-         </div>
-        <div class="row">
-            <div class="col-md-12">
-                <div id="alkoDetails" style="display:none"
-                class="center"></div>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-xs-12">
-                <table id="beerTable" style="display:none"></table>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-xs-12">
-                <p>Note that there are only less than 10 beers entered to the
-                system right now.</p>
-            </div>
-        </div>
-           </div>
+    <div class="jumbotron">
+        <p>Hoppy.fi is an experimental service written by <a
+        href="http://jyrsa.iki.fi">Jyry Suvilehto</a>. Code will eventually
+        be published in GitHub</p>
+    </div>
+    </div>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"> </script>
    <script src="//code.jquery.com/ui/1.11.0/jquery-ui.js">  </script>
