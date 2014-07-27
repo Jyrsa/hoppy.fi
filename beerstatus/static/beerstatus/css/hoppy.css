@@ -1,0 +1,37 @@
+/*custom css for hoppy*/
+body {
+    padding-top: 60px;
+    padding-bottom: 40px;
+    }
+.center {
+    text-align: center;
+}
+.center form {
+    display: inline-block;
+}
+.center th {
+    text-align: center;
+    }
+#beerTable th {
+    cursor: pointer;
+}
+.jumbotron {
+    /*The license of this stock photo prohibits it from being
+     * distributed in a repository with the software. It's hops on a
+     * table if you want to find your own */
+    background-image: url(./img/hops_on_table.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    text-shadow: black 0.3em 0.3em 0.3em;
+}
+.twitter-typeahead {
+    width: 100%;
+    }
+.tt-dropdown-menu {
+    width: 100%;
+    }
+.jumbotron  .twitter-typeahead {
+   text-shadow: none;
+}
+
