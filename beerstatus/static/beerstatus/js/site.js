@@ -267,25 +267,43 @@ var AlkoDetailsView = Backbone.View.extend({
 })
 
 var AlkoSearchView = Backbone.View.extend({
+    el: "#inputLocation",
     initialize: function(params){
-        this.collection.on("fetch set reset add change",
-                        this.render,
+        this.collection.on("sync", //sync is all we need for now
+                                    //no need to trigger at each add
+                        this.updateBloodHound,
                         this)
         params.alkolocations.on("alkochanged", this.setAlko, this);
+        this.engine = new Bloodhound({
+          name: 'alkos',
+          local: [],
+          datumTokenizer: function(d) {
+            return Bloodhound.tokenizers.whitespace(d.get("name"));
+          },
+          queryTokenizer: Bloodhound.tokenizers.whitespace
+        });
+        this.engine.initialize();
         this.render();
+        $(this.el).typeahead({
+                        minLength: 0,
+                        hilight: true,
+                        }, {
+                            source: this.engine.ttAdapter(),
+                            displayKey: function(d){
+                                return d.get("name");
+                            }
+            });
     },
-    el: "#inputLocation",
-    changeAlko: function(event_, ui){
-        this.collection.setSelected(this.collection.findWhere({name:
-                                ui.item.label}));
-        event_.preventDefault(); 
-        //the view itself takes care of updating the text once event is
-        //triggered by the collection so we can prevent the jquery-ui update
-        //
+    changeAlko: function(event_, suggestion, dataset){
+        this.collection.setSelected(suggestion);
+    },
+    updateBloodHound: function(){
+        this.engine.clear();
+        this.engine.add(this.collection.models);
+        this.engine.initialize(true);
     },
     setAlko: function(model){
         this.setText(model.get("name"));
-        this.$el.blur();
     },
     setText: function(text){
         this.$el.val(text);   
@@ -294,16 +312,12 @@ var AlkoSearchView = Backbone.View.extend({
         this.setText("");
     },
     events : {
-        "autocompleteselect": "changeAlko", 
+        "typeahead:selected": "changeAlko", 
         "click": "clearText"
     },
     render : function(){
-            var vals = this.collection.pluck("name");
-            $("#inputLocation").autocomplete({
-                        minLength: 0,
-                        source: vals,
-                        });
-            },
+    }
+        
 });
 
 

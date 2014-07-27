@@ -10,9 +10,7 @@
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
     <!-- lavish bootstrap, disabled for now until i find a perfect src picture -->
     <link rel="stylesheet" href="./css/lavish-bootstrap-threebeers.css">
-    <!-- jquery-ui -->
-  <link rel="stylesheet"
-  href="//code.jquery.com/ui/1.11.0/themes/smoothness/jquery-ui.css">
+    <link rel="stylesheet" href="./css/typeaheadjs.css">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -46,6 +44,15 @@
             background-repeat: no-repeat;
             color: white;
             text-shadow: black 0.3em 0.3em 0.3em;
+        }
+        .twitter-typeahead {
+            width: 100%; 
+            }
+        .tt-dropdown-menu {
+            width: 100%; 
+            }
+        .jumbotron  .twitter-typeahead {
+           text-shadow: none;
         }
     </style>
   </head>
@@ -113,7 +120,8 @@
            </div>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"> </script>
-   <script src="//code.jquery.com/ui/1.11.0/jquery-ui.js">  </script>
+   <script
+   src="//cdnjs.cloudflare.com/ajax/libs/typeahead.js/0.10.4/typeahead.bundle.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.6.0/underscore.js"></script>
