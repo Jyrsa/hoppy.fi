@@ -126,7 +126,7 @@ def update_beer_infos():
     for beer in models.Beer.objects.all():
         update_beer_info(beer)
 
-@db_task
+@db_task()
 def update_beer_info(beer):
     """ retrieves beer page from alko, updates model fields and saves model.
 
