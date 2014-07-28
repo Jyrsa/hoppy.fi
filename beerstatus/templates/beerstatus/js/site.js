@@ -351,4 +351,5 @@ function getInitialAlkoList(){
 $(function(){
     var router = new BeerStatusRouter();
     Backbone.history.start()
+    $('#inputLocation').focus();
 });
