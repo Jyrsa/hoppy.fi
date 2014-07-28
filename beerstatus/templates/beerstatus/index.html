@@ -1,0 +1,45 @@
+{% extends "beerstatus/base_template.html" %}
+{%block  containercontent %}
+<div class="jumbotron">
+            <h1 class="center">Hoppy.fi</h1>
+            <h3 class="center">Beers in stock at Alko stores</h3>
+                <div class="row">
+                <div class="col-md-6 col-md-offset-3 col-xs-12">
+                    <form role="form">
+                            <div class="form-group">
+                                <label class="sr-only" for="inputLocation">Store name</label>
+                                <input type="text" class="input-lg form-control" id="inputLocation" 
+                                            placeholder="Input Nearest Alko" />
+                            </div>
+                            <div class="center">
+                                <button type="button" class="btn btn-default"
+                                disabled id="locationButton">Use Location (not
+                                implemented)</button>
+                            </div>
+                    </form>
+                    </div>
+                </div>
+         </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div id="alkoDetails" style="display:none"
+                class="center"></div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-12">
+                <table id="beerTable" style="display:none"></table>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12">
+                <p>Note that there are only less than 10 beers entered to the
+                system right now. Matching beers is a manual job until/unless
+                RateBeer hands over a developer key.
+                </p>
+                <p>Beer rating scores are from <a
+                href="http://www.ratebeer.com">RateBeer</a></p>
+            </div>
+        </div>
+{% endblock containercontent %}
