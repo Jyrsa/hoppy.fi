@@ -1,4 +1,10 @@
 {% extends "beerstatus/base_template.html" %}
+{% block navigation %}
+<li><a href="../">Home</a></li>
+<li class="active"><a href="">About</a></li>
+{% endblock navigation %}
+
+
 {% block  containercontent %}
  
     <div class="jumbotron">
@@ -8,8 +14,9 @@
     <div class="row">
         <div class="col-xs-12 col-md-6 col-md-offset-3 ">
             <p>Hoppy.fi is an experimental service written by <a
-            href="http://jyrsa.iki.fi">Jyry Suvilehto</a>. Code will eventually
-            be published in GitHub.</p>
+            href="http://jyrsa.iki.fi">Jyry Suvilehto</a>. Code is available
+            at <a href="https://github.com/Jyrsa/hoppy.fi">GitHub</a>.
+            Comments, suggestions and whatnot are welcome.</p>
 
             <p>This project was sparked my frustration at trying to figure out
             what beers are available and what are worth buying when I go beer
@@ -27,3 +34,5 @@
         </div>
     </div>
 {% endblock %}
+{% block sitescript %}
+{% endblock sitescript %}
