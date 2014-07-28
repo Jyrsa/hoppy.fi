@@ -1,0 +1,13 @@
+[
+{
+  "pk": 1, 
+  "model": "beerstatus.beerrater", 
+  "fields": {
+    "created_at": "2014-07-28T20:08:20.712Z", 
+    "last_modified": "2014-07-28T20:08:20.712Z", 
+    "url_base": "http://www.ratebeer.com/beer//%s/", 
+    "name": "RateBeer", 
+    "slug": "ratebeer"
+  }
+}
+]
