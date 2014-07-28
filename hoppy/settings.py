@@ -17,7 +17,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 # See https://docs.djangoproject.com/en/1.6/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'eq128gi8t^s!779%37s)1+z#n2%)69c6e(bw6=m__y_c$b=-vy'
+SECRET_KEY = 'my name is my passport, verify me'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -153,3 +153,10 @@ LOGGING = {
        }
     }
 }
+
+#having a local_settings isn't mandatory but
+#if one exists, it overrides stuff
+try:
+    from local_settings import *
+except ImportError:
+    pass
