@@ -64,6 +64,9 @@ class BeerRater(models.Model):
         """
         return self.url_base % str(foreign_id)
 
+    def get_rating_for(self, beer):
+        return BeerRating.objects.get(rater=self, beer=beer)
+
 class BeerRating(models.Model):
     beer = models.ForeignKey(Beer)
     rater = models.ForeignKey(BeerRater)

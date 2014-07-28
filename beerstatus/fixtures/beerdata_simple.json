@@ -1,0 +1,166 @@
+[
+{
+  "pk": 1, 
+  "model": "beerstatus.beer", 
+  "fields": {
+    "created_at": "2014-07-28T20:11:18.748Z", 
+    "style": "finnish crap lager", 
+    "name": "Karhu", 
+    "alko_product_id": "54321", 
+    "price": 1.0, 
+    "slug": "karhu", 
+    "volume": 0.33, 
+    "ebu": 2.0, 
+    "last_modified": "2014-07-28T20:12:52.144Z", 
+    "abv": 3.0, 
+    "active": true, 
+    "ibu": 1.0
+  }
+},
+{
+  "pk": 2, 
+  "model": "beerstatus.beer", 
+  "fields": {
+    "created_at": "2014-07-28T20:11:59.362Z", 
+    "style": "finnish crap lager", 
+    "name": "Olvi", 
+    "alko_product_id": "54322", 
+    "price": 5.0, 
+    "slug": "olvi", 
+    "volume": 0.33, 
+    "ebu": 3.0, 
+    "last_modified": "2014-07-28T20:11:59.362Z", 
+    "abv": 4.0, 
+    "active": true, 
+    "ibu": 2.0
+  }
+},
+{
+  "pk": 3, 
+  "model": "beerstatus.beer", 
+  "fields": {
+    "created_at": "2014-07-28T20:12:40.871Z", 
+    "style": "finnish crap lager", 
+    "name": "Lahden Erikoinen", 
+    "alko_product_id": "54323", 
+    "price": 6.0, 
+    "slug": "lahden-erikoinen", 
+    "volume": 0.33, 
+    "ebu": 4.0, 
+    "last_modified": "2014-07-28T20:12:40.871Z", 
+    "abv": 5.0, 
+    "active": false, 
+    "ibu": 3.0
+  }
+},
+{
+  "pk": 1, 
+  "model": "beerstatus.beerrater", 
+  "fields": {
+    "created_at": "2014-07-28T20:08:20.712Z", 
+    "last_modified": "2014-07-28T20:08:20.712Z", 
+    "url_base": "http://www.ratebeer.com/beer//%s/", 
+    "name": "RateBeer", 
+    "slug": "ratebeer"
+  }
+},
+{
+  "pk": 1, 
+  "model": "beerstatus.beerrating", 
+  "fields": {
+    "rating": 5, 
+    "created_at": "2014-07-28T20:11:18.749Z", 
+    "beer": 1, 
+    "last_modified": "2014-07-28T20:12:52.146Z", 
+    "rater": 1, 
+    "foreign_id": "karhu-foreign-id"
+  }
+},
+{
+  "pk": 2, 
+  "model": "beerstatus.beerrating", 
+  "fields": {
+    "rating": 4, 
+    "created_at": "2014-07-28T20:11:59.364Z", 
+    "beer": 2, 
+    "last_modified": "2014-07-28T20:11:59.364Z", 
+    "rater": 1, 
+    "foreign_id": "olvi-foreign-id"
+  }
+},
+{
+  "pk": 3, 
+  "model": "beerstatus.beerrating", 
+  "fields": {
+    "rating": 3, 
+    "created_at": "2014-07-28T20:12:40.872Z", 
+    "beer": 3, 
+    "last_modified": "2014-07-28T20:12:40.872Z", 
+    "rater": 1, 
+    "foreign_id": "lahden-erikoinen-foreign-id"
+  }
+},
+{
+  "pk": 1, 
+  "model": "beerstatus.alkolocation", 
+  "fields": {
+    "city": "helsinki", 
+    "store_id": "1234", 
+    "created_at": "2014-07-28T20:10:05.331Z", 
+    "longitude": 60.170814, 
+    "last_modified": "2014-07-28T20:10:05.331Z", 
+    "address": "Salomonkatu 1, 00100 HELSINKI", 
+    "latitude": 24.934792, 
+    "slug": "test-alko-1", 
+    "name": "Test Alko 1"
+  }
+},
+{
+  "pk": 1, 
+  "model": "beerstatus.beeravailability", 
+  "fields": {
+    "count": 100, 
+    "created_at": "2014-07-28T20:13:31.037Z", 
+    "beer": 1, 
+    "last_modified": "2014-07-28T20:13:31.037Z", 
+    "location": 1, 
+    "date": "2014-07-28"
+  }
+},
+{
+  "pk": 2, 
+  "model": "beerstatus.beeravailability", 
+  "fields": {
+    "count": 150, 
+    "created_at": "2014-07-28T20:13:44.270Z", 
+    "beer": 1, 
+    "last_modified": "2014-07-28T20:13:44.270Z", 
+    "location": 1, 
+    "date": "2014-07-27"
+  }
+},
+{
+  "pk": 3, 
+  "model": "beerstatus.beeravailability", 
+  "fields": {
+    "count": 50, 
+    "created_at": "2014-07-28T20:13:56.130Z", 
+    "beer": 2, 
+    "last_modified": "2014-07-28T20:13:56.130Z", 
+    "location": 1, 
+    "date": "2014-07-28"
+  }
+},
+{
+  "pk": 4, 
+  "model": "beerstatus.beeravailability", 
+  "fields": {
+    "count": 25, 
+    "created_at": "2014-07-28T20:14:10.137Z", 
+    "beer": 2, 
+    "last_modified": "2014-07-28T20:14:10.137Z", 
+    "location": 1, 
+    "date": "2014-07-27"
+  }
+}
+]

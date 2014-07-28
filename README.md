@@ -10,11 +10,14 @@ to that the fact that the the buyers at Alko seem to have sprained their taste
 buds and sometimes arbitary placement of new products it can sometimes be a
 challenge to know what is available and what offers good bang for the buck.
 
-The project is currently very much a work in progress.
 
-ToDo:
+Testing
+----------
 
-1. Create a minimal schema and a db fixture to try out the ideas
-2. Create tools to scrape stuff from Alko, Ratebeer and others
-3. Set up Huey and Redis for simple delayed tasks and cron-like tasks 
-4. Figure out front-end
+run tests with
+    
+    python manage.py test --settings=hoppy.test_settings
+
+as e.g. Huey needs to know not to actually delay execution etc.
+
+
