@@ -44,8 +44,7 @@ def parse_alko_availability_date(value):
                 for i in range(7): #accept up to 1 week old info
                     potential = date - datetime.timedelta(days=i)
                     if potential.day == day and potential.month == month:
-                        date = potential
-                        break
+                        return potential
         except ValueError:
             pass
 
