@@ -11,6 +11,7 @@
     <!-- lavish bootstrap, disabled for now until i find a perfect src picture -->
     <link rel="stylesheet" href="./css/lavish-bootstrap-threebeers.css">
     <link rel="stylesheet" href="./css/typeaheadjs.css">
+    <link rel="stylesheet" href="./css/hoppy.css">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -18,43 +19,6 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-    <style>
-        body {
-            padding-top: 60px; 
-            padding-bottom: 40px;
-            }
-        .center {
-            text-align: center;     
-        }
-        .center form {
-            display: inline-block;     
-        }
-        .center th {
-            text-align: center; 
-            }
-        #beerTable th {
-            cursor: pointer;     
-        }
-        .jumbotron {
-            /*The license of this stock photo prohibits it from being
-             * distributed in a repository with the software. It's hops on a
-             * table if you want to find your own */
-            background-image: url(./img/hops_on_table.jpg);
-            background-size: cover;
-            background-repeat: no-repeat;
-            color: white;
-            text-shadow: black 0.3em 0.3em 0.3em;
-        }
-        .twitter-typeahead {
-            width: 100%; 
-            }
-        .tt-dropdown-menu {
-            width: 100%; 
-            }
-        .jumbotron  .twitter-typeahead {
-           text-shadow: none;
-        }
-    </style>
   </head>
   <body>
     <!-- navigation -->
@@ -114,7 +78,11 @@
         <div class="row">
             <div class="col-xs-12">
                 <p>Note that there are only less than 10 beers entered to the
-                system right now.</p>
+                system right now. Matching beers is a manual job until/unless
+                RateBeer hands over a developer key.
+                </p>
+                <p>Beer rating scores are from <a
+                href="http://www.ratebeer.com">RateBeer</a></p>
             </div>
         </div>
            </div>
@@ -126,6 +94,6 @@
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.6.0/underscore.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/backbone.js/1.1.2/backbone.js"></script>
-    <script src="./js/site.js"></script>
+    <script src="/beerstatus/site.js"></script>
   </body>
 </html>

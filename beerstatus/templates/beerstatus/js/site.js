@@ -171,7 +171,7 @@ var BeerCollectionTable = Backbone.View.extend({
     template : _.template('\
     <thead>\
     <th data-sort="name">name</th>\
-    <th data-sort="score"><a href="http://www.ratebeer.com">Ratebeer</a> score</th>\
+    <th data-sort="score">Ratebeer score</th>\
     <th data-sort="ebu" class="hidden-xs"> ebu </td>\
     <th data-sort="abv" class="hidden-xs"> abv </td>\
     <th data-sort="volume" class="hidden-xs">volume</th>\
@@ -269,8 +269,9 @@ var AlkoDetailsView = Backbone.View.extend({
 var AlkoSearchView = Backbone.View.extend({
     el: "#inputLocation",
     initialize: function(params){
-        this.collection.on("sync", //sync is all we need for now
-                                    //no need to trigger at each add
+        this.collection.on("reset", //reset is all we need
+                                    //list of alkos doesn't change
+                                    //after initial setting (now)
                         this.updateBloodHound,
                         this)
         params.alkolocations.on("alkochanged", this.setAlko, this);
@@ -278,7 +279,8 @@ var AlkoSearchView = Backbone.View.extend({
           name: 'alkos',
           local: [],
           datumTokenizer: function(d) {
-            return Bloodhound.tokenizers.whitespace(d.get("name"));
+            return Bloodhound.tokenizers.whitespace(
+                        d.get("name").replace("-", " "));
           },
           queryTokenizer: Bloodhound.tokenizers.whitespace
         });
@@ -324,12 +326,13 @@ var AlkoSearchView = Backbone.View.extend({
 var BeerStatusRouter = Backbone.Router.extend({
     initialize: function(){
         this.als = new AlkoLocations([], {router:this});
-        this.als.fetch();
         this.alsView = new AlkoSearchView({collection: this.als,
                         alkolocations: this.als});
         this.bc = new BeerCollection({locations:this.als, router: this});
         this.bcView = new BeerCollectionTable({collection: this.bc});
         this.selAlView = new AlkoDetailsView({collection: this.als});
+        var alkos = getInitialAlkoList();
+        this.als.reset(_.map(alkos, function(alko) {return new Alko(alko)}));
     },
     routes : {
        "" : "home",
@@ -341,6 +344,10 @@ var BeerStatusRouter = Backbone.Router.extend({
         this.als.setSelectedSlug(path);
     }
     });
+
+function getInitialAlkoList(){
+    return {{ alko_list }};
+    }
 $(function(){
     var router = new BeerStatusRouter();
     Backbone.history.start()

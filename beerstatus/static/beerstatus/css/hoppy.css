@@ -19,7 +19,7 @@ body {
     /*The license of this stock photo prohibits it from being
      * distributed in a repository with the software. It's hops on a
      * table if you want to find your own */
-    background-image: url(./img/hops_on_table.jpg);
+    background-image: url(../img/hops_on_table.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     color: white;
