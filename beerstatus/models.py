@@ -32,7 +32,9 @@ class Beer(models.Model):
                     " litres"))
     alko_product_id = models.CharField(
                             max_length=6,
-                            validators=[validate_integer])
+                            validators=[validate_integer],
+                            unique=True,
+                            )
     style = models.CharField(max_length=200, blank=True)
     # should be an integer
     # todo: enforce check
