@@ -35,3 +35,6 @@ body {
    text-shadow: none;
 }
 
+#beerTable th {
+    vertical-align: top;
+}

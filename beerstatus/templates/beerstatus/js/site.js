@@ -58,8 +58,37 @@ var BeerAvailabilityWithRating = Backbone.Model.extend({
         this.set("alko_url" ,
                     "http://www.alko.fi/en/products/" +
                                 this.get("alko_product_id") + "/"
-                    )
-    }
+        )
+    },
+    match: function(dict_){
+        var vals = _.pairs(dict_);
+        var filtered = _.filter(vals, 
+          function(param){
+
+            var query = param[0],
+                val = param[1];
+            if (query.substring(query.length-3) == "_gt")
+                return this.get(query.replace("_gt", "")) > val;
+            else if (query.substring(query.length-4) == "_gte")
+                return this.get(query.replace("_gte", "")) >= val;
+            else if (query.substring(query.length-4) == "_lt")
+                return this.get(query.replace("_lt", "")) < val;
+            else if (query.substring(query.length-4) == "_lte")
+                return this.get(query.replace("_lte", "")) <= val;
+            else if (query.substring(query.length-9) == "_contains")
+                return val.indexOf(this.get(query.replace("_contains", ""))) != -1
+            else if (query.substring(query.length-10) == "_icontains"){
+                var part = val.toLowerCase()
+                var findFrom = this.get( 
+                                        query.replace("_icontains","")
+                                        ).toLowerCase();
+                return findFrom.indexOf(part) != -1
+                }
+            else 
+                return this.get(query) == val;
+            }, this );
+        return vals.length == filtered.length ;
+        }
    })
 
 var BeerView = Backbone.View.extend({
@@ -70,6 +99,7 @@ var BeerView = Backbone.View.extend({
     template: _.template('\
         <td><a href="<%= alko_url%>"><%= name %></a></td>\
         <td><a href="<%= score_url %>"><%= score %> pts</a></td>\
+        <td ><%= style %></td>\
         <td class="hidden-xs"><%= ebu %></td>\
         <td class="hidden-xs"><%= abv %> %</td>\
         <td class="hidden-xs"><%= volume %> l</td>\
@@ -90,9 +120,6 @@ var BeerView = Backbone.View.extend({
         }
         var json = this.model.toJSON();
         this.$el.html(this.template(json));
-        if (this.model.get("availability") == 0){
-            this.$el.addClass("hidden"); 
-        }
         this.$el.addClass(class_);
         
         return this;
@@ -107,7 +134,7 @@ var BeerCollection = Backbone.Collection.extend({
     },
     sortAttr: "score",
     legalSortAttrs: ["score", "abv", "ebu", "availability", "name",
-                    "price", "volume", "date"],
+                    "price", "volume", "date", "style"],
     sortAsc: false,
     comparator: function(a_, b_){
         var a = a_.get(this.sortAttr),
@@ -119,8 +146,7 @@ var BeerCollection = Backbone.Collection.extend({
     setComparator: function(newcomp){
         if (this.legalSortAttrs.indexOf(newcomp) == -1)
             return
-        if (newcomp == this.sortAttr)    
-            this.sortAsc = !this.sortAsc;
+        if (newcomp == this.sortAttr)    this.sortAsc = !this.sortAsc;
         this.sortAttr = newcomp;
         this.sort();
     },
@@ -153,41 +179,121 @@ var BeerCollection = Backbone.Collection.extend({
 var BeerCollectionTable = Backbone.View.extend({
     el: "#beerTable",
     initialize: function(params){
-        this.collection.on("fetch set reset sort", 
+        this.collection.on("sync reset", 
                             this.render,
                             this);
+        this.collection.on("sort",
+                        this.renderContents,
+                        this);
         this.collection.on("all", this.log);
+        this.filters = {
+                        "availability_gt": 0,
+                        };
+
     },
     events: {
-        "click th": "changeSort",
+        //"click th": "changeSort",
+        "change .filterInput": "changeFilter",
+        "click .filterInput": "changeFilter",
+        "keyup .filterTextInput": "changeFilter",
+        "click .sortButton": "changeSort" 
         
     },
     changeSort: function(event_, params){
         this.collection.setComparator($(event_.target).data("sort"));
+    },
+    changeFilter: function(event_, params){
+       var field = $(event_.target).data("filter");
+       var value = $(event_.target).val();
+       if (!value){
+           delete this.filters[field];
+        } else {
+            this.filters[field] = value;
+        }
+       this.renderContents();
     },
     log: function(name, params){
         console.log("event " + name + " params");
     },
     template : _.template('\
     <thead>\
-    <th data-sort="name">name</th>\
-    <th data-sort="score">Ratebeer score</th>\
-    <th data-sort="ebu" class="hidden-xs"> ebu </td>\
-    <th data-sort="abv" class="hidden-xs"> abv </td>\
-    <th data-sort="volume" class="hidden-xs">volume</th>\
-    <th data-sort="price">price</th>\
-    <th data-sort="availability">in stock</th>\
-    <!--th data-sort="date">date</th-->\
+    <tr>\
+    <th ><span data-sort="name" class="sortButton">name &#8597</span>\
+    <br /><form class="filterForm" role="form">\
+    <div class="form-group"><label class="sr-only" for="filterName">Name filter</label>\
+    <input placeholder="filter by name" class="filterTextInput input-sm form-control"\
+                data-filter="name_icontains"\
+                id="filterName"></input></div></form></th>\
+    <th ><span data-sort="score" class="sortButton">RateBeer Score&#8597</span>\
+    </th>\
+    <th><span class="sortButton" data-sort="style">style &#8597</span><br />\
+                <form class="filterForm " role="form">\
+                <%= styleSelect %></form></th>\
+    <th data-sort="ebu" class="hidden-xs">\
+                <span class="sortButton" data-sort="ebu">EBU &#8597</span></th>\
+    <th data-sort="abv" class="hidden-xs"> \
+                <span class="sortButton" data-sort="abv">ABV &#8597</span></th>\
+    <th data-sort="volume" class="hidden-xs">\
+            <span class="sortButton" data-sort="volume">volume &#8597</span><br/>\
+                <form class="filterForm " role="form">\
+                <%= volumeSelect %></form></th>\
+    <th>\
+                <span class="sortButton" data-sort="price">price &#8597</span></th>\
+    <th>\
+                <span class="sortButton" data-sort="availability">in stock &#8597</span><br />\
+                <form class="filterForm " role="form">\
+                <%= availabilitySelect %></form></th>\
+    <!--th data-sort="date">date \
+            <span class="sortButton" data-sort="availability">&#8597</span</th-->\
+    </form>\
+    </tr>\
+    </form>\
     </thead>\
     <tbody></tbody>\
     '),
+    dropdownTemplate: _.template('\
+        <select class="filterInput input-sm form-control" data-filter="<%= filter %>">\
+        <option value="" >\
+        filter</option>\
+        <% _.each(entries, function(entry){ %>\
+           <option value="<%= entry[0] %>" ">\
+           <%= entry[1] %>\
+           </option>\
+        <% }); %>\
+        </select> \
+    '),
     render: function(){
+        var styleList = _.uniq(this.collection.pluck("style")).sort();
+        var styleSelect = this.dropdownTemplate({filter: "style", 
+                                name: "style",
+                                entries: _.zip(styleList, styleList)});
+        var volumeList = _.uniq(this.collection.pluck("volume")).sort();
+        var volSelect = this.dropdownTemplate({filter: "volume",
+                                name: "volume",
+                                entries: _.zip(volumeList, volumeList)}); 
+        var availList = [Number.NEGATIVE_INFINITY, 0, 10, 20];
+        var availLabels = ["all", "> 0", "> 10",  "> 20"];
+        var availSelect = this.dropdownTemplate({filter: "availability_gt",
+                                name: "availability",
+                                entries: _.zip(availList, availLabels)}); 
         this.$el.hide().
                 empty().
-                append(this.template()).
+                append(this.template({
+                                        styleSelect: styleSelect,
+                                        volumeSelect: volSelect,     
+                                        availabilitySelect: availSelect
+                                    })).
                 addClass("table").
                 addClass("center");
-        _.each(this.collection.models, function(item, index, list){
+        this.renderContents();
+        return this;
+    },
+    renderContents: function(){
+        this.$el.find("tbody").empty();
+        var vals = _.filter(this.collection.models, function(element){
+            return element.match(this.filters);
+            }, this) 
+        _.each(vals, function(item, index, list){
             
             var item = new BeerView({model:item});
             $("#"+this.el.id + " > tbody:last").append(item.render().el);
@@ -195,7 +301,6 @@ var BeerCollectionTable = Backbone.View.extend({
             if (index +1 == list.length)
                 this.$el.show();
         }, this);
-        return this;
     }
 
 });
@@ -228,6 +333,7 @@ var AlkoLocations = Backbone.Collection.extend({
     },
     setSelectedSlug: function(input){
         this.selected_hash = input; 
+        this.checkToSetSlug();
     },
     checkToSetSlug: function(){
         if (this.selected_hash){
@@ -339,11 +445,12 @@ var BeerStatusRouter = Backbone.Router.extend({
        "*path" : "getAlko" //ToDo: routes for checking on a particular alko
     },  
     home: function(){
+        $('#inputLocation').focus();
     },
     getAlko: function(path){
         this.als.setSelectedSlug(path);
     }
-    });
+});
 
 function getInitialAlkoList(){
     return {{ alko_list }};
@@ -351,5 +458,4 @@ function getInitialAlkoList(){
 $(function(){
     var router = new BeerStatusRouter();
     Backbone.history.start()
-    $('#inputLocation').focus();
 });
