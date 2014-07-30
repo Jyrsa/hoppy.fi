@@ -7,4 +7,4 @@ class Command(BaseCommand):
 
     def handle(self, *args, **options):
         update_beer_infos()
-        self.stdout.write('Scheduled a beer availability update')
+        self.stdout.write('Scheduled a beer basic info update')
