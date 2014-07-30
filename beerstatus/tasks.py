@@ -17,7 +17,7 @@ import re
 
 LOGGER = logging.getLogger(__name__)
 
-@db_periodic_task(crontab(hour='/3'))
+@db_periodic_task(crontab(hour='*/6'))
 def refresh_beer_availability_statuses():
     LOGGER.info("starting beer status updates")
     for beer in models.Beer.objects.all().filter(active=True):
@@ -231,7 +231,7 @@ def find_alko_id_by_name(name):
             return match.group(0)
     return None
 
-@db_periodic_task(crontab(hour="5"))
+@db_periodic_task(crontab(day="*"))
 def update_all_alko_infos():
     for alko in models.AlkoLocation.objects.all():
         update_alko_info(alko)
