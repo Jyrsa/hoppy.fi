@@ -68,7 +68,9 @@ def refresh_beer_availability(beer, cityID):
             continue
         date = parse_alko_availability_date(entry["LastUpdated"])
         if not date:
-            #
+            LOGGER.error("unable to parse date '%s'" % 
+                    entry["LastUpdated"]
+                    )
             return
         try:
             amount = int(entry["Amount"])
@@ -162,6 +164,7 @@ def update_beer_info(beer):
                     lambda x: float(x.replace('%', '').replace(",",".").strip())
                     )
     if abv < 0 or abv > 50:
+        #ToDo accept no ebu as at least some beers don't have it
         raise ScrapInconsistencyException(("abv is not logica for a beer"
         "produdct %d" % abv))
     ebu = get_element_contents(
@@ -173,12 +176,15 @@ def update_beer_info(beer):
     if ebu < 0 :
         raise ScrapInconsistencyException(("ebu is not logica for a beer"
         "produdct %d" % ebu))
+    #toDo make sure adjacent element says style
+
     style =  get_element_contents(
                     tree,
                     ('/html/body/div[7]/div/div[1]/div/div[1]/div[1]'
                     '/div[2]/div[6]/table/tr[10]/td[2]/text()'),
                     lambda x: x.strip()
                     )
+
     #style info isn't in model yet so don't include it
     price =  get_element_contents(
                     tree,
