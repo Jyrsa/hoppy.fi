@@ -71,7 +71,7 @@ class BeerRater(models.Model):
 
 class BeerRating(models.Model):
     beer = models.ForeignKey(Beer)
-    rater = models.ForeignKey(BeerRater)
+    rater = models.ForeignKey(BeerRater, default=1)
     foreign_id = models.CharField(max_length=200)
     rating = models.PositiveIntegerField(
                 help_text=("this content will come from"
