@@ -115,6 +115,23 @@ def get_element_contents(tree, xpath, cure):
             )
     return cure( list_[0])
 
+def get_from_alko_product_info_table(tree, name, cure_result):
+    product_info_table = "//*[contains(@class, 'product-column2')]/table/"
+    row_element = "tr[%d]/td[%d]/text()"
+    index = 1
+    cure = lambda x: x.strip().replace(":", "").lower()
+    try:
+        while True:
+            xpath = product_info_table + (row_element % (index, 1))
+            res = get_element_contents(tree, xpath, cure)
+            if res == name:
+                xpath = product_info_table + (row_element % (index, 2))
+                return get_element_contents(tree, xpath, cure_result)
+            index += 1
+    except ScrapeElementNotFoundException:
+        return None
+    
+
 class ScrapeInconsistencyException(BaseException):
     pass
 
@@ -122,97 +139,97 @@ class ScrapeInconsistencyException(BaseException):
 class ScrapeElementNotFoundException(BaseException):
     pass
 
-@db_periodic_task(crontab(hour='/12'))
+@db_periodic_task(crontab(hour='*/12'))
 def update_beer_infos():
     #loop through all after testing 
     for beer in models.Beer.objects.all():
-        update_beer_info(beer)
+        update_beer_info(beer.pk)
 
 @db_task()
-def update_beer_info(beer):
+def update_beer_info(beer_pk):
     """ retrieves beer page from alko, updates model fields and saves model.
 
     Also retrieves name so that beer lists can be bootstrapped with just alko
     product IDs in the future. Doesn't update name if one exists.
     """
+    beer = models.Beer.objects.get(pk=beer_pk)
     beer_url ="http://www.alko.fi/en/products/%s/" % beer.alko_product_id
     tree = retrieve_etree(beer_url)
     #be careful when retrieving these xpaths using chrome's dev tools
     #chrome adds a tbody in the table that isn't present in the source and
     #that lxml doesn't add
-    product_id = get_element_contents(
+    product_id = get_from_alko_product_info_table(
                     tree,
-                    ('/html/body/div[7]/div/div[1]/div/div[1]/div[1]'
-                    '/div[2]/div[6]/table/tr[1]/td[2]/text()'),
+                    "product number",
                     lambda x: x.strip()
-                ).strip()
+                )
+    if not product_id:
+        LOGGER.error("unable to find product id on page %s" %beer_url)
+        return
     if product_id != beer.alko_product_id:
-        raise ScrapInconsistencyException(("attempted to get beer info for"
+        raise ScrapeInconsistencyException(("attempted to get beer info for"
         "product %s but received info for product %s instead") %
         (beer.alko_product_id, product_id))
     product_category = get_element_contents(
                     tree,
-                    ('/html/body/div[7]/div/div[1]/div/div[1]'
-                    '/div[1]/div[2]/div[6]/h3/text()'),
+                    "//*[contains(@class, 'product-info-category')]/text()",
                     lambda x: x.strip())
     if product_category != "beer":
-        raise ScrapInconsistencyException(("attempted to get a beer but %s "
+        raise ScrapeInconsistencyException(("attempted to get a beer but %s "
         "is of category %s ") % (product_id, product_category))
-    abv = get_element_contents(
+    abv = get_from_alko_product_info_table(
                     tree,
-                    ('/html/body/div[7]/div/div[1]/div/div[1]/div[1]'
-                    '/div[2]/div[6]/table/tr[2]/td[2]/text()'),
+                    "alcohol", 
                     lambda x: float(x.replace('%', '').replace(",",".").strip())
                     )
     if abv < 0 or abv > 50:
         #ToDo accept no ebu as at least some beers don't have it
-        raise ScrapInconsistencyException(("abv is not logica for a beer"
+        raise ScrapeInconsistencyException(("abv is not logica for a beer"
         "produdct %d" % abv))
-    ebu = get_element_contents(
+    ebu = get_from_alko_product_info_table(
                     tree,
-                    ('/html/body/div[7]/div/div[1]/div/div[1]/div[1]'
-                    '/div[2]/div[6]/table/tr[5]/td[2]/text()'),
-                    lambda x: float(x.replace('EBU', '').replace(",", ".").strip())
+                    "bitterness",
+                    lambda x: x.replace('EBU', '').replace(",", ".").strip()
                     )
-    if ebu < 0 :
-        raise ScrapInconsistencyException(("ebu is not logica for a beer"
+    #not 100% of beer have ebu defined so it's allowed to be null
+    if ebu:
+        ebu = float(ebu)
+        if ebu < 0 :
+            raise ScrapeInconsistencyException(("ebu is not logical for a beer"
         "produdct %d" % ebu))
+    else:
+        ebu = 0
     #toDo make sure adjacent element says style
-
-    style =  get_element_contents(
+    style =  get_from_alko_product_info_table(
                     tree,
-                    ('/html/body/div[7]/div/div[1]/div/div[1]/div[1]'
-                    '/div[2]/div[6]/table/tr[10]/td[2]/text()'),
+                    "beer style",
                     lambda x: x.strip()
                     )
 
     #style info isn't in model yet so don't include it
     price =  get_element_contents(
                     tree,
-                    ('/html/body/div[7]/div/div[1]/div/div[1]/'
-                    'div[1]/div[2]/div[1]/span[1]/text()'),
+                    ("//*[contains(@class, 'price')]/span[1]/text()"),
                     lambda x: float(x.strip().replace(",","."))
                     )
     if price <= 0: 
-        raise ScrapInconsistencyException(("beer price is <= 0."
+        raise ScrapeInconsistencyException(("beer price is <= 0."
         " There's no such thing as free beer!"))
     volume = get_element_contents(
                     tree,
-                    ('/html/body/div[7]/div/div[1]/div/div[1]/'
-                    'div[1]/div[2]/div[2]/text()'),
+                    ("//*[contains(@class, 'product-details')]/text()[1]"),
                     lambda x: float(x.strip().replace(",","."))
                     )
     if volume <= 0 or volume > 10:
-        raise ScrapInconsistencyException(("Beer volume is not credible!"
+        raise ScrapeInconsistencyException(("Beer volume is not credible!"
         " There's no such thing as jottalitran tuopponen!"))
     name = get_element_contents(
                     tree,
-                    ('/html/body/div[7]/div/div[1]/div/'
-                    'div[1]/div[1]/div[2]/h1/text()'),
+                    ("//*[contains(@class, 'product-info')]/h1/text()"),
                     lambda x: x.strip()
                     )
-    if volume <= 0 or volume > 200:
-        raise ScrapInconsistencyException(("Beer name is incompatible: !"
+    if name <= 0 or volume > 200:
+        raise ScrapeInconsistencyException(("Beer name is incompatible: !"
         " %" ) % name)
     beer.abv = abv
     beer.ebu = ebu
@@ -259,24 +276,21 @@ def update_alko_info(alko_pk):
     streetaddr = ""
     try:
         streetaddr = get_element_contents(tree, 
-            ('/html/body/div[7]/div/div[1]/div/div/'
-            'div/div[2]/span[1]/div/span[1]/text()'), 
+            ("//*[contains(@class,'store-contact')]/span[1]/div/span[1]/text()"), 
             lambda x: x)
     except ScrapeElementNotFoundException:
         pass
     areacode = ""
     try:
         areacode = get_element_contents(tree, 
-            ('/html/body/div[7]/div/div[1]/div/div/'
-            'div/div[2]/span[1]/div/span[2]/text()'), 
+            ("//*[contains(@class,'store-contact')]/span[1]/div/span[2]/text()"), 
             lambda x: x)
     except ScrapeElementNotFoundException:
         pass
     city = ""
     try:
         city = get_element_contents(tree, 
-            ('/html/body/div[7]/div/div[1]/div/div/'
-            'div/div[2]/span[1]/div/span[3]/text()'), 
+            ("//*[contains(@class,'store-contact')]/span[1]/div/span[3]/text()"), 
             lambda x: x)
     except ScrapeElementNotFoundException:
         pass
@@ -286,8 +300,7 @@ def update_alko_info(alko_pk):
                 city
                 )
     name = get_element_contents(tree, 
-            ('/html/body/div[7]/div/div[1]/div/div/'
-            'div/h1/text()'), 
+            ("//*[contains(@class, 'basic-store-info')]/h1/text()"), 
             lambda x: x)
     # if name.length > 0:
     #     alko.name = name
