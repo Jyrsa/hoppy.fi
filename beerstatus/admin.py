@@ -25,6 +25,7 @@ class BeerAdmin(admin.ModelAdmin):
     inlines = (BeerRatingInline,)
     list_display = ("name", "slug",)
     readonly_fields = ("slug", "created_at", "last_modified")
+    search_fields = ("name", "slug")
 
 admin.site.register(Beer, BeerAdmin)
 admin.site.register(BeerRating)
@@ -34,5 +35,6 @@ class AlkoLocationAdmin(admin.ModelAdmin):
     """ lets the slug be visible
     """
     readonly_fields=("slug",)
+    search_fields = ("name", "slug", "address")
 admin.site.register(AlkoLocation, AlkoLocationAdmin)
 admin.site.register(BeerAvailability)
