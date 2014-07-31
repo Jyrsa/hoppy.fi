@@ -22,7 +22,7 @@ def refresh_beer_availability_statuses():
     LOGGER.info("starting beer status updates")
     for beer in models.Beer.objects.all().filter(active=True):
         for city_id, city in models.SUPPORTED_ALKO_CITIES:
-            refresh_beer_availability(beer, city_id)
+            refresh_beer_availability(beer.pk, city_id)
     LOGGER.info("finished scheduling beer status updates")
 
 def parse_alko_availability_date(value):
@@ -50,7 +50,8 @@ def parse_alko_availability_date(value):
 
 
 @db_task()
-def refresh_beer_availability(beer, cityID):
+def refresh_beer_availability(beer_pk, cityID):
+    beer = models.Beer.objects.get(pk=beer_pk)
     LOGGER.debug("refreshing beer %s status for %s" % (
                                                 beer.name,
                                                 cityID))
@@ -237,13 +238,14 @@ def find_alko_id_by_name(name):
             return match.group(0)
     return None
 
-@db_periodic_task(crontab(day="*"))
+@db_periodic_task(crontab(hour="*/12"))
 def update_all_alko_infos():
     for alko in models.AlkoLocation.objects.all():
-        update_alko_info(alko)
+        update_alko_info(alko.pk)
 
 @db_task()
-def update_alko_info(alko):
+def update_alko_info(alko_pk):
+    alko = models.AlkoLocation.objects.get(pk=alko_pk)
     store_id = find_alko_id_by_name(alko.name) or alko.store_id
     if not store_id:
         logging.warning("no store_id found for store name "\
