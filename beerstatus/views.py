@@ -4,6 +4,21 @@ from django.shortcuts import render_to_response
 from beerstatus.api import AlkoLocationResource
 from django.utils.safestring import mark_safe
 
+from django.views.generic.base import TemplateView
+
+
+class TemplateTrackingView(TemplateView):
+    tracking_code = None
+
+    def __init__(self, *args, **kwargs):
+        self.tracking_code = kwargs.get("tracking_code")
+        self.template_name = kwargs.get("template_name")
+
+    def get_context_data(self, **kwargs):
+        context = super(TemplateTrackingView, self).get_context_data(**kwargs)
+        context['tracking_code'] = mark_safe(self.tracking_code)
+        return context
+
 
 def site_js(request):
     """ returns the JS file with the initial data
