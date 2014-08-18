@@ -1,7 +1,7 @@
 {% extends "beerstatus/base_template.html" %}
 {%block  containercontent %}
 <div class="jumbotron">
-            <h1 class="center">Hoppy.fi</h1>
+            <h1 class="center">Hoppy.fi Beta</h1>
             <h3 class="center">Beers in stock at Alko stores</h3>
                 <div class="row">
                 <div class="col-md-6 col-md-offset-3 col-xs-12">
@@ -11,11 +11,12 @@
                                 <input type="text" class="input-lg form-control" id="inputLocation" 
                                             placeholder="Input Nearest Alko" />
                             </div>
-                            <div class="center">
+<!--                            <div class="center">
                                 <button type="button" class="btn btn-default"
                                 disabled id="locationButton">Use Location (not
                                 implemented)</button>
                             </div>
+                            -->
                     </form>
                     </div>
                 </div>
@@ -34,12 +35,12 @@
         </div>
         <div class="row">
             <div class="col-xs-12">
-                <p>Note that there are only ale-style beers + Karhu A entered to the
-                system right now. Matching beers is a manual job until/unless
-                RateBeer hands over a developer key.
+                <p>Note that the system does not contain all Alko beer.
+                Notably, all lagers with the exception of Karhu A are missing
+                right now. 
                 </p>
-                <p>Beer rating scores are from <a
-                href="http://www.ratebeer.com">RateBeer</a></p>
+                <p>Beer rating scores are from the wonderful <a
+                href="http://www.ratebeer.com">RateBeer.com</a>.</p>
             </div>
         </div>
 {% endblock containercontent %}
