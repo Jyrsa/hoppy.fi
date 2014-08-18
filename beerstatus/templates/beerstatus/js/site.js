@@ -192,7 +192,6 @@ var BeerCollectionTable = Backbone.View.extend({
 
     },
     events: {
-        //"click th": "changeSort",
         "change .filterInput": "changeFilter",
         "click .filterInput": "changeFilter",
         "keyup .filterTextInput": "changeFilter",
