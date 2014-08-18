@@ -1,11 +1,13 @@
 Django==1.6.5
 South==1.0
 argparse==1.2.1
+beautifulsoup4==4.3.2
 distribute==0.6.24
 django-autoslug==1.7.2
 django-tastypie==0.11.1
 huey==0.4.2
 lxml==3.3.5
+meld3==1.0.0
 mock==1.0.1
 python-dateutil==2.2
 python-mimeparse==0.1.4
@@ -13,4 +15,6 @@ pytz==2014.4
 redis==2.10.1
 requests==2.3.0
 six==1.7.3
+superlance==0.11
+supervisor==3.1.1
 wsgiref==0.1.2
