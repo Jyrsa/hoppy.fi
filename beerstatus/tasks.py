@@ -10,7 +10,7 @@ import pytz
 import requests
 import json
 import datetime
-from . import models
+from beerstatus import models
 from lxml import html
 from django.utils.timezone import utc
 import re
